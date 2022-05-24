@@ -1,0 +1,15 @@
+C:\Users\CyberQ\Desktop\CyberQ - Practice\Lógica e Algoritimos\Aula01\01 - Conceitos\bin\Debug\net6.0\01 - Conceitos.exe
+C:\Users\CyberQ\Desktop\CyberQ - Practice\Lógica e Algoritimos\Aula01\01 - Conceitos\bin\Debug\net6.0\01 - Conceitos.deps.json
+C:\Users\CyberQ\Desktop\CyberQ - Practice\Lógica e Algoritimos\Aula01\01 - Conceitos\bin\Debug\net6.0\01 - Conceitos.runtimeconfig.json
+C:\Users\CyberQ\Desktop\CyberQ - Practice\Lógica e Algoritimos\Aula01\01 - Conceitos\bin\Debug\net6.0\01 - Conceitos.dll
+C:\Users\CyberQ\Desktop\CyberQ - Practice\Lógica e Algoritimos\Aula01\01 - Conceitos\bin\Debug\net6.0\01 - Conceitos.pdb
+C:\Users\CyberQ\Desktop\CyberQ - Practice\Lógica e Algoritimos\Aula01\01 - Conceitos\obj\Debug\net6.0\01 - Conceitos.csproj.AssemblyReference.cache
+C:\Users\CyberQ\Desktop\CyberQ - Practice\Lógica e Algoritimos\Aula01\01 - Conceitos\obj\Debug\net6.0\01 - Conceitos.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\CyberQ\Desktop\CyberQ - Practice\Lógica e Algoritimos\Aula01\01 - Conceitos\obj\Debug\net6.0\01 - Conceitos.AssemblyInfoInputs.cache
+C:\Users\CyberQ\Desktop\CyberQ - Practice\Lógica e Algoritimos\Aula01\01 - Conceitos\obj\Debug\net6.0\01 - Conceitos.AssemblyInfo.cs
+C:\Users\CyberQ\Desktop\CyberQ - Practice\Lógica e Algoritimos\Aula01\01 - Conceitos\obj\Debug\net6.0\01 - Conceitos.csproj.CoreCompileInputs.cache
+C:\Users\CyberQ\Desktop\CyberQ - Practice\Lógica e Algoritimos\Aula01\01 - Conceitos\obj\Debug\net6.0\01 - Conceitos.dll
+C:\Users\CyberQ\Desktop\CyberQ - Practice\Lógica e Algoritimos\Aula01\01 - Conceitos\obj\Debug\net6.0\refint\01 - Conceitos.dll
+C:\Users\CyberQ\Desktop\CyberQ - Practice\Lógica e Algoritimos\Aula01\01 - Conceitos\obj\Debug\net6.0\01 - Conceitos.pdb
+C:\Users\CyberQ\Desktop\CyberQ - Practice\Lógica e Algoritimos\Aula01\01 - Conceitos\obj\Debug\net6.0\01 - Conceitos.genruntimeconfig.cache
+C:\Users\CyberQ\Desktop\CyberQ - Practice\Lógica e Algoritimos\Aula01\01 - Conceitos\obj\Debug\net6.0\ref\01 - Conceitos.dll

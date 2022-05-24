@@ -1,0 +1,15 @@
+C:\Users\CyberQ\Desktop\CyberQ - Practice\Lógica e Algoritimos\Aula01\07 - Condicional Simples\bin\Debug\net6.0\07 - Condicional Simples.exe
+C:\Users\CyberQ\Desktop\CyberQ - Practice\Lógica e Algoritimos\Aula01\07 - Condicional Simples\bin\Debug\net6.0\07 - Condicional Simples.deps.json
+C:\Users\CyberQ\Desktop\CyberQ - Practice\Lógica e Algoritimos\Aula01\07 - Condicional Simples\bin\Debug\net6.0\07 - Condicional Simples.runtimeconfig.json
+C:\Users\CyberQ\Desktop\CyberQ - Practice\Lógica e Algoritimos\Aula01\07 - Condicional Simples\bin\Debug\net6.0\07 - Condicional Simples.dll
+C:\Users\CyberQ\Desktop\CyberQ - Practice\Lógica e Algoritimos\Aula01\07 - Condicional Simples\bin\Debug\net6.0\07 - Condicional Simples.pdb
+C:\Users\CyberQ\Desktop\CyberQ - Practice\Lógica e Algoritimos\Aula01\07 - Condicional Simples\obj\Debug\net6.0\07 - Condicional Simples.csproj.AssemblyReference.cache
+C:\Users\CyberQ\Desktop\CyberQ - Practice\Lógica e Algoritimos\Aula01\07 - Condicional Simples\obj\Debug\net6.0\07 - Condicional Simples.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\CyberQ\Desktop\CyberQ - Practice\Lógica e Algoritimos\Aula01\07 - Condicional Simples\obj\Debug\net6.0\07 - Condicional Simples.AssemblyInfoInputs.cache
+C:\Users\CyberQ\Desktop\CyberQ - Practice\Lógica e Algoritimos\Aula01\07 - Condicional Simples\obj\Debug\net6.0\07 - Condicional Simples.AssemblyInfo.cs
+C:\Users\CyberQ\Desktop\CyberQ - Practice\Lógica e Algoritimos\Aula01\07 - Condicional Simples\obj\Debug\net6.0\07 - Condicional Simples.csproj.CoreCompileInputs.cache
+C:\Users\CyberQ\Desktop\CyberQ - Practice\Lógica e Algoritimos\Aula01\07 - Condicional Simples\obj\Debug\net6.0\07 - Condicional Simples.dll
+C:\Users\CyberQ\Desktop\CyberQ - Practice\Lógica e Algoritimos\Aula01\07 - Condicional Simples\obj\Debug\net6.0\refint\07 - Condicional Simples.dll
+C:\Users\CyberQ\Desktop\CyberQ - Practice\Lógica e Algoritimos\Aula01\07 - Condicional Simples\obj\Debug\net6.0\07 - Condicional Simples.pdb
+C:\Users\CyberQ\Desktop\CyberQ - Practice\Lógica e Algoritimos\Aula01\07 - Condicional Simples\obj\Debug\net6.0\07 - Condicional Simples.genruntimeconfig.cache
+C:\Users\CyberQ\Desktop\CyberQ - Practice\Lógica e Algoritimos\Aula01\07 - Condicional Simples\obj\Debug\net6.0\ref\07 - Condicional Simples.dll

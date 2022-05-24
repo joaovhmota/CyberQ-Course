@@ -1,0 +1,15 @@
+C:\Users\CyberQ\Desktop\CyberQ - Practice\Lógica e Algoritimos\Aula02\05 - Loop Infinito\bin\Debug\net6.0\05 - Loop Infinito.exe
+C:\Users\CyberQ\Desktop\CyberQ - Practice\Lógica e Algoritimos\Aula02\05 - Loop Infinito\bin\Debug\net6.0\05 - Loop Infinito.deps.json
+C:\Users\CyberQ\Desktop\CyberQ - Practice\Lógica e Algoritimos\Aula02\05 - Loop Infinito\bin\Debug\net6.0\05 - Loop Infinito.runtimeconfig.json
+C:\Users\CyberQ\Desktop\CyberQ - Practice\Lógica e Algoritimos\Aula02\05 - Loop Infinito\bin\Debug\net6.0\05 - Loop Infinito.dll
+C:\Users\CyberQ\Desktop\CyberQ - Practice\Lógica e Algoritimos\Aula02\05 - Loop Infinito\bin\Debug\net6.0\05 - Loop Infinito.pdb
+C:\Users\CyberQ\Desktop\CyberQ - Practice\Lógica e Algoritimos\Aula02\05 - Loop Infinito\obj\Debug\net6.0\05 - Loop Infinito.csproj.AssemblyReference.cache
+C:\Users\CyberQ\Desktop\CyberQ - Practice\Lógica e Algoritimos\Aula02\05 - Loop Infinito\obj\Debug\net6.0\05 - Loop Infinito.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\CyberQ\Desktop\CyberQ - Practice\Lógica e Algoritimos\Aula02\05 - Loop Infinito\obj\Debug\net6.0\05 - Loop Infinito.AssemblyInfoInputs.cache
+C:\Users\CyberQ\Desktop\CyberQ - Practice\Lógica e Algoritimos\Aula02\05 - Loop Infinito\obj\Debug\net6.0\05 - Loop Infinito.AssemblyInfo.cs
+C:\Users\CyberQ\Desktop\CyberQ - Practice\Lógica e Algoritimos\Aula02\05 - Loop Infinito\obj\Debug\net6.0\05 - Loop Infinito.csproj.CoreCompileInputs.cache
+C:\Users\CyberQ\Desktop\CyberQ - Practice\Lógica e Algoritimos\Aula02\05 - Loop Infinito\obj\Debug\net6.0\05 - Loop Infinito.dll
+C:\Users\CyberQ\Desktop\CyberQ - Practice\Lógica e Algoritimos\Aula02\05 - Loop Infinito\obj\Debug\net6.0\refint\05 - Loop Infinito.dll
+C:\Users\CyberQ\Desktop\CyberQ - Practice\Lógica e Algoritimos\Aula02\05 - Loop Infinito\obj\Debug\net6.0\05 - Loop Infinito.pdb
+C:\Users\CyberQ\Desktop\CyberQ - Practice\Lógica e Algoritimos\Aula02\05 - Loop Infinito\obj\Debug\net6.0\05 - Loop Infinito.genruntimeconfig.cache
+C:\Users\CyberQ\Desktop\CyberQ - Practice\Lógica e Algoritimos\Aula02\05 - Loop Infinito\obj\Debug\net6.0\ref\05 - Loop Infinito.dll

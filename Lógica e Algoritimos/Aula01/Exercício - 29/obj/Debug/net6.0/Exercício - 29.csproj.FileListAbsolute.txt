@@ -1,0 +1,15 @@
+C:\Users\CyberQ\Desktop\CyberQ - Practice\Lógica e Algoritimos\Aula01\Exercício - 29\bin\Debug\net6.0\Exercício - 29.exe
+C:\Users\CyberQ\Desktop\CyberQ - Practice\Lógica e Algoritimos\Aula01\Exercício - 29\bin\Debug\net6.0\Exercício - 29.deps.json
+C:\Users\CyberQ\Desktop\CyberQ - Practice\Lógica e Algoritimos\Aula01\Exercício - 29\bin\Debug\net6.0\Exercício - 29.runtimeconfig.json
+C:\Users\CyberQ\Desktop\CyberQ - Practice\Lógica e Algoritimos\Aula01\Exercício - 29\bin\Debug\net6.0\Exercício - 29.dll
+C:\Users\CyberQ\Desktop\CyberQ - Practice\Lógica e Algoritimos\Aula01\Exercício - 29\bin\Debug\net6.0\Exercício - 29.pdb
+C:\Users\CyberQ\Desktop\CyberQ - Practice\Lógica e Algoritimos\Aula01\Exercício - 29\obj\Debug\net6.0\Exercício - 29.csproj.AssemblyReference.cache
+C:\Users\CyberQ\Desktop\CyberQ - Practice\Lógica e Algoritimos\Aula01\Exercício - 29\obj\Debug\net6.0\Exercício - 29.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\CyberQ\Desktop\CyberQ - Practice\Lógica e Algoritimos\Aula01\Exercício - 29\obj\Debug\net6.0\Exercício - 29.AssemblyInfoInputs.cache
+C:\Users\CyberQ\Desktop\CyberQ - Practice\Lógica e Algoritimos\Aula01\Exercício - 29\obj\Debug\net6.0\Exercício - 29.AssemblyInfo.cs
+C:\Users\CyberQ\Desktop\CyberQ - Practice\Lógica e Algoritimos\Aula01\Exercício - 29\obj\Debug\net6.0\Exercício - 29.csproj.CoreCompileInputs.cache
+C:\Users\CyberQ\Desktop\CyberQ - Practice\Lógica e Algoritimos\Aula01\Exercício - 29\obj\Debug\net6.0\Exercício - 29.dll
+C:\Users\CyberQ\Desktop\CyberQ - Practice\Lógica e Algoritimos\Aula01\Exercício - 29\obj\Debug\net6.0\refint\Exercício - 29.dll
+C:\Users\CyberQ\Desktop\CyberQ - Practice\Lógica e Algoritimos\Aula01\Exercício - 29\obj\Debug\net6.0\Exercício - 29.pdb
+C:\Users\CyberQ\Desktop\CyberQ - Practice\Lógica e Algoritimos\Aula01\Exercício - 29\obj\Debug\net6.0\Exercício - 29.genruntimeconfig.cache
+C:\Users\CyberQ\Desktop\CyberQ - Practice\Lógica e Algoritimos\Aula01\Exercício - 29\obj\Debug\net6.0\ref\Exercício - 29.dll

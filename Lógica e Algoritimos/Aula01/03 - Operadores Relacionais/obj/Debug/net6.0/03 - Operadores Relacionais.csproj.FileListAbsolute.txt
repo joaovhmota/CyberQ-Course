@@ -1,0 +1,15 @@
+C:\Users\CyberQ\Desktop\CyberQ - Practice\Lógica e Algoritimos\Aula01\03 - Operadores Relacionais\bin\Debug\net6.0\03 - Operadores Relacionais.exe
+C:\Users\CyberQ\Desktop\CyberQ - Practice\Lógica e Algoritimos\Aula01\03 - Operadores Relacionais\bin\Debug\net6.0\03 - Operadores Relacionais.deps.json
+C:\Users\CyberQ\Desktop\CyberQ - Practice\Lógica e Algoritimos\Aula01\03 - Operadores Relacionais\bin\Debug\net6.0\03 - Operadores Relacionais.runtimeconfig.json
+C:\Users\CyberQ\Desktop\CyberQ - Practice\Lógica e Algoritimos\Aula01\03 - Operadores Relacionais\bin\Debug\net6.0\03 - Operadores Relacionais.dll
+C:\Users\CyberQ\Desktop\CyberQ - Practice\Lógica e Algoritimos\Aula01\03 - Operadores Relacionais\bin\Debug\net6.0\03 - Operadores Relacionais.pdb
+C:\Users\CyberQ\Desktop\CyberQ - Practice\Lógica e Algoritimos\Aula01\03 - Operadores Relacionais\obj\Debug\net6.0\03 - Operadores Relacionais.csproj.AssemblyReference.cache
+C:\Users\CyberQ\Desktop\CyberQ - Practice\Lógica e Algoritimos\Aula01\03 - Operadores Relacionais\obj\Debug\net6.0\03 - Operadores Relacionais.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\CyberQ\Desktop\CyberQ - Practice\Lógica e Algoritimos\Aula01\03 - Operadores Relacionais\obj\Debug\net6.0\03 - Operadores Relacionais.AssemblyInfoInputs.cache
+C:\Users\CyberQ\Desktop\CyberQ - Practice\Lógica e Algoritimos\Aula01\03 - Operadores Relacionais\obj\Debug\net6.0\03 - Operadores Relacionais.AssemblyInfo.cs
+C:\Users\CyberQ\Desktop\CyberQ - Practice\Lógica e Algoritimos\Aula01\03 - Operadores Relacionais\obj\Debug\net6.0\03 - Operadores Relacionais.csproj.CoreCompileInputs.cache
+C:\Users\CyberQ\Desktop\CyberQ - Practice\Lógica e Algoritimos\Aula01\03 - Operadores Relacionais\obj\Debug\net6.0\03 - Operadores Relacionais.dll
+C:\Users\CyberQ\Desktop\CyberQ - Practice\Lógica e Algoritimos\Aula01\03 - Operadores Relacionais\obj\Debug\net6.0\refint\03 - Operadores Relacionais.dll
+C:\Users\CyberQ\Desktop\CyberQ - Practice\Lógica e Algoritimos\Aula01\03 - Operadores Relacionais\obj\Debug\net6.0\03 - Operadores Relacionais.pdb
+C:\Users\CyberQ\Desktop\CyberQ - Practice\Lógica e Algoritimos\Aula01\03 - Operadores Relacionais\obj\Debug\net6.0\03 - Operadores Relacionais.genruntimeconfig.cache
+C:\Users\CyberQ\Desktop\CyberQ - Practice\Lógica e Algoritimos\Aula01\03 - Operadores Relacionais\obj\Debug\net6.0\ref\03 - Operadores Relacionais.dll

@@ -1,0 +1,15 @@
+C:\Users\CyberQ\Desktop\CyberQ - Practice\Lógica e Algoritimos\Aula01\05 - Operadores Aritiméticos\bin\Debug\net6.0\05 - Operadores Aritméticos.exe
+C:\Users\CyberQ\Desktop\CyberQ - Practice\Lógica e Algoritimos\Aula01\05 - Operadores Aritiméticos\bin\Debug\net6.0\05 - Operadores Aritméticos.deps.json
+C:\Users\CyberQ\Desktop\CyberQ - Practice\Lógica e Algoritimos\Aula01\05 - Operadores Aritiméticos\bin\Debug\net6.0\05 - Operadores Aritméticos.runtimeconfig.json
+C:\Users\CyberQ\Desktop\CyberQ - Practice\Lógica e Algoritimos\Aula01\05 - Operadores Aritiméticos\bin\Debug\net6.0\05 - Operadores Aritméticos.dll
+C:\Users\CyberQ\Desktop\CyberQ - Practice\Lógica e Algoritimos\Aula01\05 - Operadores Aritiméticos\bin\Debug\net6.0\05 - Operadores Aritméticos.pdb
+C:\Users\CyberQ\Desktop\CyberQ - Practice\Lógica e Algoritimos\Aula01\05 - Operadores Aritiméticos\obj\Debug\net6.0\05 - Operadores Aritméticos.csproj.AssemblyReference.cache
+C:\Users\CyberQ\Desktop\CyberQ - Practice\Lógica e Algoritimos\Aula01\05 - Operadores Aritiméticos\obj\Debug\net6.0\05 - Operadores Aritméticos.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\CyberQ\Desktop\CyberQ - Practice\Lógica e Algoritimos\Aula01\05 - Operadores Aritiméticos\obj\Debug\net6.0\05 - Operadores Aritméticos.AssemblyInfoInputs.cache
+C:\Users\CyberQ\Desktop\CyberQ - Practice\Lógica e Algoritimos\Aula01\05 - Operadores Aritiméticos\obj\Debug\net6.0\05 - Operadores Aritméticos.AssemblyInfo.cs
+C:\Users\CyberQ\Desktop\CyberQ - Practice\Lógica e Algoritimos\Aula01\05 - Operadores Aritiméticos\obj\Debug\net6.0\05 - Operadores Aritméticos.csproj.CoreCompileInputs.cache
+C:\Users\CyberQ\Desktop\CyberQ - Practice\Lógica e Algoritimos\Aula01\05 - Operadores Aritiméticos\obj\Debug\net6.0\05 - Operadores Aritméticos.dll
+C:\Users\CyberQ\Desktop\CyberQ - Practice\Lógica e Algoritimos\Aula01\05 - Operadores Aritiméticos\obj\Debug\net6.0\refint\05 - Operadores Aritméticos.dll
+C:\Users\CyberQ\Desktop\CyberQ - Practice\Lógica e Algoritimos\Aula01\05 - Operadores Aritiméticos\obj\Debug\net6.0\05 - Operadores Aritméticos.pdb
+C:\Users\CyberQ\Desktop\CyberQ - Practice\Lógica e Algoritimos\Aula01\05 - Operadores Aritiméticos\obj\Debug\net6.0\05 - Operadores Aritméticos.genruntimeconfig.cache
+C:\Users\CyberQ\Desktop\CyberQ - Practice\Lógica e Algoritimos\Aula01\05 - Operadores Aritiméticos\obj\Debug\net6.0\ref\05 - Operadores Aritméticos.dll

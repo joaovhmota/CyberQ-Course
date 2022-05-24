@@ -1,0 +1,15 @@
+C:\Users\CyberQ\Desktop\CyberQ - Practice\Lógica e Algoritimos\Aula02\03 - Laço Do While\bin\Debug\net6.0\03 - Laço Do While.exe
+C:\Users\CyberQ\Desktop\CyberQ - Practice\Lógica e Algoritimos\Aula02\03 - Laço Do While\bin\Debug\net6.0\03 - Laço Do While.deps.json
+C:\Users\CyberQ\Desktop\CyberQ - Practice\Lógica e Algoritimos\Aula02\03 - Laço Do While\bin\Debug\net6.0\03 - Laço Do While.runtimeconfig.json
+C:\Users\CyberQ\Desktop\CyberQ - Practice\Lógica e Algoritimos\Aula02\03 - Laço Do While\bin\Debug\net6.0\03 - Laço Do While.dll
+C:\Users\CyberQ\Desktop\CyberQ - Practice\Lógica e Algoritimos\Aula02\03 - Laço Do While\bin\Debug\net6.0\03 - Laço Do While.pdb
+C:\Users\CyberQ\Desktop\CyberQ - Practice\Lógica e Algoritimos\Aula02\03 - Laço Do While\obj\Debug\net6.0\03 - Laço Do While.csproj.AssemblyReference.cache
+C:\Users\CyberQ\Desktop\CyberQ - Practice\Lógica e Algoritimos\Aula02\03 - Laço Do While\obj\Debug\net6.0\03 - Laço Do While.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\CyberQ\Desktop\CyberQ - Practice\Lógica e Algoritimos\Aula02\03 - Laço Do While\obj\Debug\net6.0\03 - Laço Do While.AssemblyInfoInputs.cache
+C:\Users\CyberQ\Desktop\CyberQ - Practice\Lógica e Algoritimos\Aula02\03 - Laço Do While\obj\Debug\net6.0\03 - Laço Do While.AssemblyInfo.cs
+C:\Users\CyberQ\Desktop\CyberQ - Practice\Lógica e Algoritimos\Aula02\03 - Laço Do While\obj\Debug\net6.0\03 - Laço Do While.csproj.CoreCompileInputs.cache
+C:\Users\CyberQ\Desktop\CyberQ - Practice\Lógica e Algoritimos\Aula02\03 - Laço Do While\obj\Debug\net6.0\03 - Laço Do While.dll
+C:\Users\CyberQ\Desktop\CyberQ - Practice\Lógica e Algoritimos\Aula02\03 - Laço Do While\obj\Debug\net6.0\refint\03 - Laço Do While.dll
+C:\Users\CyberQ\Desktop\CyberQ - Practice\Lógica e Algoritimos\Aula02\03 - Laço Do While\obj\Debug\net6.0\03 - Laço Do While.pdb
+C:\Users\CyberQ\Desktop\CyberQ - Practice\Lógica e Algoritimos\Aula02\03 - Laço Do While\obj\Debug\net6.0\03 - Laço Do While.genruntimeconfig.cache
+C:\Users\CyberQ\Desktop\CyberQ - Practice\Lógica e Algoritimos\Aula02\03 - Laço Do While\obj\Debug\net6.0\ref\03 - Laço Do While.dll

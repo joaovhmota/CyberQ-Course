@@ -1,0 +1,15 @@
+C:\Users\CyberQ\Desktop\CyberQ - Practice\Lógica e Algoritimos\Aula01\06 - Resto da divisão\bin\Debug\net6.0\06 - Resto da divisão.exe
+C:\Users\CyberQ\Desktop\CyberQ - Practice\Lógica e Algoritimos\Aula01\06 - Resto da divisão\bin\Debug\net6.0\06 - Resto da divisão.deps.json
+C:\Users\CyberQ\Desktop\CyberQ - Practice\Lógica e Algoritimos\Aula01\06 - Resto da divisão\bin\Debug\net6.0\06 - Resto da divisão.runtimeconfig.json
+C:\Users\CyberQ\Desktop\CyberQ - Practice\Lógica e Algoritimos\Aula01\06 - Resto da divisão\bin\Debug\net6.0\06 - Resto da divisão.dll
+C:\Users\CyberQ\Desktop\CyberQ - Practice\Lógica e Algoritimos\Aula01\06 - Resto da divisão\bin\Debug\net6.0\06 - Resto da divisão.pdb
+C:\Users\CyberQ\Desktop\CyberQ - Practice\Lógica e Algoritimos\Aula01\06 - Resto da divisão\obj\Debug\net6.0\06 - Resto da divisão.csproj.AssemblyReference.cache
+C:\Users\CyberQ\Desktop\CyberQ - Practice\Lógica e Algoritimos\Aula01\06 - Resto da divisão\obj\Debug\net6.0\06 - Resto da divisão.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\CyberQ\Desktop\CyberQ - Practice\Lógica e Algoritimos\Aula01\06 - Resto da divisão\obj\Debug\net6.0\06 - Resto da divisão.AssemblyInfoInputs.cache
+C:\Users\CyberQ\Desktop\CyberQ - Practice\Lógica e Algoritimos\Aula01\06 - Resto da divisão\obj\Debug\net6.0\06 - Resto da divisão.AssemblyInfo.cs
+C:\Users\CyberQ\Desktop\CyberQ - Practice\Lógica e Algoritimos\Aula01\06 - Resto da divisão\obj\Debug\net6.0\06 - Resto da divisão.csproj.CoreCompileInputs.cache
+C:\Users\CyberQ\Desktop\CyberQ - Practice\Lógica e Algoritimos\Aula01\06 - Resto da divisão\obj\Debug\net6.0\06 - Resto da divisão.dll
+C:\Users\CyberQ\Desktop\CyberQ - Practice\Lógica e Algoritimos\Aula01\06 - Resto da divisão\obj\Debug\net6.0\refint\06 - Resto da divisão.dll
+C:\Users\CyberQ\Desktop\CyberQ - Practice\Lógica e Algoritimos\Aula01\06 - Resto da divisão\obj\Debug\net6.0\06 - Resto da divisão.pdb
+C:\Users\CyberQ\Desktop\CyberQ - Practice\Lógica e Algoritimos\Aula01\06 - Resto da divisão\obj\Debug\net6.0\06 - Resto da divisão.genruntimeconfig.cache
+C:\Users\CyberQ\Desktop\CyberQ - Practice\Lógica e Algoritimos\Aula01\06 - Resto da divisão\obj\Debug\net6.0\ref\06 - Resto da divisão.dll

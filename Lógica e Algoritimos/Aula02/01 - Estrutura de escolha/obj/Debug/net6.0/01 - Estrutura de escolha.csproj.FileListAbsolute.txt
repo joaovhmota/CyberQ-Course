@@ -1,0 +1,15 @@
+C:\Users\CyberQ\Desktop\CyberQ - Practice\Lógica e Algoritimos\Aula02\01 - Estrutura de escolha\bin\Debug\net6.0\01 - Estrutura de escolha.exe
+C:\Users\CyberQ\Desktop\CyberQ - Practice\Lógica e Algoritimos\Aula02\01 - Estrutura de escolha\bin\Debug\net6.0\01 - Estrutura de escolha.deps.json
+C:\Users\CyberQ\Desktop\CyberQ - Practice\Lógica e Algoritimos\Aula02\01 - Estrutura de escolha\bin\Debug\net6.0\01 - Estrutura de escolha.runtimeconfig.json
+C:\Users\CyberQ\Desktop\CyberQ - Practice\Lógica e Algoritimos\Aula02\01 - Estrutura de escolha\bin\Debug\net6.0\01 - Estrutura de escolha.dll
+C:\Users\CyberQ\Desktop\CyberQ - Practice\Lógica e Algoritimos\Aula02\01 - Estrutura de escolha\bin\Debug\net6.0\01 - Estrutura de escolha.pdb
+C:\Users\CyberQ\Desktop\CyberQ - Practice\Lógica e Algoritimos\Aula02\01 - Estrutura de escolha\obj\Debug\net6.0\01 - Estrutura de escolha.csproj.AssemblyReference.cache
+C:\Users\CyberQ\Desktop\CyberQ - Practice\Lógica e Algoritimos\Aula02\01 - Estrutura de escolha\obj\Debug\net6.0\01 - Estrutura de escolha.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\CyberQ\Desktop\CyberQ - Practice\Lógica e Algoritimos\Aula02\01 - Estrutura de escolha\obj\Debug\net6.0\01 - Estrutura de escolha.AssemblyInfoInputs.cache
+C:\Users\CyberQ\Desktop\CyberQ - Practice\Lógica e Algoritimos\Aula02\01 - Estrutura de escolha\obj\Debug\net6.0\01 - Estrutura de escolha.AssemblyInfo.cs
+C:\Users\CyberQ\Desktop\CyberQ - Practice\Lógica e Algoritimos\Aula02\01 - Estrutura de escolha\obj\Debug\net6.0\01 - Estrutura de escolha.csproj.CoreCompileInputs.cache
+C:\Users\CyberQ\Desktop\CyberQ - Practice\Lógica e Algoritimos\Aula02\01 - Estrutura de escolha\obj\Debug\net6.0\01 - Estrutura de escolha.dll
+C:\Users\CyberQ\Desktop\CyberQ - Practice\Lógica e Algoritimos\Aula02\01 - Estrutura de escolha\obj\Debug\net6.0\refint\01 - Estrutura de escolha.dll
+C:\Users\CyberQ\Desktop\CyberQ - Practice\Lógica e Algoritimos\Aula02\01 - Estrutura de escolha\obj\Debug\net6.0\01 - Estrutura de escolha.pdb
+C:\Users\CyberQ\Desktop\CyberQ - Practice\Lógica e Algoritimos\Aula02\01 - Estrutura de escolha\obj\Debug\net6.0\01 - Estrutura de escolha.genruntimeconfig.cache
+C:\Users\CyberQ\Desktop\CyberQ - Practice\Lógica e Algoritimos\Aula02\01 - Estrutura de escolha\obj\Debug\net6.0\ref\01 - Estrutura de escolha.dll

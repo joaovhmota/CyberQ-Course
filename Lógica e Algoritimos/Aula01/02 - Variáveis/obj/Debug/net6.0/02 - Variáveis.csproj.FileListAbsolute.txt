@@ -1,0 +1,15 @@
+C:\Users\CyberQ\Desktop\CyberQ - Practice\Lógica e Algoritimos\Aula01\02 - Variáveis\bin\Debug\net6.0\02 - Variáveis.exe
+C:\Users\CyberQ\Desktop\CyberQ - Practice\Lógica e Algoritimos\Aula01\02 - Variáveis\bin\Debug\net6.0\02 - Variáveis.deps.json
+C:\Users\CyberQ\Desktop\CyberQ - Practice\Lógica e Algoritimos\Aula01\02 - Variáveis\bin\Debug\net6.0\02 - Variáveis.runtimeconfig.json
+C:\Users\CyberQ\Desktop\CyberQ - Practice\Lógica e Algoritimos\Aula01\02 - Variáveis\bin\Debug\net6.0\02 - Variáveis.dll
+C:\Users\CyberQ\Desktop\CyberQ - Practice\Lógica e Algoritimos\Aula01\02 - Variáveis\bin\Debug\net6.0\02 - Variáveis.pdb
+C:\Users\CyberQ\Desktop\CyberQ - Practice\Lógica e Algoritimos\Aula01\02 - Variáveis\obj\Debug\net6.0\02 - Variáveis.csproj.AssemblyReference.cache
+C:\Users\CyberQ\Desktop\CyberQ - Practice\Lógica e Algoritimos\Aula01\02 - Variáveis\obj\Debug\net6.0\02 - Variáveis.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\CyberQ\Desktop\CyberQ - Practice\Lógica e Algoritimos\Aula01\02 - Variáveis\obj\Debug\net6.0\02 - Variáveis.AssemblyInfoInputs.cache
+C:\Users\CyberQ\Desktop\CyberQ - Practice\Lógica e Algoritimos\Aula01\02 - Variáveis\obj\Debug\net6.0\02 - Variáveis.AssemblyInfo.cs
+C:\Users\CyberQ\Desktop\CyberQ - Practice\Lógica e Algoritimos\Aula01\02 - Variáveis\obj\Debug\net6.0\02 - Variáveis.csproj.CoreCompileInputs.cache
+C:\Users\CyberQ\Desktop\CyberQ - Practice\Lógica e Algoritimos\Aula01\02 - Variáveis\obj\Debug\net6.0\02 - Variáveis.dll
+C:\Users\CyberQ\Desktop\CyberQ - Practice\Lógica e Algoritimos\Aula01\02 - Variáveis\obj\Debug\net6.0\refint\02 - Variáveis.dll
+C:\Users\CyberQ\Desktop\CyberQ - Practice\Lógica e Algoritimos\Aula01\02 - Variáveis\obj\Debug\net6.0\02 - Variáveis.pdb
+C:\Users\CyberQ\Desktop\CyberQ - Practice\Lógica e Algoritimos\Aula01\02 - Variáveis\obj\Debug\net6.0\02 - Variáveis.genruntimeconfig.cache
+C:\Users\CyberQ\Desktop\CyberQ - Practice\Lógica e Algoritimos\Aula01\02 - Variáveis\obj\Debug\net6.0\ref\02 - Variáveis.dll

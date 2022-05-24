@@ -1,0 +1,15 @@
+C:\Users\CyberQ\Desktop\CyberQ - Practice\Lógica e Algoritimos\Aula02\04 - Laço For\bin\Debug\net6.0\04 - Laço For.exe
+C:\Users\CyberQ\Desktop\CyberQ - Practice\Lógica e Algoritimos\Aula02\04 - Laço For\bin\Debug\net6.0\04 - Laço For.deps.json
+C:\Users\CyberQ\Desktop\CyberQ - Practice\Lógica e Algoritimos\Aula02\04 - Laço For\bin\Debug\net6.0\04 - Laço For.runtimeconfig.json
+C:\Users\CyberQ\Desktop\CyberQ - Practice\Lógica e Algoritimos\Aula02\04 - Laço For\bin\Debug\net6.0\04 - Laço For.dll
+C:\Users\CyberQ\Desktop\CyberQ - Practice\Lógica e Algoritimos\Aula02\04 - Laço For\bin\Debug\net6.0\04 - Laço For.pdb
+C:\Users\CyberQ\Desktop\CyberQ - Practice\Lógica e Algoritimos\Aula02\04 - Laço For\obj\Debug\net6.0\04 - Laço For.csproj.AssemblyReference.cache
+C:\Users\CyberQ\Desktop\CyberQ - Practice\Lógica e Algoritimos\Aula02\04 - Laço For\obj\Debug\net6.0\04 - Laço For.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\CyberQ\Desktop\CyberQ - Practice\Lógica e Algoritimos\Aula02\04 - Laço For\obj\Debug\net6.0\04 - Laço For.AssemblyInfoInputs.cache
+C:\Users\CyberQ\Desktop\CyberQ - Practice\Lógica e Algoritimos\Aula02\04 - Laço For\obj\Debug\net6.0\04 - Laço For.AssemblyInfo.cs
+C:\Users\CyberQ\Desktop\CyberQ - Practice\Lógica e Algoritimos\Aula02\04 - Laço For\obj\Debug\net6.0\04 - Laço For.csproj.CoreCompileInputs.cache
+C:\Users\CyberQ\Desktop\CyberQ - Practice\Lógica e Algoritimos\Aula02\04 - Laço For\obj\Debug\net6.0\04 - Laço For.dll
+C:\Users\CyberQ\Desktop\CyberQ - Practice\Lógica e Algoritimos\Aula02\04 - Laço For\obj\Debug\net6.0\refint\04 - Laço For.dll
+C:\Users\CyberQ\Desktop\CyberQ - Practice\Lógica e Algoritimos\Aula02\04 - Laço For\obj\Debug\net6.0\04 - Laço For.pdb
+C:\Users\CyberQ\Desktop\CyberQ - Practice\Lógica e Algoritimos\Aula02\04 - Laço For\obj\Debug\net6.0\04 - Laço For.genruntimeconfig.cache
+C:\Users\CyberQ\Desktop\CyberQ - Practice\Lógica e Algoritimos\Aula02\04 - Laço For\obj\Debug\net6.0\ref\04 - Laço For.dll

@@ -1,0 +1,15 @@
+C:\Users\CyberQ\Desktop\CyberQ - Practice\Lógica e Algoritimos\Aula01\04 - Operadores Lógicos\bin\Debug\net6.0\04 - Operadores Lógicos.exe
+C:\Users\CyberQ\Desktop\CyberQ - Practice\Lógica e Algoritimos\Aula01\04 - Operadores Lógicos\bin\Debug\net6.0\04 - Operadores Lógicos.deps.json
+C:\Users\CyberQ\Desktop\CyberQ - Practice\Lógica e Algoritimos\Aula01\04 - Operadores Lógicos\bin\Debug\net6.0\04 - Operadores Lógicos.runtimeconfig.json
+C:\Users\CyberQ\Desktop\CyberQ - Practice\Lógica e Algoritimos\Aula01\04 - Operadores Lógicos\bin\Debug\net6.0\04 - Operadores Lógicos.dll
+C:\Users\CyberQ\Desktop\CyberQ - Practice\Lógica e Algoritimos\Aula01\04 - Operadores Lógicos\bin\Debug\net6.0\04 - Operadores Lógicos.pdb
+C:\Users\CyberQ\Desktop\CyberQ - Practice\Lógica e Algoritimos\Aula01\04 - Operadores Lógicos\obj\Debug\net6.0\04 - Operadores Lógicos.csproj.AssemblyReference.cache
+C:\Users\CyberQ\Desktop\CyberQ - Practice\Lógica e Algoritimos\Aula01\04 - Operadores Lógicos\obj\Debug\net6.0\04 - Operadores Lógicos.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\CyberQ\Desktop\CyberQ - Practice\Lógica e Algoritimos\Aula01\04 - Operadores Lógicos\obj\Debug\net6.0\04 - Operadores Lógicos.AssemblyInfoInputs.cache
+C:\Users\CyberQ\Desktop\CyberQ - Practice\Lógica e Algoritimos\Aula01\04 - Operadores Lógicos\obj\Debug\net6.0\04 - Operadores Lógicos.AssemblyInfo.cs
+C:\Users\CyberQ\Desktop\CyberQ - Practice\Lógica e Algoritimos\Aula01\04 - Operadores Lógicos\obj\Debug\net6.0\04 - Operadores Lógicos.csproj.CoreCompileInputs.cache
+C:\Users\CyberQ\Desktop\CyberQ - Practice\Lógica e Algoritimos\Aula01\04 - Operadores Lógicos\obj\Debug\net6.0\04 - Operadores Lógicos.dll
+C:\Users\CyberQ\Desktop\CyberQ - Practice\Lógica e Algoritimos\Aula01\04 - Operadores Lógicos\obj\Debug\net6.0\refint\04 - Operadores Lógicos.dll
+C:\Users\CyberQ\Desktop\CyberQ - Practice\Lógica e Algoritimos\Aula01\04 - Operadores Lógicos\obj\Debug\net6.0\04 - Operadores Lógicos.pdb
+C:\Users\CyberQ\Desktop\CyberQ - Practice\Lógica e Algoritimos\Aula01\04 - Operadores Lógicos\obj\Debug\net6.0\04 - Operadores Lógicos.genruntimeconfig.cache
+C:\Users\CyberQ\Desktop\CyberQ - Practice\Lógica e Algoritimos\Aula01\04 - Operadores Lógicos\obj\Debug\net6.0\ref\04 - Operadores Lógicos.dll

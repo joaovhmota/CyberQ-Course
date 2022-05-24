@@ -1,0 +1,15 @@
+C:\Users\CyberQ\Desktop\CyberQ - Practice\Lógica e Algoritimos\Aula02\02 - Laço While\bin\Debug\net6.0\02 - Laço While.exe
+C:\Users\CyberQ\Desktop\CyberQ - Practice\Lógica e Algoritimos\Aula02\02 - Laço While\bin\Debug\net6.0\02 - Laço While.deps.json
+C:\Users\CyberQ\Desktop\CyberQ - Practice\Lógica e Algoritimos\Aula02\02 - Laço While\bin\Debug\net6.0\02 - Laço While.runtimeconfig.json
+C:\Users\CyberQ\Desktop\CyberQ - Practice\Lógica e Algoritimos\Aula02\02 - Laço While\bin\Debug\net6.0\02 - Laço While.dll
+C:\Users\CyberQ\Desktop\CyberQ - Practice\Lógica e Algoritimos\Aula02\02 - Laço While\bin\Debug\net6.0\02 - Laço While.pdb
+C:\Users\CyberQ\Desktop\CyberQ - Practice\Lógica e Algoritimos\Aula02\02 - Laço While\obj\Debug\net6.0\02 - Laço While.csproj.AssemblyReference.cache
+C:\Users\CyberQ\Desktop\CyberQ - Practice\Lógica e Algoritimos\Aula02\02 - Laço While\obj\Debug\net6.0\02 - Laço While.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\CyberQ\Desktop\CyberQ - Practice\Lógica e Algoritimos\Aula02\02 - Laço While\obj\Debug\net6.0\02 - Laço While.AssemblyInfoInputs.cache
+C:\Users\CyberQ\Desktop\CyberQ - Practice\Lógica e Algoritimos\Aula02\02 - Laço While\obj\Debug\net6.0\02 - Laço While.AssemblyInfo.cs
+C:\Users\CyberQ\Desktop\CyberQ - Practice\Lógica e Algoritimos\Aula02\02 - Laço While\obj\Debug\net6.0\02 - Laço While.csproj.CoreCompileInputs.cache
+C:\Users\CyberQ\Desktop\CyberQ - Practice\Lógica e Algoritimos\Aula02\02 - Laço While\obj\Debug\net6.0\02 - Laço While.dll
+C:\Users\CyberQ\Desktop\CyberQ - Practice\Lógica e Algoritimos\Aula02\02 - Laço While\obj\Debug\net6.0\refint\02 - Laço While.dll
+C:\Users\CyberQ\Desktop\CyberQ - Practice\Lógica e Algoritimos\Aula02\02 - Laço While\obj\Debug\net6.0\02 - Laço While.pdb
+C:\Users\CyberQ\Desktop\CyberQ - Practice\Lógica e Algoritimos\Aula02\02 - Laço While\obj\Debug\net6.0\02 - Laço While.genruntimeconfig.cache
+C:\Users\CyberQ\Desktop\CyberQ - Practice\Lógica e Algoritimos\Aula02\02 - Laço While\obj\Debug\net6.0\ref\02 - Laço While.dll
