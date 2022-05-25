@@ -1,0 +1,15 @@
+C:\Users\CyberQ\Desktop\CyberQ - Practice\Lógica e Algoritimos\Aula02\Ambiente\bin\Debug\net6.0\Ambiente.exe
+C:\Users\CyberQ\Desktop\CyberQ - Practice\Lógica e Algoritimos\Aula02\Ambiente\bin\Debug\net6.0\Ambiente.deps.json
+C:\Users\CyberQ\Desktop\CyberQ - Practice\Lógica e Algoritimos\Aula02\Ambiente\bin\Debug\net6.0\Ambiente.runtimeconfig.json
+C:\Users\CyberQ\Desktop\CyberQ - Practice\Lógica e Algoritimos\Aula02\Ambiente\bin\Debug\net6.0\Ambiente.dll
+C:\Users\CyberQ\Desktop\CyberQ - Practice\Lógica e Algoritimos\Aula02\Ambiente\bin\Debug\net6.0\Ambiente.pdb
+C:\Users\CyberQ\Desktop\CyberQ - Practice\Lógica e Algoritimos\Aula02\Ambiente\obj\Debug\net6.0\Ambiente.csproj.AssemblyReference.cache
+C:\Users\CyberQ\Desktop\CyberQ - Practice\Lógica e Algoritimos\Aula02\Ambiente\obj\Debug\net6.0\Ambiente.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\CyberQ\Desktop\CyberQ - Practice\Lógica e Algoritimos\Aula02\Ambiente\obj\Debug\net6.0\Ambiente.AssemblyInfoInputs.cache
+C:\Users\CyberQ\Desktop\CyberQ - Practice\Lógica e Algoritimos\Aula02\Ambiente\obj\Debug\net6.0\Ambiente.AssemblyInfo.cs
+C:\Users\CyberQ\Desktop\CyberQ - Practice\Lógica e Algoritimos\Aula02\Ambiente\obj\Debug\net6.0\Ambiente.csproj.CoreCompileInputs.cache
+C:\Users\CyberQ\Desktop\CyberQ - Practice\Lógica e Algoritimos\Aula02\Ambiente\obj\Debug\net6.0\Ambiente.dll
+C:\Users\CyberQ\Desktop\CyberQ - Practice\Lógica e Algoritimos\Aula02\Ambiente\obj\Debug\net6.0\refint\Ambiente.dll
+C:\Users\CyberQ\Desktop\CyberQ - Practice\Lógica e Algoritimos\Aula02\Ambiente\obj\Debug\net6.0\Ambiente.pdb
+C:\Users\CyberQ\Desktop\CyberQ - Practice\Lógica e Algoritimos\Aula02\Ambiente\obj\Debug\net6.0\Ambiente.genruntimeconfig.cache
+C:\Users\CyberQ\Desktop\CyberQ - Practice\Lógica e Algoritimos\Aula02\Ambiente\obj\Debug\net6.0\ref\Ambiente.dll
