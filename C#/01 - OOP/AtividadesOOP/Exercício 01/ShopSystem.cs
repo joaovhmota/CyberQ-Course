@@ -69,6 +69,7 @@ namespace Exercício_01
 				Console.ForegroundColor = ConsoleColor.Red;
 				Console.WriteLine($" ・ {ex.Message} ・ ");
 				Console.ForegroundColor = ConsoleColor.White;
+				Console.ReadLine();
 			}
 			
 		}
@@ -122,6 +123,7 @@ namespace Exercício_01
 				Console.ForegroundColor = ConsoleColor.Red;
 				Console.WriteLine($" ・ {ex.Message} ・ ");
 				Console.ForegroundColor = ConsoleColor.White;
+				Console.ReadLine();
 			}
 		}
 
@@ -141,6 +143,7 @@ namespace Exercício_01
 				Console.ForegroundColor = ConsoleColor.Red;
 				Console.WriteLine($" ・ {ex.Message} ・ ");
 				Console.ForegroundColor = ConsoleColor.White;
+				Console.ReadLine();
 			}
 		}
 	}
