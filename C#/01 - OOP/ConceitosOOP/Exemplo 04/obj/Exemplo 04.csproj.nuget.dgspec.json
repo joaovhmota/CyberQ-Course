@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\CyberQ\\Desktop\\CyberQ - Github\\C#\\01 - OOP\\ConceitosOOP\\Exemplo 04\\Exemplo 04.csproj": {}
+    "C:\\Users\\CyberQ\\Desktop\\CyberQ - Practice\\C#\\01 - OOP\\ConceitosOOP\\Exemplo 04\\Exemplo 04.csproj": {}
   },
   "projects": {
-    "C:\\Users\\CyberQ\\Desktop\\CyberQ - Github\\C#\\01 - OOP\\ConceitosOOP\\Exemplo 04\\Exemplo 04.csproj": {
+    "C:\\Users\\CyberQ\\Desktop\\CyberQ - Practice\\C#\\01 - OOP\\ConceitosOOP\\Exemplo 04\\Exemplo 04.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\CyberQ\\Desktop\\CyberQ - Github\\C#\\01 - OOP\\ConceitosOOP\\Exemplo 04\\Exemplo 04.csproj",
+        "projectUniqueName": "C:\\Users\\CyberQ\\Desktop\\CyberQ - Practice\\C#\\01 - OOP\\ConceitosOOP\\Exemplo 04\\Exemplo 04.csproj",
         "projectName": "Exemplo 04",
-        "projectPath": "C:\\Users\\CyberQ\\Desktop\\CyberQ - Github\\C#\\01 - OOP\\ConceitosOOP\\Exemplo 04\\Exemplo 04.csproj",
+        "projectPath": "C:\\Users\\CyberQ\\Desktop\\CyberQ - Practice\\C#\\01 - OOP\\ConceitosOOP\\Exemplo 04\\Exemplo 04.csproj",
         "packagesPath": "C:\\Users\\CyberQ\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\CyberQ\\Desktop\\CyberQ - Github\\C#\\01 - OOP\\ConceitosOOP\\Exemplo 04\\obj\\",
+        "outputPath": "C:\\Users\\CyberQ\\Desktop\\CyberQ - Practice\\C#\\01 - OOP\\ConceitosOOP\\Exemplo 04\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
