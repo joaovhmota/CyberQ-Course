@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v6.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v6.0": {
+      "Prova - 01 [ 27-05-2022 ]/1.0.0": {
+        "runtime": {
+          "Prova - 01 [ 27-05-2022 ].dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Prova - 01 [ 27-05-2022 ]/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

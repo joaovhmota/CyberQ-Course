@@ -1,0 +1,15 @@
+C:\Users\CyberQ\Desktop\CyberQ - Github\Lógica e Algoritimos\Aula03\Exercício - 07\obj\Debug\net6.0\Exercício - 07.csproj.AssemblyReference.cache
+C:\Users\CyberQ\Desktop\CyberQ - Github\Lógica e Algoritimos\Aula03\Exercício - 07\obj\Debug\net6.0\Exercício - 07.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\CyberQ\Desktop\CyberQ - Github\Lógica e Algoritimos\Aula03\Exercício - 07\obj\Debug\net6.0\Exercício - 07.AssemblyInfoInputs.cache
+C:\Users\CyberQ\Desktop\CyberQ - Github\Lógica e Algoritimos\Aula03\Exercício - 07\obj\Debug\net6.0\Exercício - 07.AssemblyInfo.cs
+C:\Users\CyberQ\Desktop\CyberQ - Github\Lógica e Algoritimos\Aula03\Exercício - 07\obj\Debug\net6.0\Exercício - 07.csproj.CoreCompileInputs.cache
+C:\Users\CyberQ\Desktop\CyberQ - Github\Lógica e Algoritimos\Aula03\Exercício - 07\bin\Debug\net6.0\Exercício - 07.exe
+C:\Users\CyberQ\Desktop\CyberQ - Github\Lógica e Algoritimos\Aula03\Exercício - 07\bin\Debug\net6.0\Exercício - 07.deps.json
+C:\Users\CyberQ\Desktop\CyberQ - Github\Lógica e Algoritimos\Aula03\Exercício - 07\bin\Debug\net6.0\Exercício - 07.runtimeconfig.json
+C:\Users\CyberQ\Desktop\CyberQ - Github\Lógica e Algoritimos\Aula03\Exercício - 07\bin\Debug\net6.0\Exercício - 07.dll
+C:\Users\CyberQ\Desktop\CyberQ - Github\Lógica e Algoritimos\Aula03\Exercício - 07\bin\Debug\net6.0\Exercício - 07.pdb
+C:\Users\CyberQ\Desktop\CyberQ - Github\Lógica e Algoritimos\Aula03\Exercício - 07\obj\Debug\net6.0\Exercício - 07.dll
+C:\Users\CyberQ\Desktop\CyberQ - Github\Lógica e Algoritimos\Aula03\Exercício - 07\obj\Debug\net6.0\refint\Exercício - 07.dll
+C:\Users\CyberQ\Desktop\CyberQ - Github\Lógica e Algoritimos\Aula03\Exercício - 07\obj\Debug\net6.0\Exercício - 07.pdb
+C:\Users\CyberQ\Desktop\CyberQ - Github\Lógica e Algoritimos\Aula03\Exercício - 07\obj\Debug\net6.0\Exercício - 07.genruntimeconfig.cache
+C:\Users\CyberQ\Desktop\CyberQ - Github\Lógica e Algoritimos\Aula03\Exercício - 07\obj\Debug\net6.0\ref\Exercício - 07.dll

@@ -14,11 +14,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\CyberQ\\Desktop\\CyberQ - Practice\\Lógica e Algoritimos\\Aula02\\05 - Loop Infinito\\05 - Loop Infinito.csproj",
+      "projectUniqueName": "C:\\Users\\CyberQ\\Desktop\\CyberQ - Github\\Lógica e Algoritimos\\Aula02\\05 - Loop Infinito\\05 - Loop Infinito.csproj",
       "projectName": "05 - Loop Infinito",
-      "projectPath": "C:\\Users\\CyberQ\\Desktop\\CyberQ - Practice\\Lógica e Algoritimos\\Aula02\\05 - Loop Infinito\\05 - Loop Infinito.csproj",
+      "projectPath": "C:\\Users\\CyberQ\\Desktop\\CyberQ - Github\\Lógica e Algoritimos\\Aula02\\05 - Loop Infinito\\05 - Loop Infinito.csproj",
       "packagesPath": "C:\\Users\\CyberQ\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\CyberQ\\Desktop\\CyberQ - Practice\\Lógica e Algoritimos\\Aula02\\05 - Loop Infinito\\obj\\",
+      "outputPath": "C:\\Users\\CyberQ\\Desktop\\CyberQ - Github\\Lógica e Algoritimos\\Aula02\\05 - Loop Infinito\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

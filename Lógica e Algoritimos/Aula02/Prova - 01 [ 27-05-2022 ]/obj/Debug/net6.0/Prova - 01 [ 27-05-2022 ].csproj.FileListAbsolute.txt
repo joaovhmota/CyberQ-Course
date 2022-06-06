@@ -1,0 +1,15 @@
+C:\Users\CyberQ\Desktop\CyberQ - Github\Lógica e Algoritimos\Aula02\Prova - 01 [ 27-05-2022 ]\bin\Debug\net6.0\Prova - 01 [ 27-05-2022 ].exe
+C:\Users\CyberQ\Desktop\CyberQ - Github\Lógica e Algoritimos\Aula02\Prova - 01 [ 27-05-2022 ]\bin\Debug\net6.0\Prova - 01 [ 27-05-2022 ].deps.json
+C:\Users\CyberQ\Desktop\CyberQ - Github\Lógica e Algoritimos\Aula02\Prova - 01 [ 27-05-2022 ]\bin\Debug\net6.0\Prova - 01 [ 27-05-2022 ].runtimeconfig.json
+C:\Users\CyberQ\Desktop\CyberQ - Github\Lógica e Algoritimos\Aula02\Prova - 01 [ 27-05-2022 ]\bin\Debug\net6.0\Prova - 01 [ 27-05-2022 ].dll
+C:\Users\CyberQ\Desktop\CyberQ - Github\Lógica e Algoritimos\Aula02\Prova - 01 [ 27-05-2022 ]\bin\Debug\net6.0\Prova - 01 [ 27-05-2022 ].pdb
+C:\Users\CyberQ\Desktop\CyberQ - Github\Lógica e Algoritimos\Aula02\Prova - 01 [ 27-05-2022 ]\obj\Debug\net6.0\Prova - 01 [ 27-05-2022 ].csproj.AssemblyReference.cache
+C:\Users\CyberQ\Desktop\CyberQ - Github\Lógica e Algoritimos\Aula02\Prova - 01 [ 27-05-2022 ]\obj\Debug\net6.0\Prova - 01 [ 27-05-2022 ].GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\CyberQ\Desktop\CyberQ - Github\Lógica e Algoritimos\Aula02\Prova - 01 [ 27-05-2022 ]\obj\Debug\net6.0\Prova - 01 [ 27-05-2022 ].AssemblyInfoInputs.cache
+C:\Users\CyberQ\Desktop\CyberQ - Github\Lógica e Algoritimos\Aula02\Prova - 01 [ 27-05-2022 ]\obj\Debug\net6.0\Prova - 01 [ 27-05-2022 ].AssemblyInfo.cs
+C:\Users\CyberQ\Desktop\CyberQ - Github\Lógica e Algoritimos\Aula02\Prova - 01 [ 27-05-2022 ]\obj\Debug\net6.0\Prova - 01 [ 27-05-2022 ].csproj.CoreCompileInputs.cache
+C:\Users\CyberQ\Desktop\CyberQ - Github\Lógica e Algoritimos\Aula02\Prova - 01 [ 27-05-2022 ]\obj\Debug\net6.0\Prova - 01 [ 27-05-2022 ].dll
+C:\Users\CyberQ\Desktop\CyberQ - Github\Lógica e Algoritimos\Aula02\Prova - 01 [ 27-05-2022 ]\obj\Debug\net6.0\refint\Prova - 01 [ 27-05-2022 ].dll
+C:\Users\CyberQ\Desktop\CyberQ - Github\Lógica e Algoritimos\Aula02\Prova - 01 [ 27-05-2022 ]\obj\Debug\net6.0\Prova - 01 [ 27-05-2022 ].pdb
+C:\Users\CyberQ\Desktop\CyberQ - Github\Lógica e Algoritimos\Aula02\Prova - 01 [ 27-05-2022 ]\obj\Debug\net6.0\Prova - 01 [ 27-05-2022 ].genruntimeconfig.cache
+C:\Users\CyberQ\Desktop\CyberQ - Github\Lógica e Algoritimos\Aula02\Prova - 01 [ 27-05-2022 ]\obj\Debug\net6.0\ref\Prova - 01 [ 27-05-2022 ].dll

@@ -1,0 +1,15 @@
+C:\Users\CyberQ\Desktop\CyberQ - Github\C#\01 - OOP\ConceitosOOP\Exemplo 01\bin\Debug\net6.0\Exemplo 01.exe
+C:\Users\CyberQ\Desktop\CyberQ - Github\C#\01 - OOP\ConceitosOOP\Exemplo 01\bin\Debug\net6.0\Exemplo 01.deps.json
+C:\Users\CyberQ\Desktop\CyberQ - Github\C#\01 - OOP\ConceitosOOP\Exemplo 01\bin\Debug\net6.0\Exemplo 01.runtimeconfig.json
+C:\Users\CyberQ\Desktop\CyberQ - Github\C#\01 - OOP\ConceitosOOP\Exemplo 01\bin\Debug\net6.0\Exemplo 01.dll
+C:\Users\CyberQ\Desktop\CyberQ - Github\C#\01 - OOP\ConceitosOOP\Exemplo 01\bin\Debug\net6.0\Exemplo 01.pdb
+C:\Users\CyberQ\Desktop\CyberQ - Github\C#\01 - OOP\ConceitosOOP\Exemplo 01\obj\Debug\net6.0\Exemplo 01.csproj.AssemblyReference.cache
+C:\Users\CyberQ\Desktop\CyberQ - Github\C#\01 - OOP\ConceitosOOP\Exemplo 01\obj\Debug\net6.0\Exemplo 01.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\CyberQ\Desktop\CyberQ - Github\C#\01 - OOP\ConceitosOOP\Exemplo 01\obj\Debug\net6.0\Exemplo 01.AssemblyInfoInputs.cache
+C:\Users\CyberQ\Desktop\CyberQ - Github\C#\01 - OOP\ConceitosOOP\Exemplo 01\obj\Debug\net6.0\Exemplo 01.AssemblyInfo.cs
+C:\Users\CyberQ\Desktop\CyberQ - Github\C#\01 - OOP\ConceitosOOP\Exemplo 01\obj\Debug\net6.0\Exemplo 01.csproj.CoreCompileInputs.cache
+C:\Users\CyberQ\Desktop\CyberQ - Github\C#\01 - OOP\ConceitosOOP\Exemplo 01\obj\Debug\net6.0\Exemplo 01.dll
+C:\Users\CyberQ\Desktop\CyberQ - Github\C#\01 - OOP\ConceitosOOP\Exemplo 01\obj\Debug\net6.0\refint\Exemplo 01.dll
+C:\Users\CyberQ\Desktop\CyberQ - Github\C#\01 - OOP\ConceitosOOP\Exemplo 01\obj\Debug\net6.0\Exemplo 01.pdb
+C:\Users\CyberQ\Desktop\CyberQ - Github\C#\01 - OOP\ConceitosOOP\Exemplo 01\obj\Debug\net6.0\Exemplo 01.genruntimeconfig.cache
+C:\Users\CyberQ\Desktop\CyberQ - Github\C#\01 - OOP\ConceitosOOP\Exemplo 01\obj\Debug\net6.0\ref\Exemplo 01.dll

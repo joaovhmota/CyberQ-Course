@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\CyberQ\\Desktop\\CyberQ - Practice\\Lógica e Algoritimos\\Aula02\\04 - Laço For\\04 - Laço For.csproj": {}
+    "C:\\Users\\CyberQ\\Desktop\\CyberQ - Github\\Lógica e Algoritimos\\Aula02\\04 - Laço For\\04 - Laço For.csproj": {}
   },
   "projects": {
-    "C:\\Users\\CyberQ\\Desktop\\CyberQ - Practice\\Lógica e Algoritimos\\Aula02\\04 - Laço For\\04 - Laço For.csproj": {
+    "C:\\Users\\CyberQ\\Desktop\\CyberQ - Github\\Lógica e Algoritimos\\Aula02\\04 - Laço For\\04 - Laço For.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\CyberQ\\Desktop\\CyberQ - Practice\\Lógica e Algoritimos\\Aula02\\04 - Laço For\\04 - Laço For.csproj",
+        "projectUniqueName": "C:\\Users\\CyberQ\\Desktop\\CyberQ - Github\\Lógica e Algoritimos\\Aula02\\04 - Laço For\\04 - Laço For.csproj",
         "projectName": "04 - Laço For",
-        "projectPath": "C:\\Users\\CyberQ\\Desktop\\CyberQ - Practice\\Lógica e Algoritimos\\Aula02\\04 - Laço For\\04 - Laço For.csproj",
+        "projectPath": "C:\\Users\\CyberQ\\Desktop\\CyberQ - Github\\Lógica e Algoritimos\\Aula02\\04 - Laço For\\04 - Laço For.csproj",
         "packagesPath": "C:\\Users\\CyberQ\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\CyberQ\\Desktop\\CyberQ - Practice\\Lógica e Algoritimos\\Aula02\\04 - Laço For\\obj\\",
+        "outputPath": "C:\\Users\\CyberQ\\Desktop\\CyberQ - Github\\Lógica e Algoritimos\\Aula02\\04 - Laço For\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\CyberQ\\Desktop\\CyberQ - Practice\\Lógica e Algoritimos\\Aula02\\01 - Estrutura de escolha\\01 - Estrutura de escolha.csproj": {}
+    "C:\\Users\\CyberQ\\Desktop\\CyberQ - Github\\Lógica e Algoritimos\\Aula02\\01 - Estrutura de escolha\\01 - Estrutura de escolha.csproj": {}
   },
   "projects": {
-    "C:\\Users\\CyberQ\\Desktop\\CyberQ - Practice\\Lógica e Algoritimos\\Aula02\\01 - Estrutura de escolha\\01 - Estrutura de escolha.csproj": {
+    "C:\\Users\\CyberQ\\Desktop\\CyberQ - Github\\Lógica e Algoritimos\\Aula02\\01 - Estrutura de escolha\\01 - Estrutura de escolha.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\CyberQ\\Desktop\\CyberQ - Practice\\Lógica e Algoritimos\\Aula02\\01 - Estrutura de escolha\\01 - Estrutura de escolha.csproj",
+        "projectUniqueName": "C:\\Users\\CyberQ\\Desktop\\CyberQ - Github\\Lógica e Algoritimos\\Aula02\\01 - Estrutura de escolha\\01 - Estrutura de escolha.csproj",
         "projectName": "01 - Estrutura de escolha",
-        "projectPath": "C:\\Users\\CyberQ\\Desktop\\CyberQ - Practice\\Lógica e Algoritimos\\Aula02\\01 - Estrutura de escolha\\01 - Estrutura de escolha.csproj",
+        "projectPath": "C:\\Users\\CyberQ\\Desktop\\CyberQ - Github\\Lógica e Algoritimos\\Aula02\\01 - Estrutura de escolha\\01 - Estrutura de escolha.csproj",
         "packagesPath": "C:\\Users\\CyberQ\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\CyberQ\\Desktop\\CyberQ - Practice\\Lógica e Algoritimos\\Aula02\\01 - Estrutura de escolha\\obj\\",
+        "outputPath": "C:\\Users\\CyberQ\\Desktop\\CyberQ - Github\\Lógica e Algoritimos\\Aula02\\01 - Estrutura de escolha\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

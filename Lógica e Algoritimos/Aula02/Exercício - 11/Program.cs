@@ -23,6 +23,7 @@ while (pass)
 }
 
 total--;
+
 Console.Clear();
 Console.WriteLine("Total de números informados: {0}", total);
 Console.WriteLine("Ímpares: " + odd);
