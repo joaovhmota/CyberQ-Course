@@ -110,7 +110,7 @@ namespace Exercício_02
 			{
 				double toWithdraw;
 
-				Console.Write(" ・ Valor a depositar: ");
+				Console.Write(" ・ Valor a sacar: ");
 				toWithdraw = Convert.ToDouble(Console.ReadLine());
 
 				if (!(toWithdraw <= currentLogged.Balance) || !(toWithdraw > 0) ) return;

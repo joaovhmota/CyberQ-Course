@@ -13,7 +13,7 @@ namespace Exercício_05
 			_InputString = str.ToLower();
 			return this;
 		}
-
+		
 		public string Encrypt(int key = 1)
 		{
 			foreach(Char c in _InputString)
