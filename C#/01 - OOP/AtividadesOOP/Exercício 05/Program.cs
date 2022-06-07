@@ -28,6 +28,7 @@ do
 			case "1": Console.WriteLine($" ・ Resultado: {cypher.Update(str).Encrypt(key)}"); break;
 			case "2": Console.WriteLine($" ・ Resultado: {cypher.Update(str).Decrypt(key)}"); break;
 		}
+		Console.ReadLine();
 	}
 	catch (Exception ex) { continue; }
 } while (true);
