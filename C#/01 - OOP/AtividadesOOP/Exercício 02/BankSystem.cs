@@ -213,7 +213,7 @@ namespace Exercício_02
 
 				currentLogged.Balance += toWithdraw;
 				currentLogged.Historic += $" ・ Pegou um empréstimo {toWithdraw:C2}\n";
-			} catch(Exception ex)
+			} catch (Exception ex)
 			{
 				Console.ForegroundColor = ConsoleColor.Red;
 				Console.WriteLine($" ・ {ex.Message} ・ ");
