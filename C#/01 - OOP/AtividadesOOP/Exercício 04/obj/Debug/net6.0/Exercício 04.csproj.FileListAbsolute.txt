@@ -1,0 +1,15 @@
+C:\Users\CyberQ\Desktop\CyberQ - Practice\C#\01 - OOP\AtividadesOOP\Exercício 04\obj\Debug\net6.0\Exercício 04.csproj.AssemblyReference.cache
+C:\Users\CyberQ\Desktop\CyberQ - Practice\C#\01 - OOP\AtividadesOOP\Exercício 04\obj\Debug\net6.0\Exercício 04.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\CyberQ\Desktop\CyberQ - Practice\C#\01 - OOP\AtividadesOOP\Exercício 04\obj\Debug\net6.0\Exercício 04.AssemblyInfoInputs.cache
+C:\Users\CyberQ\Desktop\CyberQ - Practice\C#\01 - OOP\AtividadesOOP\Exercício 04\obj\Debug\net6.0\Exercício 04.AssemblyInfo.cs
+C:\Users\CyberQ\Desktop\CyberQ - Practice\C#\01 - OOP\AtividadesOOP\Exercício 04\obj\Debug\net6.0\Exercício 04.csproj.CoreCompileInputs.cache
+C:\Users\CyberQ\Desktop\CyberQ - Practice\C#\01 - OOP\AtividadesOOP\Exercício 04\bin\Debug\net6.0\Exercício 04.exe
+C:\Users\CyberQ\Desktop\CyberQ - Practice\C#\01 - OOP\AtividadesOOP\Exercício 04\bin\Debug\net6.0\Exercício 04.deps.json
+C:\Users\CyberQ\Desktop\CyberQ - Practice\C#\01 - OOP\AtividadesOOP\Exercício 04\bin\Debug\net6.0\Exercício 04.runtimeconfig.json
+C:\Users\CyberQ\Desktop\CyberQ - Practice\C#\01 - OOP\AtividadesOOP\Exercício 04\bin\Debug\net6.0\Exercício 04.dll
+C:\Users\CyberQ\Desktop\CyberQ - Practice\C#\01 - OOP\AtividadesOOP\Exercício 04\bin\Debug\net6.0\Exercício 04.pdb
+C:\Users\CyberQ\Desktop\CyberQ - Practice\C#\01 - OOP\AtividadesOOP\Exercício 04\obj\Debug\net6.0\Exercício 04.dll
+C:\Users\CyberQ\Desktop\CyberQ - Practice\C#\01 - OOP\AtividadesOOP\Exercício 04\obj\Debug\net6.0\refint\Exercício 04.dll
+C:\Users\CyberQ\Desktop\CyberQ - Practice\C#\01 - OOP\AtividadesOOP\Exercício 04\obj\Debug\net6.0\Exercício 04.pdb
+C:\Users\CyberQ\Desktop\CyberQ - Practice\C#\01 - OOP\AtividadesOOP\Exercício 04\obj\Debug\net6.0\Exercício 04.genruntimeconfig.cache
+C:\Users\CyberQ\Desktop\CyberQ - Practice\C#\01 - OOP\AtividadesOOP\Exercício 04\obj\Debug\net6.0\ref\Exercício 04.dll
