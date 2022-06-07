@@ -76,7 +76,7 @@ namespace Exercício_03
 		{
 			for (int i = 0; i < RegisteredStudents.Count; i++)
 				StudentsAvarage += RegisteredStudents[i].Avarage;
-			StudentsAvarage /= ( RegisteredStudents.Count * 2 );
+			StudentsAvarage /= ( RegisteredStudents.Count );
 		}
 
 		private void UpdateBestStudent()
