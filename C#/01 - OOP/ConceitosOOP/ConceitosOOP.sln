@@ -3,13 +3,23 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.1.32421.90
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Exemplo 01", "Exemplo 01\Exemplo 01.csproj", "{5BBA0FA8-FCBB-4728-8CCD-8B2082288918}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Exemplo 01", "Exemplo 01\Exemplo 01.csproj", "{5BBA0FA8-FCBB-4728-8CCD-8B2082288918}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Exemplo 02", "Exemplo 02\Exemplo 02.csproj", "{175998D6-4853-4677-852F-7CA3ADD470EA}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Exemplo 02", "Exemplo 02\Exemplo 02.csproj", "{175998D6-4853-4677-852F-7CA3ADD470EA}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Exemplo 03", "Exemplo 03\Exemplo 03.csproj", "{3371B6E5-170C-4B7C-B43C-E7D503E1A922}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Exemplo 03", "Exemplo 03\Exemplo 03.csproj", "{3371B6E5-170C-4B7C-B43C-E7D503E1A922}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Exemplo 04", "Exemplo 04\Exemplo 04.csproj", "{092B9B65-4D6E-4457-B34A-8D9B7DC82482}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Exemplo 04", "Exemplo 04\Exemplo 04.csproj", "{092B9B65-4D6E-4457-B34A-8D9B7DC82482}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Exemplo 05", "Exemplo 05\Exemplo 05.csproj", "{9DC4807E-0F53-495B-B75E-E92270F400B5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Exemplo 06", "Exemplo 06\Exemplo 06.csproj", "{0A02B1F0-CEA8-4A2B-97AA-A810895E9515}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Exemplo 07", "Exemplo 07\Exemplo 07.csproj", "{E8D43899-EF91-4661-8943-A8B1030AFE8E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Exemplo 08", "Exemplo 08\Exemplo 08.csproj", "{2BC8E6B7-4F9A-4C0F-BD48-3AC881CC9028}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Exemplo 09", "Exemplo 09\Exemplo 09.csproj", "{61CB7EAD-3308-4D48-81D9-A277A98D07B9}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,6 +43,26 @@ Global
 		{092B9B65-4D6E-4457-B34A-8D9B7DC82482}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{092B9B65-4D6E-4457-B34A-8D9B7DC82482}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{092B9B65-4D6E-4457-B34A-8D9B7DC82482}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9DC4807E-0F53-495B-B75E-E92270F400B5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9DC4807E-0F53-495B-B75E-E92270F400B5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9DC4807E-0F53-495B-B75E-E92270F400B5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9DC4807E-0F53-495B-B75E-E92270F400B5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0A02B1F0-CEA8-4A2B-97AA-A810895E9515}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0A02B1F0-CEA8-4A2B-97AA-A810895E9515}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0A02B1F0-CEA8-4A2B-97AA-A810895E9515}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0A02B1F0-CEA8-4A2B-97AA-A810895E9515}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E8D43899-EF91-4661-8943-A8B1030AFE8E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E8D43899-EF91-4661-8943-A8B1030AFE8E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E8D43899-EF91-4661-8943-A8B1030AFE8E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E8D43899-EF91-4661-8943-A8B1030AFE8E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2BC8E6B7-4F9A-4C0F-BD48-3AC881CC9028}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2BC8E6B7-4F9A-4C0F-BD48-3AC881CC9028}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2BC8E6B7-4F9A-4C0F-BD48-3AC881CC9028}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2BC8E6B7-4F9A-4C0F-BD48-3AC881CC9028}.Release|Any CPU.Build.0 = Release|Any CPU
+		{61CB7EAD-3308-4D48-81D9-A277A98D07B9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{61CB7EAD-3308-4D48-81D9-A277A98D07B9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{61CB7EAD-3308-4D48-81D9-A277A98D07B9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{61CB7EAD-3308-4D48-81D9-A277A98D07B9}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

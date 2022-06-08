@@ -1,0 +1,15 @@
+C:\Users\CyberQ\Desktop\CyberQ - Practice\C#\01 - OOP\Projetos OOP\Projeto 01 - School\obj\Debug\net6.0\Projeto 01 - Escola.csproj.AssemblyReference.cache
+C:\Users\CyberQ\Desktop\CyberQ - Practice\C#\01 - OOP\Projetos OOP\Projeto 01 - School\obj\Debug\net6.0\Projeto 01 - Escola.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\CyberQ\Desktop\CyberQ - Practice\C#\01 - OOP\Projetos OOP\Projeto 01 - School\obj\Debug\net6.0\Projeto 01 - Escola.AssemblyInfoInputs.cache
+C:\Users\CyberQ\Desktop\CyberQ - Practice\C#\01 - OOP\Projetos OOP\Projeto 01 - School\obj\Debug\net6.0\Projeto 01 - Escola.AssemblyInfo.cs
+C:\Users\CyberQ\Desktop\CyberQ - Practice\C#\01 - OOP\Projetos OOP\Projeto 01 - School\obj\Debug\net6.0\Projeto 01 - Escola.csproj.CoreCompileInputs.cache
+C:\Users\CyberQ\Desktop\CyberQ - Practice\C#\01 - OOP\Projetos OOP\Projeto 01 - School\bin\Debug\net6.0\Projeto 01 - Escola.exe
+C:\Users\CyberQ\Desktop\CyberQ - Practice\C#\01 - OOP\Projetos OOP\Projeto 01 - School\bin\Debug\net6.0\Projeto 01 - Escola.deps.json
+C:\Users\CyberQ\Desktop\CyberQ - Practice\C#\01 - OOP\Projetos OOP\Projeto 01 - School\bin\Debug\net6.0\Projeto 01 - Escola.runtimeconfig.json
+C:\Users\CyberQ\Desktop\CyberQ - Practice\C#\01 - OOP\Projetos OOP\Projeto 01 - School\bin\Debug\net6.0\Projeto 01 - Escola.dll
+C:\Users\CyberQ\Desktop\CyberQ - Practice\C#\01 - OOP\Projetos OOP\Projeto 01 - School\bin\Debug\net6.0\Projeto 01 - Escola.pdb
+C:\Users\CyberQ\Desktop\CyberQ - Practice\C#\01 - OOP\Projetos OOP\Projeto 01 - School\obj\Debug\net6.0\Projeto 01 - Escola.dll
+C:\Users\CyberQ\Desktop\CyberQ - Practice\C#\01 - OOP\Projetos OOP\Projeto 01 - School\obj\Debug\net6.0\refint\Projeto 01 - Escola.dll
+C:\Users\CyberQ\Desktop\CyberQ - Practice\C#\01 - OOP\Projetos OOP\Projeto 01 - School\obj\Debug\net6.0\Projeto 01 - Escola.pdb
+C:\Users\CyberQ\Desktop\CyberQ - Practice\C#\01 - OOP\Projetos OOP\Projeto 01 - School\obj\Debug\net6.0\Projeto 01 - Escola.genruntimeconfig.cache
+C:\Users\CyberQ\Desktop\CyberQ - Practice\C#\01 - OOP\Projetos OOP\Projeto 01 - School\obj\Debug\net6.0\ref\Projeto 01 - Escola.dll
