@@ -1,20 +1,22 @@
 ﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
 
 namespace ProjetoSchool.Classes
 {
-	internal class Suspension
+	internal class Suspension　// 休学
 	{
-		public string Title { get; }
-		public string Message { get; }
-		public DateTime CreatedAt { get; }
-		public int Duration { get; }
+		public string   ID        { get; set; } // ID
+		public string   Reason    { get; set; } // 理由
+		public DateTime CreatedAt { get; set; } // 日付
 
-		public Suspension(string Title, string Message, int Duration)
+		public Suspension(string Reason)
 		{
-			this.Title = Title;
-			this.Message = Message;
-			this.Duration = Duration;
-			this.CreatedAt = new DateTime();
+			this.ID        = new Util().UniqueID();
+			this.Reason    = Reason;
+			this.CreatedAt = DateTime.Now;
 		}
 	}
 }

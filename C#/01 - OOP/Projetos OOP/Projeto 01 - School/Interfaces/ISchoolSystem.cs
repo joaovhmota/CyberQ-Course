@@ -1,37 +1,21 @@
 ﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
 using ProjetoSchool.Classes;
 
 namespace ProjetoSchool.Interfaces
 {
-	internal interface ISchoolSystem
+	internal interface ISchoolSystem // 学校の企画
 	{
-		public string SchoolName { get; set; }
-		public List<SchoolClass> SchoolClasses { get; set; }
-		public List<Student> RegisteredStudents { get; set; }
-		public List<Teacher> RegisteredTeachers { get; set; }
-		public List<Subject> RegisteredSubjects { get; set; }
-		public List<Student> ApprovedStudents { get; set; }
-		public List<Student> DisapprovedStudents { get; set; }
-		public float SchoolAvarage { get; set; }
-		public float SchoolMinimumAvarage { get; set; }
-
-		public void Update();
-		public void Update(Student student);
-		public void Update(Subject subject);
-		public void ShowStats();
-		public void Search();
-		public void Add(Student student);
-		public void Add(Teacher teacher);
-		public void Add(SchoolClass schoolClass);
-		public void Add(Subject subject);
-		public void Remove(Student student);
-		public void Remove(Teacher teacher);
-		public void Remove(SchoolClass schoolClass);
-		public void Remove(Subject subject);
-
-		public void ListStudents();
-		public void ListTeachers();
-		public void ListSubjects();
-		public void ListClasses();
+		public string              Name          { get; set; } // 学校の名
+		public List<SchoolClasses> SchoolClasses { get; set; } // 授業
+		public List<Student>       Students      { get; set; } // 学生
+		public List<Subject>       Subjects      { get; set; } // 科目
+		public List<Teacher>       Teachers      { get; set; } // 先生
+		public List<Worker>        Workers       { get; set; } // 従業員
+		public float               Avarage       { get; set; } // 平均
+		public float               MinAvarage    { get; set; } // 最小限平均
 	}
 }

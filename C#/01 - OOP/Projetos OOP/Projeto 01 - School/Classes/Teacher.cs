@@ -6,16 +6,16 @@ using System.Threading.Tasks;
 
 namespace ProjetoSchool.Classes
 {
-	internal class Teacher : Person
+	internal class Teacher : Person // 先生
 	{
-		public string ID { get; }
-		public float Salary { get; set; }
-		public Subject Subject { get; set; }
+		public string  ID      { get; set; } // ID
+		public float   Salary  { get; set; } // 給料
+		public Subject Subject { get; set; } // 科目
 
-		public Teacher(string CPF, string Name, int Age, float Salary, Subject subject) : base(CPF, Name, Age)
+		public Teacher(string Name, int Age, float Salary, Subject subject) : base(Name, Age)
 		{
-			this.ID = DateTime.Now.Ticks.ToString().Substring(0, DateTime.Now.Ticks.ToString().Length / 2);
-			this.Salary = Salary;
+			this.ID      = new Util().UniqueID();
+			this.Salary  = Salary;
 			this.Subject = subject;
 		}
 	}

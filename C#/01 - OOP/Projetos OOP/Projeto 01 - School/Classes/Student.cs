@@ -1,47 +1,41 @@
 ﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
 
 namespace ProjetoSchool.Classes
 {
-	internal class Student : Person
+	internal class Student : Person // 学生
 	{
-		public string ID { get; }
-		public List<float> StudentNotes;
-		public List<Warning> WarningLists;
-		public List<Suspension> SuspensionList;
-		public float StudentAvarage { get; set; }
-		public string Situation { get; set; }
-		public List<Responsible> Responsibles;
+		public string               ID             { get; set; } // ID
+		public List<float>          Notes          { get; set; } 
+		public List<Warning>        Warnings       { get; set; } // 警告
+		public List<Suspension>     Suspensions    { get; set; } // 休学
+		public List<StudentParents> Parents        { get; set; } // 両親
+		public string               Situation      { get; set; }
+		public float                StudentAvarage { get; set; } // 平均
 
-		public Student(string CPF, string Name, int Age) : base(CPF, Name, Age)
+		public Student(string Name, int Age) : base(Name, Age)
 		{
-			this.ID = DateTime.Now.Ticks.ToString().Substring(0, DateTime.Now.Ticks.ToString().Length / 2);
-			this.StudentAvarage = 0;
-			this.StudentNotes = new List<float>();
-			this.WarningLists = new List<Warning>();
-			this.Responsibles = new List<Responsible>();
-			this.SuspensionList = new List<Suspension>();
-			this.Situation = "";
+			this.ID             = new Util().UniqueID();
+			this.Notes          = new List<float>();
+			this.Warnings       = new List<Warning>();
+			this.Suspensions    = new List<Suspension>();
+			this.Parents        = new List<StudentParents>(); 
+			this.Situation      = "";
+			this.StudentAvarage = 0.0f;
 		}
 
 		public void Update()
 		{
-			this.StudentAvarage = this.StudentNotes.Sum() / this.StudentNotes.Count;
+			StudentAvarage = Notes.Sum() / Notes.Count;
 		}
 
-		public void AddNota(float n)
+		public void AddNote(float note)
 		{
-			this.StudentNotes.Add(n);
-			this.Update();
-		}
-
-		public void AddWarning(Warning warning)
-		{
-			this.WarningLists.Add(warning);
-		}
-
-		public void AddSuspension(Suspension suspension)
-		{
-			this.SuspensionList.Add(suspension);
+			this.Notes.Add(note);
+			Update();
 		}
 	}
 }

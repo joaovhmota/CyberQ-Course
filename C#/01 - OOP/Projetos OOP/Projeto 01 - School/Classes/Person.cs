@@ -6,15 +6,13 @@ using System.Threading.Tasks;
 
 namespace ProjetoSchool.Classes
 {
-	internal class Person
+	internal class Person // 人
 	{
-		public string CPF { get; }
-		public string Name { get; }
-		public int Age { get; }
+		public string Name { get; set; } // 氏名
+		public int    Age  { get; set; } // 歳
 
-		public Person(string CPF, string Name, int Age)
+		public Person(string Name, int Age)
 		{
-			this.CPF = CPF;
 			this.Name = Name;
 			this.Age = Age;
 		}

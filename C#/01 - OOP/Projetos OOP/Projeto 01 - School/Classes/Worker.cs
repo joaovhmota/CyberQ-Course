@@ -1,18 +1,22 @@
 ﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
 
 namespace ProjetoSchool.Classes
 {
-	internal class Worker
+	internal class Worker : Person // 学校の従業員
 	{
-		public string ID { get; }
-		public float Salary { get; set; }
-		public string Role { get; set; }
+		public string ID     { get; set; } // ID
+		public float  Salary { get; set; } // 給料
+		public string Role   { get; set; } // 役
 
-		public Worker(float Salary, string Role)
+		public Worker(string Name, int Age, float Salary, string Role) : base(Name, Age)
 		{
-			this.ID = DateTime.Now.Ticks.ToString().Substring(0, DateTime.Now.Ticks.ToString().Length / 2);
+			this.ID     = new Util().UniqueID();
 			this.Salary = Salary;
-			this.Role = Role;
+			this.Role   = Role;
 		}
 	}
 }

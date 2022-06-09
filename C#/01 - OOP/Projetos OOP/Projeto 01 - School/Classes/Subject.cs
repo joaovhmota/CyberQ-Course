@@ -1,16 +1,20 @@
 ﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
 
 namespace ProjetoSchool.Classes
 {
-	internal class Subject
+	internal class Subject // 科目
 	{
-		public string ID { get; set; }
-		public string SubjectName { get; set; }
+		public string ID   { get; set; } // ID
+		public string Name { get; set; } // 名
 
-		public Subject(string SubjectName = null)
+		public Subject(string Name)
 		{
-			this.ID = DateTime.Now.Ticks.ToString().Substring(0, DateTime.Now.Ticks.ToString().Length / 2);
-			this.SubjectName = SubjectName;
+			this.ID = new Util().UniqueID();
+			this.Name = Name;
 		}
 	}
 }

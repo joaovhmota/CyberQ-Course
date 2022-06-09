@@ -1,3 +1,3 @@
 ﻿using ProjetoSchool.Classes;
 
-new ProgramSystem().Init();
+new ActionProgram().Init();
