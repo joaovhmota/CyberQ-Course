@@ -128,13 +128,14 @@ namespace ProjetoSchool.Classes
 				Console.SetCursorPosition(6, 4); BallPrintLine("2 - Professor    " + (MenuOption == 2 ? "<" : null));
 				Console.SetCursorPosition(6, 5); BallPrintLine("3 - Sala de Aula " + (MenuOption == 3 ? "<" : null));
 				Console.SetCursorPosition(6, 6); BallPrintLine("4 - Funcionário  " + (MenuOption == 4 ? "<" : null));
-				Console.SetCursorPosition(6, 7); BallPrintLine("5 - Sair         " + (MenuOption == 5 ? "<" : null));
+				Console.SetCursorPosition(6, 7); BallPrintLine("5 - Estatísticas " + (MenuOption == 5 ? "<" : null));
+				Console.SetCursorPosition(6, 8); BallPrintLine("6 - Sair         " + (MenuOption == 6 ? "<" : null));
 
-				ChangePointer(1, 5);
+				ChangePointer(1,6);
 
 				if (PressedKey == ConsoleKey.Enter)
 				{
-					if (MenuOption == 5)
+					if (MenuOption == 6)
 					{
 						CurrentSchool = null!;
 						break;
@@ -146,7 +147,8 @@ namespace ProjetoSchool.Classes
 							case 1: StudentSection(); break;
 							case 2: TeacherSection(); break;
 							case 3: ClassroomSection(); break;
-							case 4: break;
+							case 4: WorkerSection(); break;
+							case 5: SchoolStatus(); break;
 						}
 					}
 				}
@@ -503,65 +505,229 @@ namespace ProjetoSchool.Classes
 								{
 									try
 									{
-										Student selectedStudent;
+										SchoolClasses currentClass;
+										Student currentStudent;
 
 										Console.Clear();
-
-										Console.ForegroundColor = ConsoleColor.White;
-
-										for (int i = 0; i < CurrentSchool.Students.Count; i++)
+										for (int i = 0; i < CurrentSchool.SchoolClasses.Count; i++)
 										{
-											Console.SetCursorPosition(4, i + 2); BallPrintLine($"{i+1} - {CurrentSchool.Students[i].ID}, {CurrentSchool.Students[i].Name} " + (MenuOption == CurrentSchool.Students.IndexOf(CurrentSchool.Students[i]) ? "<" : null));
+											Console.SetCursorPosition(4, i + 2); BallPrintLine($"{i+1} - {CurrentSchool.SchoolClasses[i].ID}, {CurrentSchool.SchoolClasses[i].Name} " + (MenuOption == CurrentSchool.SchoolClasses.IndexOf(CurrentSchool.SchoolClasses[i]) ? "<" : null));
 										}
-										Console.SetCursorPosition(4, CurrentSchool.Students.Count + 2); BallPrintLine("Sair " + (MenuOption == CurrentSchool.Students.Count ? "<" : null));
 										
-										ChangePointer(0, CurrentSchool.Students.Count);
+										Console.SetCursorPosition(4, CurrentSchool.SchoolClasses.Count + 2);
+										BallPrintLine("Sair " + (MenuOption == CurrentSchool.SchoolClasses.Count ? "<" : null));
+
+										ChangePointer(0, CurrentSchool.SchoolClasses.Count);
+										
 										if (PressedKey == ConsoleKey.Enter)
 										{
-											if (MenuOption == CurrentSchool.Students.Count) break;
+											if (MenuOption == CurrentSchool.SchoolClasses.Count) break;
 											else
 											{
-												selectedStudent = CurrentSchool.Students[MenuOption];
+												currentClass = CurrentSchool.SchoolClasses[MenuOption];
+												Console.ForegroundColor = ConsoleColor.White;
 												MenuOption = 0;
 												do
 												{
-													try
+													Console.Clear();
+													for (int i = 0; i < CurrentSchool.Students.Count; i++)
 													{
-														Console.Clear();
-														for (int i = 0; i < CurrentSchool.SchoolClasses.Count; i++)
+														Console.SetCursorPosition(4, i + 2); BallPrintLine($"{i+1} - {CurrentSchool.Students[i].ID}, {CurrentSchool.Students[i].Name} " + (MenuOption == CurrentSchool.Students.IndexOf(CurrentSchool.Students[i]) ? "<" : null));
+													}
+													Console.SetCursorPosition(4, CurrentSchool.Students.Count + 2); BallPrintLine("Sair " + (MenuOption == CurrentSchool.Students.Count ? "<" : null));
+													ChangePointer(0, CurrentSchool.Students.Count);
+
+													if (PressedKey == ConsoleKey.Enter)
+													{
+														if (MenuOption == CurrentSchool.Students.Count) break;
+														else
 														{
-															Console.SetCursorPosition(4, i + 2); BallPrintLine($"{i+1} - {CurrentSchool.SchoolClasses[i].ID}, {CurrentSchool.SchoolClasses[i].Name} " + (MenuOption == CurrentSchool.SchoolClasses.IndexOf(CurrentSchool.SchoolClasses[i]) ? "<" : null));
+															currentClass.AddStudent(CurrentSchool.Students[MenuOption]);
 														}
-														
-														Console.SetCursorPosition(4, CurrentSchool.SchoolClasses.Count + 2);
-														BallPrintLine("Sair " + (MenuOption == CurrentSchool.SchoolClasses.Count ? "<" : null));
-														ChangePointer(0, CurrentSchool.SchoolClasses.Count);
-														if (PressedKey == ConsoleKey.Enter)
-														{
-															if (MenuOption == CurrentSchool.SchoolClasses.Count) break;
-															else
-															{
-																CurrentSchool.SchoolClasses[MenuOption].Students.Add(selectedStudent);
-																selectedStudent = null!;
-																break;
-															}
-														}
-													} catch (Exception ex) { ShowException(ex); }
+													}
+
 												} while (true);
 											}
 										}
-
 									} catch (Exception ex) { ShowException(ex); }
 								} while (true);
 								break;
 
 							case 4:
-								// To Do
+								MenuOption = 0;
+								do
+								{
+									try
+									{
+										SchoolClasses currentClass;
+										Student currentStudent;
+
+										Console.Clear();
+										for (int i = 0; i < CurrentSchool.SchoolClasses.Count; i++)
+										{
+											Console.SetCursorPosition(4, i + 2); BallPrintLine($"{i+1} - {CurrentSchool.SchoolClasses[i].ID}, {CurrentSchool.SchoolClasses[i].Name} " + (MenuOption == CurrentSchool.SchoolClasses.IndexOf(CurrentSchool.SchoolClasses[i]) ? "<" : null));
+										}
+										
+										Console.SetCursorPosition(4, CurrentSchool.SchoolClasses.Count + 2);
+										BallPrintLine("Sair " + (MenuOption == CurrentSchool.SchoolClasses.Count ? "<" : null));
+
+										ChangePointer(0, CurrentSchool.SchoolClasses.Count);
+										
+										if (PressedKey == ConsoleKey.Enter)
+										{
+											if (MenuOption == CurrentSchool.SchoolClasses.Count) break;
+											else
+											{
+												currentClass = CurrentSchool.SchoolClasses[MenuOption];
+												Console.ForegroundColor = ConsoleColor.White;
+												MenuOption = 0;
+												do
+												{
+													Console.Clear();
+													for (int i = 0; i < currentClass.Students.Count; i++)
+													{
+														Console.SetCursorPosition(4, i + 2); BallPrintLine($"{i+1} - {currentClass.Students[i].ID}, {currentClass.Students[i].Name} " + (MenuOption == currentClass.Students.IndexOf(currentClass.Students[i]) ? "<" : null));
+													}
+													Console.SetCursorPosition(4, currentClass.Students.Count + 2); BallPrintLine("Sair " + (MenuOption == currentClass.Students.Count ? "<" : null));
+													ChangePointer(0, currentClass.Students.Count);
+
+													if (PressedKey == ConsoleKey.Enter)
+													{
+														if (MenuOption == currentClass.Students.Count) break;
+														else
+														{
+															currentClass.Students.Remove(currentClass.Students[MenuOption]);
+														}
+													}
+
+												} while (true);
+											}
+										}
+									} catch (Exception ex) { ShowException(ex); }
+								} while (true);
 								break;
 						}
 					}
 				} catch (Exception ex) { ShowException(ex); }
 			} while (true);
+		}
+		public void WorkerSection()
+		{
+			
+			MenuOption = 1;
+			do
+			{
+				try
+				{
+					Console.Clear();
+					Console.SetCursorPosition(2, 1); BallPrintLine($"Escola: {CurrentSchool.Name}");
+					Console.SetCursorPosition(4, 2); BallPrintLine("Seção: Funcionário");
+					Console.SetCursorPosition(6, 3); BallPrintLine("1 - Cadastrar Funcionário " + (MenuOption == 1 ? "<" : null));
+					Console.SetCursorPosition(6, 4); BallPrintLine("2 - Remover Funcionário   " + (MenuOption == 2 ? "<" : null));
+					Console.SetCursorPosition(6, 5); BallPrintLine("Sair                    " + (MenuOption == 3 ? "<" : null));
+
+					ChangePointer(1, 3);
+					if (PressedKey == ConsoleKey.Enter)
+					{
+						if (MenuOption == 3)
+							break;
+						switch (MenuOption)
+						{
+							case 1:
+								string tempWorkerName;
+								int    tempWorkerAge;
+								float  tempWorkerSalary;
+								string tempWorkerRole;
+								bool   hasNumber = false;
+								Console.Clear();
+
+								Console.ForegroundColor = ConsoleColor.White;
+								Console.SetCursorPosition(2, 1); BallPrint("Nome do Funcionário: ");
+								Console.SetCursorPosition(2, 2); BallPrint("Idade do Funcionário: ");
+								Console.SetCursorPosition(2, 3); BallPrint("Salário do Funcionário: ");
+								Console.SetCursorPosition(2, 4); BallPrint("Profissão do Funcionário: ");
+
+								Console.ForegroundColor = ConsoleColor.Yellow;
+								Console.SetCursorPosition(WithBall("Nome do Funcionário: ") + 2, 1);    tempWorkerName = Console.ReadLine()!.Trim();
+								if (tempWorkerName == "" || tempWorkerName.Length < 3) continue;
+
+								Console.SetCursorPosition(WithBall("Idade do Funcionário: ") + 2, 2);   tempWorkerAge = Convert.ToInt32(Console.ReadLine()!);
+								if (tempWorkerAge < 18 || tempWorkerAge > 122) continue;
+
+
+								Console.SetCursorPosition(WithBall("Salário do Funcionário: ") + 2, 3); tempWorkerSalary = Convert.ToSingle(Console.ReadLine()!.Replace('.', ','));
+								if (tempWorkerSalary < 0) continue;
+
+								Console.SetCursorPosition(WithBall("Profissão do Funcionário: ") + 2, 4); tempWorkerRole = Console.ReadLine()!.Trim();
+								if (tempWorkerRole == "") continue;
+
+								Console.ForegroundColor = ConsoleColor.White;
+
+								CurrentSchool.Workers.Add(new Worker(tempWorkerName, tempWorkerAge, tempWorkerSalary, tempWorkerRole));
+								break;
+
+							case 2:
+								do
+								{
+									Console.Clear();
+									for (int i = 0; i < CurrentSchool.Workers.Count; i++)
+									{
+										Console.SetCursorPosition(4, i + 2); BallPrintLine($"{i+1} - {CurrentSchool.Workers[i].ID}, {CurrentSchool.Workers[i].Name} - {CurrentSchool.Workers[i].Role} " + (MenuOption == CurrentSchool.Workers.IndexOf(CurrentSchool.Workers[i]) ? "<" : null));
+									}
+									
+									Console.SetCursorPosition(4, CurrentSchool.Workers.Count + 2);
+									BallPrintLine("Sair " + (MenuOption == CurrentSchool.Workers.Count ? "<" : null));
+
+									ChangePointer(0, CurrentSchool.Workers.Count);
+									if (PressedKey == ConsoleKey.Enter)
+									{
+										if (MenuOption == CurrentSchool.Workers.Count) break;
+										else
+										{
+											CurrentSchool.Workers.Remove(CurrentSchool.Workers[MenuOption]);
+											break;
+										}
+									}
+								} while (true);
+								break;
+						}
+					}
+				} catch (Exception ex) { ShowException(ex); }
+			} while (true);
+		}
+		public void SchoolStatus()
+		{
+			Console.Clear();
+
+			BallPrintLine($"Escola: {CurrentSchool.Name}");
+			BallPrintLine($"Professores:");
+			for (int i = 0; i < CurrentSchool.Teachers.Count; i++)
+			{
+				BallPrintLine($"Nome: {CurrentSchool.Teachers[i].Name}, Matéria: {CurrentSchool.Teachers[i].Subject.Name}, ID: {CurrentSchool.Teachers[i].ID}");
+			}
+
+			Console.WriteLine();
+			BallPrintLine($"Funcionários:");
+			for (int i = 0; i < CurrentSchool.Workers.Count; i++)
+			{
+				BallPrintLine($"Nome: {CurrentSchool.Workers[i].Name}, Função: {CurrentSchool.Workers[i].Role}, ID: {CurrentSchool.Teachers[i].ID}");
+			}
+
+			Console.WriteLine();
+			BallPrintLine("Salas: ");
+			for (int i = 0; i < CurrentSchool.SchoolClasses.Count; i++)
+			{
+				BallPrint($"Nome: {CurrentSchool.SchoolClasses[i].Name}, Média: {CurrentSchool.SchoolClasses[i].Avarage}, ID: {CurrentSchool.SchoolClasses[i].ID}");
+			}
+
+			Console.WriteLine();
+			CurrentSchool.UpdateStudentSituation();
+			BallPrintLine("Alunos: ");
+			for (int i = 0; i < CurrentSchool.Students.Count; i++)
+			{
+				BallPrintLine($"Nome: {CurrentSchool.Students[i].Name}, Média: {CurrentSchool.Students[i].StudentAvarage}, Situação: {CurrentSchool.Students[i].Situation}");
+			}
+			Console.ReadLine();
 		}
 	}
 }

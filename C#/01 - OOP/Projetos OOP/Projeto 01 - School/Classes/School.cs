@@ -28,5 +28,23 @@ namespace ProjetoSchool.Classes
 			this.Teachers      = new List<Teacher>();
 			this.Workers       = new List<Worker>();
 		}
+
+		public School Update()
+		{
+			this.Avarage = 0f;
+			this.SchoolClasses.ForEach(x => {
+				this.Avarage += x.Avarage;
+			});
+			return this;
+		}
+
+		public void UpdateStudentSituation()
+		{
+			Students.ForEach( s =>
+			{
+				if (s.StudentAvarage >= MinAvarage) s.Situation = "Aprovado";
+				else s.Situation = "Reprovado";
+			});
+		}
 	}
 }
