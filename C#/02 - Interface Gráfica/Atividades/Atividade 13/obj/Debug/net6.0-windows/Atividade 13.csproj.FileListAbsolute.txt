@@ -1,0 +1,17 @@
+C:\Users\CyberQ\Desktop\CyberQ - Practice\C#\02 - Interface Gráfica\Atividades\Atividade 13\bin\Debug\net6.0-windows\Atividade 13.exe
+C:\Users\CyberQ\Desktop\CyberQ - Practice\C#\02 - Interface Gráfica\Atividades\Atividade 13\bin\Debug\net6.0-windows\Atividade 13.deps.json
+C:\Users\CyberQ\Desktop\CyberQ - Practice\C#\02 - Interface Gráfica\Atividades\Atividade 13\bin\Debug\net6.0-windows\Atividade 13.runtimeconfig.json
+C:\Users\CyberQ\Desktop\CyberQ - Practice\C#\02 - Interface Gráfica\Atividades\Atividade 13\bin\Debug\net6.0-windows\Atividade 13.dll
+C:\Users\CyberQ\Desktop\CyberQ - Practice\C#\02 - Interface Gráfica\Atividades\Atividade 13\bin\Debug\net6.0-windows\Atividade 13.pdb
+C:\Users\CyberQ\Desktop\CyberQ - Practice\C#\02 - Interface Gráfica\Atividades\Atividade 13\obj\Debug\net6.0-windows\Atividade 13.csproj.AssemblyReference.cache
+C:\Users\CyberQ\Desktop\CyberQ - Practice\C#\02 - Interface Gráfica\Atividades\Atividade 13\obj\Debug\net6.0-windows\Atividade 13.csproj.GenerateResource.cache
+C:\Users\CyberQ\Desktop\CyberQ - Practice\C#\02 - Interface Gráfica\Atividades\Atividade 13\obj\Debug\net6.0-windows\Atividade 13.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\CyberQ\Desktop\CyberQ - Practice\C#\02 - Interface Gráfica\Atividades\Atividade 13\obj\Debug\net6.0-windows\Atividade 13.AssemblyInfoInputs.cache
+C:\Users\CyberQ\Desktop\CyberQ - Practice\C#\02 - Interface Gráfica\Atividades\Atividade 13\obj\Debug\net6.0-windows\Atividade 13.AssemblyInfo.cs
+C:\Users\CyberQ\Desktop\CyberQ - Practice\C#\02 - Interface Gráfica\Atividades\Atividade 13\obj\Debug\net6.0-windows\Atividade 13.csproj.CoreCompileInputs.cache
+C:\Users\CyberQ\Desktop\CyberQ - Practice\C#\02 - Interface Gráfica\Atividades\Atividade 13\obj\Debug\net6.0-windows\Atividade 13.dll
+C:\Users\CyberQ\Desktop\CyberQ - Practice\C#\02 - Interface Gráfica\Atividades\Atividade 13\obj\Debug\net6.0-windows\refint\Atividade 13.dll
+C:\Users\CyberQ\Desktop\CyberQ - Practice\C#\02 - Interface Gráfica\Atividades\Atividade 13\obj\Debug\net6.0-windows\Atividade 13.pdb
+C:\Users\CyberQ\Desktop\CyberQ - Practice\C#\02 - Interface Gráfica\Atividades\Atividade 13\obj\Debug\net6.0-windows\Atividade 13.genruntimeconfig.cache
+C:\Users\CyberQ\Desktop\CyberQ - Practice\C#\02 - Interface Gráfica\Atividades\Atividade 13\obj\Debug\net6.0-windows\ref\Atividade 13.dll
+C:\Users\CyberQ\Desktop\CyberQ - Practice\C#\02 - Interface Gráfica\Atividades\Atividade 13\obj\Debug\net6.0-windows\Atividade_13.FormMain.resources

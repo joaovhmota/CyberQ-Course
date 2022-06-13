@@ -1,0 +1,17 @@
+C:\Users\CyberQ\Desktop\CyberQ - Practice\C#\02 - Interface Gráfica\Atividades\Atividade 05\bin\Debug\net6.0-windows\Atividade 05.exe
+C:\Users\CyberQ\Desktop\CyberQ - Practice\C#\02 - Interface Gráfica\Atividades\Atividade 05\bin\Debug\net6.0-windows\Atividade 05.deps.json
+C:\Users\CyberQ\Desktop\CyberQ - Practice\C#\02 - Interface Gráfica\Atividades\Atividade 05\bin\Debug\net6.0-windows\Atividade 05.runtimeconfig.json
+C:\Users\CyberQ\Desktop\CyberQ - Practice\C#\02 - Interface Gráfica\Atividades\Atividade 05\bin\Debug\net6.0-windows\Atividade 05.dll
+C:\Users\CyberQ\Desktop\CyberQ - Practice\C#\02 - Interface Gráfica\Atividades\Atividade 05\bin\Debug\net6.0-windows\Atividade 05.pdb
+C:\Users\CyberQ\Desktop\CyberQ - Practice\C#\02 - Interface Gráfica\Atividades\Atividade 05\obj\Debug\net6.0-windows\Atividade 05.csproj.AssemblyReference.cache
+C:\Users\CyberQ\Desktop\CyberQ - Practice\C#\02 - Interface Gráfica\Atividades\Atividade 05\obj\Debug\net6.0-windows\Atividade_05.formMain.resources
+C:\Users\CyberQ\Desktop\CyberQ - Practice\C#\02 - Interface Gráfica\Atividades\Atividade 05\obj\Debug\net6.0-windows\Atividade 05.csproj.GenerateResource.cache
+C:\Users\CyberQ\Desktop\CyberQ - Practice\C#\02 - Interface Gráfica\Atividades\Atividade 05\obj\Debug\net6.0-windows\Atividade 05.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\CyberQ\Desktop\CyberQ - Practice\C#\02 - Interface Gráfica\Atividades\Atividade 05\obj\Debug\net6.0-windows\Atividade 05.AssemblyInfoInputs.cache
+C:\Users\CyberQ\Desktop\CyberQ - Practice\C#\02 - Interface Gráfica\Atividades\Atividade 05\obj\Debug\net6.0-windows\Atividade 05.AssemblyInfo.cs
+C:\Users\CyberQ\Desktop\CyberQ - Practice\C#\02 - Interface Gráfica\Atividades\Atividade 05\obj\Debug\net6.0-windows\Atividade 05.csproj.CoreCompileInputs.cache
+C:\Users\CyberQ\Desktop\CyberQ - Practice\C#\02 - Interface Gráfica\Atividades\Atividade 05\obj\Debug\net6.0-windows\Atividade 05.dll
+C:\Users\CyberQ\Desktop\CyberQ - Practice\C#\02 - Interface Gráfica\Atividades\Atividade 05\obj\Debug\net6.0-windows\refint\Atividade 05.dll
+C:\Users\CyberQ\Desktop\CyberQ - Practice\C#\02 - Interface Gráfica\Atividades\Atividade 05\obj\Debug\net6.0-windows\Atividade 05.pdb
+C:\Users\CyberQ\Desktop\CyberQ - Practice\C#\02 - Interface Gráfica\Atividades\Atividade 05\obj\Debug\net6.0-windows\Atividade 05.genruntimeconfig.cache
+C:\Users\CyberQ\Desktop\CyberQ - Practice\C#\02 - Interface Gráfica\Atividades\Atividade 05\obj\Debug\net6.0-windows\ref\Atividade 05.dll

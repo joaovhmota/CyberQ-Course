@@ -1,0 +1,17 @@
+C:\Users\CyberQ\Desktop\CyberQ - Practice\C#\02 - Interface Gráfica\Conceitos\Exemplo 01\bin\Debug\net6.0-windows\Exemplo 01.exe
+C:\Users\CyberQ\Desktop\CyberQ - Practice\C#\02 - Interface Gráfica\Conceitos\Exemplo 01\bin\Debug\net6.0-windows\Exemplo 01.deps.json
+C:\Users\CyberQ\Desktop\CyberQ - Practice\C#\02 - Interface Gráfica\Conceitos\Exemplo 01\bin\Debug\net6.0-windows\Exemplo 01.runtimeconfig.json
+C:\Users\CyberQ\Desktop\CyberQ - Practice\C#\02 - Interface Gráfica\Conceitos\Exemplo 01\bin\Debug\net6.0-windows\Exemplo 01.dll
+C:\Users\CyberQ\Desktop\CyberQ - Practice\C#\02 - Interface Gráfica\Conceitos\Exemplo 01\bin\Debug\net6.0-windows\Exemplo 01.pdb
+C:\Users\CyberQ\Desktop\CyberQ - Practice\C#\02 - Interface Gráfica\Conceitos\Exemplo 01\obj\Debug\net6.0-windows\Exemplo 01.csproj.AssemblyReference.cache
+C:\Users\CyberQ\Desktop\CyberQ - Practice\C#\02 - Interface Gráfica\Conceitos\Exemplo 01\obj\Debug\net6.0-windows\Exemplo_01.Form1.resources
+C:\Users\CyberQ\Desktop\CyberQ - Practice\C#\02 - Interface Gráfica\Conceitos\Exemplo 01\obj\Debug\net6.0-windows\Exemplo 01.csproj.GenerateResource.cache
+C:\Users\CyberQ\Desktop\CyberQ - Practice\C#\02 - Interface Gráfica\Conceitos\Exemplo 01\obj\Debug\net6.0-windows\Exemplo 01.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\CyberQ\Desktop\CyberQ - Practice\C#\02 - Interface Gráfica\Conceitos\Exemplo 01\obj\Debug\net6.0-windows\Exemplo 01.AssemblyInfoInputs.cache
+C:\Users\CyberQ\Desktop\CyberQ - Practice\C#\02 - Interface Gráfica\Conceitos\Exemplo 01\obj\Debug\net6.0-windows\Exemplo 01.AssemblyInfo.cs
+C:\Users\CyberQ\Desktop\CyberQ - Practice\C#\02 - Interface Gráfica\Conceitos\Exemplo 01\obj\Debug\net6.0-windows\Exemplo 01.csproj.CoreCompileInputs.cache
+C:\Users\CyberQ\Desktop\CyberQ - Practice\C#\02 - Interface Gráfica\Conceitos\Exemplo 01\obj\Debug\net6.0-windows\Exemplo 01.dll
+C:\Users\CyberQ\Desktop\CyberQ - Practice\C#\02 - Interface Gráfica\Conceitos\Exemplo 01\obj\Debug\net6.0-windows\refint\Exemplo 01.dll
+C:\Users\CyberQ\Desktop\CyberQ - Practice\C#\02 - Interface Gráfica\Conceitos\Exemplo 01\obj\Debug\net6.0-windows\Exemplo 01.pdb
+C:\Users\CyberQ\Desktop\CyberQ - Practice\C#\02 - Interface Gráfica\Conceitos\Exemplo 01\obj\Debug\net6.0-windows\Exemplo 01.genruntimeconfig.cache
+C:\Users\CyberQ\Desktop\CyberQ - Practice\C#\02 - Interface Gráfica\Conceitos\Exemplo 01\obj\Debug\net6.0-windows\ref\Exemplo 01.dll
