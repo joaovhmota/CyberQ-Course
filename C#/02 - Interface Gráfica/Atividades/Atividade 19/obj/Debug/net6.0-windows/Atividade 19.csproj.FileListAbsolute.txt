@@ -1,0 +1,20 @@
+C:\Users\CyberQ\Desktop\CyberQ - Practice\C#\02 - Interface Gráfica\Atividades\Atividade 19\bin\Debug\net6.0-windows\Atividade 19.exe
+C:\Users\CyberQ\Desktop\CyberQ - Practice\C#\02 - Interface Gráfica\Atividades\Atividade 19\bin\Debug\net6.0-windows\Atividade 19.deps.json
+C:\Users\CyberQ\Desktop\CyberQ - Practice\C#\02 - Interface Gráfica\Atividades\Atividade 19\bin\Debug\net6.0-windows\Atividade 19.runtimeconfig.json
+C:\Users\CyberQ\Desktop\CyberQ - Practice\C#\02 - Interface Gráfica\Atividades\Atividade 19\bin\Debug\net6.0-windows\Atividade 19.dll
+C:\Users\CyberQ\Desktop\CyberQ - Practice\C#\02 - Interface Gráfica\Atividades\Atividade 19\bin\Debug\net6.0-windows\Atividade 19.pdb
+C:\Users\CyberQ\Desktop\CyberQ - Practice\C#\02 - Interface Gráfica\Atividades\Atividade 19\obj\Debug\net6.0-windows\Atividade 19.csproj.AssemblyReference.cache
+C:\Users\CyberQ\Desktop\CyberQ - Practice\C#\02 - Interface Gráfica\Atividades\Atividade 19\obj\Debug\net6.0-windows\Atividade_19.FormMain.resources
+C:\Users\CyberQ\Desktop\CyberQ - Practice\C#\02 - Interface Gráfica\Atividades\Atividade 19\obj\Debug\net6.0-windows\Atividade 19.csproj.GenerateResource.cache
+C:\Users\CyberQ\Desktop\CyberQ - Practice\C#\02 - Interface Gráfica\Atividades\Atividade 19\obj\Debug\net6.0-windows\Atividade 19.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\CyberQ\Desktop\CyberQ - Practice\C#\02 - Interface Gráfica\Atividades\Atividade 19\obj\Debug\net6.0-windows\Atividade 19.AssemblyInfoInputs.cache
+C:\Users\CyberQ\Desktop\CyberQ - Practice\C#\02 - Interface Gráfica\Atividades\Atividade 19\obj\Debug\net6.0-windows\Atividade 19.AssemblyInfo.cs
+C:\Users\CyberQ\Desktop\CyberQ - Practice\C#\02 - Interface Gráfica\Atividades\Atividade 19\obj\Debug\net6.0-windows\Atividade 19.csproj.CoreCompileInputs.cache
+C:\Users\CyberQ\Desktop\CyberQ - Practice\C#\02 - Interface Gráfica\Atividades\Atividade 19\obj\Debug\net6.0-windows\Atividade 19.dll
+C:\Users\CyberQ\Desktop\CyberQ - Practice\C#\02 - Interface Gráfica\Atividades\Atividade 19\obj\Debug\net6.0-windows\refint\Atividade 19.dll
+C:\Users\CyberQ\Desktop\CyberQ - Practice\C#\02 - Interface Gráfica\Atividades\Atividade 19\obj\Debug\net6.0-windows\Atividade 19.pdb
+C:\Users\CyberQ\Desktop\CyberQ - Practice\C#\02 - Interface Gráfica\Atividades\Atividade 19\obj\Debug\net6.0-windows\Atividade 19.genruntimeconfig.cache
+C:\Users\CyberQ\Desktop\CyberQ - Practice\C#\02 - Interface Gráfica\Atividades\Atividade 19\obj\Debug\net6.0-windows\ref\Atividade 19.dll
+C:\Users\CyberQ\Desktop\CyberQ - Practice\C#\02 - Interface Gráfica\Atividades\Atividade 19\obj\Debug\net6.0-windows\Atividade_19.Properties.Resources.resources
+C:\Users\CyberQ\Desktop\CyberQ - Practice\C#\02 - Interface Gráfica\Atividades\Atividade 19\obj\Debug\net6.0-windows\Atividade_19.FormBrand.resources
+C:\Users\CyberQ\Desktop\CyberQ - Practice\C#\02 - Interface Gráfica\Atividades\Atividade 19\obj\Debug\net6.0-windows\Atividade_19.FormProduct.resources
