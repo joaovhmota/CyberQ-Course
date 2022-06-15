@@ -1,0 +1,22 @@
+C:\Users\CyberQ\Desktop\CyberQ - Practice\C#\02 - Interface Gráfica\Projetos\Projeto Windows Forms\bin\Debug\net6.0-windows\Projeto Windows Forms.exe
+C:\Users\CyberQ\Desktop\CyberQ - Practice\C#\02 - Interface Gráfica\Projetos\Projeto Windows Forms\bin\Debug\net6.0-windows\Projeto Windows Forms.deps.json
+C:\Users\CyberQ\Desktop\CyberQ - Practice\C#\02 - Interface Gráfica\Projetos\Projeto Windows Forms\bin\Debug\net6.0-windows\Projeto Windows Forms.runtimeconfig.json
+C:\Users\CyberQ\Desktop\CyberQ - Practice\C#\02 - Interface Gráfica\Projetos\Projeto Windows Forms\bin\Debug\net6.0-windows\Projeto Windows Forms.dll
+C:\Users\CyberQ\Desktop\CyberQ - Practice\C#\02 - Interface Gráfica\Projetos\Projeto Windows Forms\bin\Debug\net6.0-windows\Projeto Windows Forms.pdb
+C:\Users\CyberQ\Desktop\CyberQ - Practice\C#\02 - Interface Gráfica\Projetos\Projeto Windows Forms\obj\Debug\net6.0-windows\Projeto Windows Forms.csproj.AssemblyReference.cache
+C:\Users\CyberQ\Desktop\CyberQ - Practice\C#\02 - Interface Gráfica\Projetos\Projeto Windows Forms\obj\Debug\net6.0-windows\Projeto_Windows_Forms.FormLogin.resources
+C:\Users\CyberQ\Desktop\CyberQ - Practice\C#\02 - Interface Gráfica\Projetos\Projeto Windows Forms\obj\Debug\net6.0-windows\Projeto Windows Forms.csproj.GenerateResource.cache
+C:\Users\CyberQ\Desktop\CyberQ - Practice\C#\02 - Interface Gráfica\Projetos\Projeto Windows Forms\obj\Debug\net6.0-windows\Projeto Windows Forms.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\CyberQ\Desktop\CyberQ - Practice\C#\02 - Interface Gráfica\Projetos\Projeto Windows Forms\obj\Debug\net6.0-windows\Projeto Windows Forms.AssemblyInfoInputs.cache
+C:\Users\CyberQ\Desktop\CyberQ - Practice\C#\02 - Interface Gráfica\Projetos\Projeto Windows Forms\obj\Debug\net6.0-windows\Projeto Windows Forms.AssemblyInfo.cs
+C:\Users\CyberQ\Desktop\CyberQ - Practice\C#\02 - Interface Gráfica\Projetos\Projeto Windows Forms\obj\Debug\net6.0-windows\Projeto Windows Forms.csproj.CoreCompileInputs.cache
+C:\Users\CyberQ\Desktop\CyberQ - Practice\C#\02 - Interface Gráfica\Projetos\Projeto Windows Forms\obj\Debug\net6.0-windows\Projeto Windows Forms.dll
+C:\Users\CyberQ\Desktop\CyberQ - Practice\C#\02 - Interface Gráfica\Projetos\Projeto Windows Forms\obj\Debug\net6.0-windows\refint\Projeto Windows Forms.dll
+C:\Users\CyberQ\Desktop\CyberQ - Practice\C#\02 - Interface Gráfica\Projetos\Projeto Windows Forms\obj\Debug\net6.0-windows\Projeto Windows Forms.pdb
+C:\Users\CyberQ\Desktop\CyberQ - Practice\C#\02 - Interface Gráfica\Projetos\Projeto Windows Forms\obj\Debug\net6.0-windows\Projeto Windows Forms.genruntimeconfig.cache
+C:\Users\CyberQ\Desktop\CyberQ - Practice\C#\02 - Interface Gráfica\Projetos\Projeto Windows Forms\obj\Debug\net6.0-windows\ref\Projeto Windows Forms.dll
+C:\Users\CyberQ\Desktop\CyberQ - Practice\C#\02 - Interface Gráfica\Projetos\Projeto Windows Forms\obj\Debug\net6.0-windows\Projeto_Windows_Forms.FormMenuStudent.resources
+C:\Users\CyberQ\Desktop\CyberQ - Practice\C#\02 - Interface Gráfica\Projetos\Projeto Windows Forms\obj\Debug\net6.0-windows\Projeto_Windows_Forms.FormMenuTeachers.resources
+C:\Users\CyberQ\Desktop\CyberQ - Practice\C#\02 - Interface Gráfica\Projetos\Projeto Windows Forms\obj\Debug\net6.0-windows\Projeto_Windows_Forms.FormTeacherStudents.resources
+C:\Users\CyberQ\Desktop\CyberQ - Practice\C#\02 - Interface Gráfica\Projetos\Projeto Windows Forms\obj\Debug\net6.0-windows\Projeto_Windows_Forms.FormClassesTeacher.resources
+C:\Users\CyberQ\Desktop\CyberQ - Practice\C#\02 - Interface Gráfica\Projetos\Projeto Windows Forms\obj\Debug\net6.0-windows\Projeto_Windows_Forms.FormBlockerStudentsTeacher.resources

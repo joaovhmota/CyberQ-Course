@@ -163,7 +163,10 @@
 			this.Controls.Add(this.txtProductName);
 			this.Controls.Add(this.lblProductName);
 			this.Controls.Add(this.dgvProducts);
+			this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
 			this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+			this.MaximizeBox = false;
+			this.MinimizeBox = false;
 			this.Name = "FormProduct";
 			((System.ComponentModel.ISupportInitialize)(this.dgvProducts)).EndInit();
 			((System.ComponentModel.ISupportInitialize)(this.numProductPrice)).EndInit();

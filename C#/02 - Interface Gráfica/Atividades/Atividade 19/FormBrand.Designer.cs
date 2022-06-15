@@ -113,7 +113,10 @@
 			this.Controls.Add(this.txtNomeBrand);
 			this.Controls.Add(this.label1);
 			this.Controls.Add(this.dgvBrands);
+			this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
 			this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+			this.MaximizeBox = false;
+			this.MinimizeBox = false;
 			this.Name = "FormBrand";
 			this.Click += new System.EventHandler(this.FormBrand_Click);
 			((System.ComponentModel.ISupportInitialize)(this.dgvBrands)).EndInit();
