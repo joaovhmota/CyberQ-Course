@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Atividade_19
 {
-	internal class Product
+	public class Product
 	{
 		public string Name { get; set; }
 		public float Price { get; set; }

@@ -31,13 +31,15 @@
 			this.components = new System.ComponentModel.Container();
 			System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormMain));
 			this.imgIcon = new System.Windows.Forms.ImageList(this.components);
-			this.dgvProducts = new System.Windows.Forms.DataGridView();
+			this.dgvDashboard = new System.Windows.Forms.DataGridView();
 			this.groupBox1 = new System.Windows.Forms.GroupBox();
+			this.btnShowProducts = new System.Windows.Forms.Button();
+			this.btnShowBrands = new System.Windows.Forms.Button();
 			this.btnBrands = new System.Windows.Forms.Button();
 			this.groupBox2 = new System.Windows.Forms.GroupBox();
 			this.btnProducts = new System.Windows.Forms.Button();
 			this.imgBaita = new System.Windows.Forms.ImageList(this.components);
-			((System.ComponentModel.ISupportInitialize)(this.dgvProducts)).BeginInit();
+			((System.ComponentModel.ISupportInitialize)(this.dgvDashboard)).BeginInit();
 			this.groupBox1.SuspendLayout();
 			this.groupBox2.SuspendLayout();
 			this.SuspendLayout();
@@ -49,24 +51,49 @@
 			this.imgIcon.TransparentColor = System.Drawing.Color.Transparent;
 			this.imgIcon.Images.SetKeyName(0, "SmugAnya.jpg");
 			// 
-			// dgvProducts
+			// dgvDashboard
 			// 
-			this.dgvProducts.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-			this.dgvProducts.Location = new System.Drawing.Point(6, 22);
-			this.dgvProducts.Name = "dgvProducts";
-			this.dgvProducts.RowTemplate.Height = 25;
-			this.dgvProducts.Size = new System.Drawing.Size(448, 236);
-			this.dgvProducts.TabIndex = 0;
+			this.dgvDashboard.AllowUserToAddRows = false;
+			this.dgvDashboard.AllowUserToDeleteRows = false;
+			this.dgvDashboard.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+			this.dgvDashboard.Location = new System.Drawing.Point(6, 22);
+			this.dgvDashboard.Name = "dgvDashboard";
+			this.dgvDashboard.ReadOnly = true;
+			this.dgvDashboard.RowTemplate.Height = 25;
+			this.dgvDashboard.Size = new System.Drawing.Size(448, 207);
+			this.dgvDashboard.TabIndex = 0;
 			// 
 			// groupBox1
 			// 
-			this.groupBox1.Controls.Add(this.dgvProducts);
+			this.groupBox1.Controls.Add(this.btnShowProducts);
+			this.groupBox1.Controls.Add(this.btnShowBrands);
+			this.groupBox1.Controls.Add(this.dgvDashboard);
 			this.groupBox1.Location = new System.Drawing.Point(12, 12);
 			this.groupBox1.Name = "groupBox1";
 			this.groupBox1.Size = new System.Drawing.Size(460, 264);
 			this.groupBox1.TabIndex = 1;
 			this.groupBox1.TabStop = false;
-			this.groupBox1.Text = "Lista de Produtos";
+			this.groupBox1.Text = "DashBoard";
+			// 
+			// btnShowProducts
+			// 
+			this.btnShowProducts.Location = new System.Drawing.Point(231, 235);
+			this.btnShowProducts.Name = "btnShowProducts";
+			this.btnShowProducts.Size = new System.Drawing.Size(217, 23);
+			this.btnShowProducts.TabIndex = 2;
+			this.btnShowProducts.Text = "Mostrar Produtos";
+			this.btnShowProducts.UseVisualStyleBackColor = true;
+			this.btnShowProducts.Click += new System.EventHandler(this.btnShowProducts_Click);
+			// 
+			// btnShowBrands
+			// 
+			this.btnShowBrands.Location = new System.Drawing.Point(6, 235);
+			this.btnShowBrands.Name = "btnShowBrands";
+			this.btnShowBrands.Size = new System.Drawing.Size(217, 23);
+			this.btnShowBrands.TabIndex = 1;
+			this.btnShowBrands.Text = "Mostrar Marcas";
+			this.btnShowBrands.UseVisualStyleBackColor = true;
+			this.btnShowBrands.Click += new System.EventHandler(this.btnShowBrands_Click);
 			// 
 			// btnBrands
 			// 
@@ -116,7 +143,7 @@
 			this.MaximizeBox = false;
 			this.MinimizeBox = false;
 			this.Name = "FormMain";
-			((System.ComponentModel.ISupportInitialize)(this.dgvProducts)).EndInit();
+			((System.ComponentModel.ISupportInitialize)(this.dgvDashboard)).EndInit();
 			this.groupBox1.ResumeLayout(false);
 			this.groupBox2.ResumeLayout(false);
 			this.ResumeLayout(false);
@@ -126,11 +153,13 @@
 		#endregion
 
 		private ImageList imgIcon;
-		private DataGridView dgvProducts;
+		private DataGridView dgvDashboard;
 		private GroupBox groupBox1;
 		private Button btnBrands;
 		private GroupBox groupBox2;
 		private Button btnProducts;
 		private ImageList imgBaita;
+		private Button btnShowProducts;
+		private Button btnShowBrands;
 	}
 }

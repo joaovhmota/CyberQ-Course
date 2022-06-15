@@ -57,17 +57,17 @@
 			this.label1.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
 			this.label1.Location = new System.Drawing.Point(12, 207);
 			this.label1.Name = "label1";
-			this.label1.Size = new System.Drawing.Size(129, 25);
+			this.label1.Size = new System.Drawing.Size(155, 25);
 			this.label1.TabIndex = 1;
-			this.label1.Text = "Nome marca: ";
+			this.label1.Text = "Nome da marca: ";
 			// 
 			// txtNomeBrand
 			// 
 			this.txtNomeBrand.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
 			this.txtNomeBrand.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.CustomSource;
-			this.txtNomeBrand.Location = new System.Drawing.Point(147, 212);
+			this.txtNomeBrand.Location = new System.Drawing.Point(173, 212);
 			this.txtNomeBrand.Name = "txtNomeBrand";
-			this.txtNomeBrand.Size = new System.Drawing.Size(225, 23);
+			this.txtNomeBrand.Size = new System.Drawing.Size(199, 23);
 			this.txtNomeBrand.TabIndex = 2;
 			// 
 			// btnAddBrand
