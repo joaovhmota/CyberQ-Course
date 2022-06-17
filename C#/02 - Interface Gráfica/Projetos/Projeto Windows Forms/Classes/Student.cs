@@ -8,17 +8,18 @@ namespace Projeto_Windows_Forms.Classes
 {
 	public class Student
 	{
-		public string		 Login { get; set; }
-		public string		 Password { get; set; }
-		public string		 Name { get; set; }
-		public int		 Age { get; set; }
-		public char		 Gender { get; set; }
-		public float		 Avarage { get; set; }
-		public List<float>   Notes { get; set; }
-		public bool          IsLocked { get; set; }
-		public byte          Tries { get; set; }
+		public string		      Login { get; set; }
+		public string		      Password { get; set; }
+		public string		      Name { get; set; }
+		public int		      Age { get; set; }
+		public char		      Gender { get; set; }
+		public float		      Avarage { get; set; }
+		public List<TestResult>   Notes { get; set; }
+		public bool	           IsLocked { get; set; }
+		public byte	           Tries { get; set; }
+		public bool	           IsInClass { get; set; }
 
-		public Student(string Name, int Age, char Gender )
+		public Student(string Name, int Age, char Gender)
 		{
 			Login = $"St{Name.Replace(" ", "")}{Age}";
 			Password = $"St{Name.Replace(" ", "")}{Age}";
@@ -26,8 +27,9 @@ namespace Projeto_Windows_Forms.Classes
 			this.Age = Age;
 			this.Gender = Gender;
 			Avarage = 0.0f;
-			Notes = new List<float>();
+			Notes = new List<TestResult>();
 			IsLocked = false;
+			IsInClass = false;
 		}
 
 		public void UpdateInfo(string Name = "", int Age = 0, char Gender = ' ')
@@ -36,17 +38,29 @@ namespace Projeto_Windows_Forms.Classes
 			if (Age != 0) this.Age = Age;
 			if (Gender != ' ') this.Gender = Gender;
 		}
-
-		public void AddNote(float note = -1)
+		
+		public void UpdateAvarage()
 		{
-			if (note == -1) return;
-			Notes.Add(note);
-			Avarage = Notes.Sum() / Notes.Count;
+			Avarage = 0f;
+			Notes.ForEach(r => {
+				Avarage += r.Result;
+			});
+			Avarage /= Notes.Count;
 		}
+
+		public void AddResult(TestResult? r)
+		{
+			if (r == null) return;
+
+			Notes.Add(r);
+
+			UpdateAvarage();
+		}
+
 
 		public override string ToString()
 		{
-			return this.Name;
+			return Name;
 		}
 	}
 }

@@ -20,3 +20,5 @@ C:\Users\CyberQ\Desktop\CyberQ - Practice\C#\02 - Interface Gráfica\Projetos\Pr
 C:\Users\CyberQ\Desktop\CyberQ - Practice\C#\02 - Interface Gráfica\Projetos\Projeto Windows Forms\obj\Debug\net6.0-windows\Projeto_Windows_Forms.FormTeacherStudents.resources
 C:\Users\CyberQ\Desktop\CyberQ - Practice\C#\02 - Interface Gráfica\Projetos\Projeto Windows Forms\obj\Debug\net6.0-windows\Projeto_Windows_Forms.FormClassesTeacher.resources
 C:\Users\CyberQ\Desktop\CyberQ - Practice\C#\02 - Interface Gráfica\Projetos\Projeto Windows Forms\obj\Debug\net6.0-windows\Projeto_Windows_Forms.FormBlockerStudentsTeacher.resources
+C:\Users\CyberQ\Desktop\CyberQ - Practice\C#\02 - Interface Gráfica\Projetos\Projeto Windows Forms\obj\Debug\net6.0-windows\Projeto_Windows_Forms.FormTestsTeacher.resources
+C:\Users\CyberQ\Desktop\CyberQ - Practice\C#\02 - Interface Gráfica\Projetos\Projeto Windows Forms\obj\Debug\net6.0-windows\Projeto_Windows_Forms.FormStatsTeacher.resources

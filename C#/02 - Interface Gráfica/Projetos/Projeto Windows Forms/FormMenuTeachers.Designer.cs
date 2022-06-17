@@ -38,6 +38,7 @@
 			this.btnFormClasses = new System.Windows.Forms.Button();
 			this.btnFormStudent = new System.Windows.Forms.Button();
 			this.gbxDashBoard = new System.Windows.Forms.GroupBox();
+			this.btnSchoolStats = new System.Windows.Forms.Button();
 			this.lblFilterBy = new System.Windows.Forms.Label();
 			this.dgvDashboard = new System.Windows.Forms.DataGridView();
 			this.btnDashTests = new System.Windows.Forms.Button();
@@ -97,25 +98,27 @@
 			// 
 			// btnBlockedAccounts
 			// 
-			this.btnBlockedAccounts.Location = new System.Drawing.Point(249, 22);
+			this.btnBlockedAccounts.Location = new System.Drawing.Point(303, 22);
 			this.btnBlockedAccounts.Name = "btnBlockedAccounts";
-			this.btnBlockedAccounts.Size = new System.Drawing.Size(179, 23);
+			this.btnBlockedAccounts.Size = new System.Drawing.Size(125, 23);
 			this.btnBlockedAccounts.TabIndex = 3;
 			this.btnBlockedAccounts.Text = "Contas Bloqueadas";
 			this.btnBlockedAccounts.UseVisualStyleBackColor = true;
+			this.btnBlockedAccounts.Click += new System.EventHandler(this.btnBlockedAccounts_Click);
 			// 
 			// btnFormTests
 			// 
-			this.btnFormTests.Location = new System.Drawing.Point(168, 22);
+			this.btnFormTests.Location = new System.Drawing.Point(222, 22);
 			this.btnFormTests.Name = "btnFormTests";
 			this.btnFormTests.Size = new System.Drawing.Size(75, 23);
 			this.btnFormTests.TabIndex = 2;
 			this.btnFormTests.Text = "Provas";
 			this.btnFormTests.UseVisualStyleBackColor = true;
+			this.btnFormTests.Click += new System.EventHandler(this.btnFormTests_Click);
 			// 
 			// btnFormClasses
 			// 
-			this.btnFormClasses.Location = new System.Drawing.Point(87, 22);
+			this.btnFormClasses.Location = new System.Drawing.Point(141, 22);
 			this.btnFormClasses.Name = "btnFormClasses";
 			this.btnFormClasses.Size = new System.Drawing.Size(75, 23);
 			this.btnFormClasses.TabIndex = 1;
@@ -127,14 +130,15 @@
 			// 
 			this.btnFormStudent.Location = new System.Drawing.Point(6, 22);
 			this.btnFormStudent.Name = "btnFormStudent";
-			this.btnFormStudent.Size = new System.Drawing.Size(75, 23);
+			this.btnFormStudent.Size = new System.Drawing.Size(129, 23);
 			this.btnFormStudent.TabIndex = 0;
-			this.btnFormStudent.Text = "Estudantes";
+			this.btnFormStudent.Text = "Cadastrar Estudantes";
 			this.btnFormStudent.UseVisualStyleBackColor = true;
 			this.btnFormStudent.Click += new System.EventHandler(this.btnFormStudent_Click);
 			// 
 			// gbxDashBoard
 			// 
+			this.gbxDashBoard.Controls.Add(this.btnSchoolStats);
 			this.gbxDashBoard.Controls.Add(this.lblFilterBy);
 			this.gbxDashBoard.Controls.Add(this.dgvDashboard);
 			this.gbxDashBoard.Controls.Add(this.btnDashTests);
@@ -146,6 +150,16 @@
 			this.gbxDashBoard.TabIndex = 5;
 			this.gbxDashBoard.TabStop = false;
 			this.gbxDashBoard.Text = "Estatísticas";
+			// 
+			// btnSchoolStats
+			// 
+			this.btnSchoolStats.Location = new System.Drawing.Point(6, 207);
+			this.btnSchoolStats.Name = "btnSchoolStats";
+			this.btnSchoolStats.Size = new System.Drawing.Size(116, 23);
+			this.btnSchoolStats.TabIndex = 6;
+			this.btnSchoolStats.Text = "Estastísticas";
+			this.btnSchoolStats.UseVisualStyleBackColor = true;
+			this.btnSchoolStats.Click += new System.EventHandler(this.btnSchoolStats_Click);
 			// 
 			// lblFilterBy
 			// 
@@ -176,6 +190,7 @@
 			this.btnDashTests.TabIndex = 4;
 			this.btnDashTests.Text = "Provas";
 			this.btnDashTests.UseVisualStyleBackColor = true;
+			this.btnDashTests.Click += new System.EventHandler(this.btnDashTests_Click);
 			// 
 			// btnDashStudents
 			// 
@@ -195,6 +210,7 @@
 			this.btnDashClasses.TabIndex = 3;
 			this.btnDashClasses.Text = "Turmas";
 			this.btnDashClasses.UseVisualStyleBackColor = true;
+			this.btnDashClasses.Click += new System.EventHandler(this.btnDashClasses_Click);
 			// 
 			// btnTeLogoff
 			// 
@@ -247,5 +263,6 @@
 		private Button btnFormClasses;
 		private Button btnFormStudent;
 		private Button btnBlockedAccounts;
+		private Button btnSchoolStats;
 	}
 }

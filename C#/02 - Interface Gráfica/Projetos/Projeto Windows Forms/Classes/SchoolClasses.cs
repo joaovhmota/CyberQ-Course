@@ -11,12 +11,14 @@ namespace Projeto_Windows_Forms.Classes
 		public string Name { get; set; }
 		public List<Student> Students { get; set; }
 		public float ClassAvarage { get; set; }
+		public List<Tests> Tests { get; set; }
 
 		public SchoolClasses(string Name)
 		{
 			this.Name = Name;
 			Students = new List<Student>();
 			ClassAvarage = 0.0f;
+			Tests = new List<Tests>();
 		}
 
 		public void UpdateAvarage()
@@ -33,6 +35,7 @@ namespace Projeto_Windows_Forms.Classes
 		public void AddStudent(Student s)
 		{
 			Students.Add(s);
+			s.IsInClass = true;
 			UpdateAvarage();
 		}
 	}

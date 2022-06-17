@@ -47,6 +47,9 @@ namespace Projeto_Windows_Forms
 
 		private void btnAddStudent_Click(object sender, EventArgs e)
 		{
+			for (int i = 0; i < FormMenuTeachers.RegisteredStudent.Count; ++i)
+				if (FormMenuTeachers.RegisteredStudent[i].Name == txtStudentName.Text.Trim()) return;
+
 			if (txtStudentName.Text.Trim() == "") return;
 			if (numStudentAge.Value <= 0) return;
 
