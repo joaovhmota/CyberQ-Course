@@ -157,7 +157,7 @@
                this.btnSchoolStats.Name = "btnSchoolStats";
                this.btnSchoolStats.Size = new System.Drawing.Size(116, 23);
                this.btnSchoolStats.TabIndex = 6;
-               this.btnSchoolStats.Text = "Estastísticas";
+               this.btnSchoolStats.Text = "Estatísticas";
                this.btnSchoolStats.UseVisualStyleBackColor = true;
                this.btnSchoolStats.Click += new System.EventHandler(this.btnSchoolStats_Click);
                // 
