@@ -22,7 +22,7 @@ namespace Projeto_Windows_Forms
 			if (ckbShowPass.Checked)
 				txtPassword.PasswordChar = '\0';
 			else
-				txtPassword.PasswordChar = '*';
+				txtPassword.PasswordChar = '•';
 		}
 
 		private void btnLogin_Click(object sender, EventArgs e)
@@ -63,5 +63,5 @@ namespace Projeto_Windows_Forms
 				}
 			}
 		}
-	}
+     }
 }

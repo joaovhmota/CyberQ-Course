@@ -28,6 +28,9 @@ namespace Projeto_Windows_Forms
 
 		private void FormMenuStudent_Load(object sender, EventArgs e)
 		{
+			FormMenuTeachers.LoggedTeacher = null!;
+
+
 			dgvStudentResults.Rows.Clear();
 			dgvStudentResults.Columns.Clear();
 
@@ -65,7 +68,8 @@ namespace Projeto_Windows_Forms
 		{
 			FormMenuTeachers.LoggedStudent = null!;
 			FormMenuTeachers.LoggedTeacher = null!;
-			Close();
+			FormMenuTeachers.HasClosedViaX = true;
+			Dispose();
 		}
 	}
 }

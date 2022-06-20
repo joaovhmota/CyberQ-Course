@@ -12,8 +12,11 @@ namespace Projeto_Windows_Forms
 		public static List<Tests> RegisteredTests = new List<Tests>();
 		public static Teacher? LoggedTeacher = null;
 		public static Student? LoggedStudent = null;
+		public static bool hasClosedViaX = !true;
 
-		public FormMenuTeachers()
+          public static bool HasClosedViaX { get => hasClosedViaX; set => hasClosedViaX =  value ; }
+
+          public FormMenuTeachers()
 		{
 			InitializeComponent();
 			LoggedTeacher = null!;
@@ -54,9 +57,10 @@ namespace Projeto_Windows_Forms
 
 		public void Login()
 		{
+			hasClosedViaX = false;
 			Visible = false;
-			new FormLogin().ShowDialog();
-			if (LoggedTeacher == null && LoggedStudent == null) Close();
+			if (LoggedStudent == null && LoggedTeacher == null)
+				new FormLogin().ShowDialog();
 
 			if (LoggedTeacher != null && LoggedStudent == null)
 			{
@@ -64,8 +68,8 @@ namespace Projeto_Windows_Forms
 			}
 			else if (LoggedTeacher == null && LoggedStudent != null)
 			{
+				HasClosedViaX = false;
 				new FormMenuStudent().ShowDialog();
-				if (LoggedStudent != null) Close();
 			}
 		}
 
@@ -80,19 +84,21 @@ namespace Projeto_Windows_Forms
 
 		private void FormMenu_Load(object sender, EventArgs e)
 		{
-			do
-			{
-				Login();
-				LoggedStudent = new(null, 0, ' ');
-			} while (LoggedStudent == null && LoggedTeacher == null);
+			Login();
+			if ( LoggedTeacher != null ) hasClosedViaX = !false;
+			if ( HasClosedViaX && LoggedTeacher == null)
+				FormMenu_Load(sender, e);
+			else if ( !HasClosedViaX ) {
+				Close();
+               }
 		}
 
 		private void Logoff(object sender, EventArgs e)
 		{
 			LoggedTeacher = null!;
 			LoggedStudent = null!;
-			Visible = false;
-			Login();
+			HasClosedViaX = false;
+			FormMenu_Load(sender, e);
 		}
 
 		private void btnFormStudent_Click(object sender, EventArgs e)

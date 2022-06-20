@@ -102,6 +102,8 @@ namespace Projeto_Windows_Forms
 
 		private void btnAddClass_Click(object sender, EventArgs e)
 		{
+			if (txtClassName.Text.Trim() == "") return;
+
 			for (int i = 0; i < FormMenuTeachers.RegisteredClasses.Count; ++i)
 				if (FormMenuTeachers.RegisteredClasses[i].Name == txtClassName.Text.Trim()) return;
 
@@ -113,11 +115,14 @@ namespace Projeto_Windows_Forms
 
 		private void btnRemoveClass_Click(object sender, EventArgs e)
 		{
-			if (dgvAllClasses.CurrentCell.RowIndex < 0 || FormMenuTeachers.RegisteredClasses[dgvAllClasses.CurrentCell.RowIndex].Students.Count > 0) return;
+			try {
+				if ( dgvAllClasses.CurrentCell.RowIndex < 0 || FormMenuTeachers.RegisteredClasses[dgvAllClasses.CurrentCell.RowIndex].Students.Count > 0 ) return;
 
-			FormMenuTeachers.RegisteredClasses.RemoveAt(dgvAllClasses.CurrentCell.RowIndex);
-			UpdateDgvAllClasses();
-			UpdateClassesComboBox();
+				FormMenuTeachers.RegisteredClasses.RemoveAt(dgvAllClasses.CurrentCell.RowIndex);
+				UpdateDgvAllClasses();
+				UpdateClassesComboBox();
+
+			} catch ( Exception ex ) { }
 		}
 
 		private void btnUpdateClass_Click(object sender, EventArgs e)
@@ -139,19 +144,20 @@ namespace Projeto_Windows_Forms
 
 		private void btnAddStudentToClass_Click(object sender, EventArgs e)
 		{
-			for (int i = 0; i < FormMenuTeachers.RegisteredStudent.Count; ++i)
-			{
-				if (FormMenuTeachers.RegisteredStudent[i].Name == dgvStudentsNotInClass.Rows[dgvStudentsNotInClass.CurrentCell.RowIndex].Cells[0].Value.ToString())
-				{
-					FormMenuTeachers.RegisteredStudent[i].IsInClass = true;
-					FormMenuTeachers.RegisteredClasses[cbxSelectedSchoolClass.SelectedIndex].AddStudent(FormMenuTeachers.RegisteredStudent[i]);
-				}
-			}
+			try {
 
-			UpdateDgvClassStudents();
-			UpdateDgvNotInClass();
-			ResizeGrid(dgvClassStudents);
-			ResizeGrid(dgvStudentsNotInClass);
+				for ( int i = 0; i < FormMenuTeachers.RegisteredStudent.Count; ++i ) {
+					if ( FormMenuTeachers.RegisteredStudent[i].Name == dgvStudentsNotInClass.Rows[dgvStudentsNotInClass.CurrentCell.RowIndex].Cells[0].Value.ToString() ) {
+						FormMenuTeachers.RegisteredStudent[i].IsInClass = true;
+						FormMenuTeachers.RegisteredClasses[cbxSelectedSchoolClass.SelectedIndex].AddStudent(FormMenuTeachers.RegisteredStudent[i]);
+					}
+				}
+
+				UpdateDgvClassStudents();
+				UpdateDgvNotInClass();
+				ResizeGrid(dgvClassStudents);
+				ResizeGrid(dgvStudentsNotInClass);
+			} catch ( Exception ex ) { }
 		}
 
 		private void btnRemoveStudentFromClass_Click(object sender, EventArgs e)

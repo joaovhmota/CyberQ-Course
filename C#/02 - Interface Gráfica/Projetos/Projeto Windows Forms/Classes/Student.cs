@@ -41,7 +41,7 @@ namespace Projeto_Windows_Forms.Classes
 		
 		public void UpdateAvarage()
 		{
-			Avarage = 0f;
+			Avarage = 0.0f;
 			Notes.ForEach(r => {
 				Avarage += r.Result;
 			});
