@@ -1,0 +1,11 @@
+* {
+	scroll-behavior: smooth;
+}
+
+.somePadding {
+	margin-top: 50px;
+}
+
+.aLittlePadding {
+	margin-top: 10px;
+}

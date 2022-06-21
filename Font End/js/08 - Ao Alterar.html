@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title> 08 - Ao Alterar </title>
+	<script>
+		function mudou(c) {
+			switch (parseInt(c)) {
+				case 1:
+					alert("Pomerode");
+					break;
+				case 2:
+					alert("Blumenau");
+					break;
+				case 3:
+					alert("Timbó");
+					break;
+			}
+		}
+	</script>
+</head>
+<body>
+	<select onchange="mudou(this.value)">
+		<option value="0"> Escolha uma cidade </option>
+		<option value="1"> Pomerode </option>
+		<option value="2"> Blumenau </option>
+		<option value="3"> Timbó  </option>
+	</select>
+</body>
+</html>

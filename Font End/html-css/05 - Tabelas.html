@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title> 05 - Tabelas </title>
+</head>
+<body>
+	<!-- Exemplo 01 -->
+	<h1> Exemplo 01 </h1>
+	<table border=1>
+		<tr>
+			<td>A</td>
+			<td>B</td>
+			<td>C</td>
+		</tr>
+		<tr>
+			<td>D</td>
+			<td>E</td>
+			<td>F</td>
+		</tr>
+	</table>
+
+	<hr>
+
+	<!-- Exemplo 02 -->
+	<h1> Exemplo 02 </h1>
+	<table border="1">
+		<tr>
+			<td>Linha 1 - Coluna 1</td>
+			<td colspan="2">Linha 1 - Coluna 2 e 3</td>
+		</tr>
+		<tr>
+			<td>Linha 2 - Coluna 1</td>
+			<td>Linha 2 - Coluna 2</td>
+			<td rowspan="2">Linha 2 e 3 - Coluna 3</td>
+		</tr>
+		<tr>
+			<td>Linha 3 - Coluna 1</td>
+			<td>Linha 3 - Coluna 2</td>
+		</tr>
+	</table>
+
+	<hr>
+
+	<!-- Exemplo 03 -->
+	<h1> Exemplo 03 </h1>
+	<table border="1">
+		<thead>
+			<tr>
+				<th> Código </th>
+				<th> Produto </th>
+				<th> Valor </th>
+			</tr>
+		</thead>
+
+		<tbody>
+			<tr>
+				<td> 01 </td>
+				<td> Maçã Kg </td>
+				<td> R$5,60 </td>
+			</tr>
+			<tr>
+				<td> 02 </td>
+				<td> Banaba Cacho </td>
+				<td> R$10,50 </td>
+			</tr>
+
+			<tr>
+				<td> 03 </td>
+				<td> Lendário suco de pêssego </td>
+				<td> R$0,00 </td>
+			</tr>
+
+			<tr>
+				<td> 04 </td>
+				<td> Tijolo </td>
+				<td> R$100,00 </td>
+			</tr>
+		</tbody>
+
+		<tfoot> 
+			<tr> 
+				<td colspan="3"> Foram encontrados 4 produtos de ótima qualidade </td>
+			</tr>
+		</tfoot>
+	</table>
+
+</body>
+</html>

@@ -1,0 +1,23 @@
+C:\Users\CyberQ\Desktop\CyberQ - Practice\C#\02 - Interface Gráfica\Conceitos\Exemplo 04 Banco de Dados\bin\Debug\net6.0-windows\Exemplo 04 Banco de Dados.exe
+C:\Users\CyberQ\Desktop\CyberQ - Practice\C#\02 - Interface Gráfica\Conceitos\Exemplo 04 Banco de Dados\bin\Debug\net6.0-windows\Exemplo 04 Banco de Dados.deps.json
+C:\Users\CyberQ\Desktop\CyberQ - Practice\C#\02 - Interface Gráfica\Conceitos\Exemplo 04 Banco de Dados\bin\Debug\net6.0-windows\Exemplo 04 Banco de Dados.runtimeconfig.json
+C:\Users\CyberQ\Desktop\CyberQ - Practice\C#\02 - Interface Gráfica\Conceitos\Exemplo 04 Banco de Dados\bin\Debug\net6.0-windows\Exemplo 04 Banco de Dados.dll
+C:\Users\CyberQ\Desktop\CyberQ - Practice\C#\02 - Interface Gráfica\Conceitos\Exemplo 04 Banco de Dados\bin\Debug\net6.0-windows\Exemplo 04 Banco de Dados.pdb
+C:\Users\CyberQ\Desktop\CyberQ - Practice\C#\02 - Interface Gráfica\Conceitos\Exemplo 04 Banco de Dados\bin\Debug\net6.0-windows\Oracle.ManagedDataAccess.dll
+C:\Users\CyberQ\Desktop\CyberQ - Practice\C#\02 - Interface Gráfica\Conceitos\Exemplo 04 Banco de Dados\bin\Debug\net6.0-windows\System.DirectoryServices.Protocols.dll
+C:\Users\CyberQ\Desktop\CyberQ - Practice\C#\02 - Interface Gráfica\Conceitos\Exemplo 04 Banco de Dados\bin\Debug\net6.0-windows\runtimes\linux\lib\netcoreapp2.0\System.DirectoryServices.Protocols.dll
+C:\Users\CyberQ\Desktop\CyberQ - Practice\C#\02 - Interface Gráfica\Conceitos\Exemplo 04 Banco de Dados\bin\Debug\net6.0-windows\runtimes\osx\lib\netcoreapp2.0\System.DirectoryServices.Protocols.dll
+C:\Users\CyberQ\Desktop\CyberQ - Practice\C#\02 - Interface Gráfica\Conceitos\Exemplo 04 Banco de Dados\bin\Debug\net6.0-windows\runtimes\win\lib\netcoreapp2.0\System.DirectoryServices.Protocols.dll
+C:\Users\CyberQ\Desktop\CyberQ - Practice\C#\02 - Interface Gráfica\Conceitos\Exemplo 04 Banco de Dados\obj\Debug\net6.0-windows\Exemplo 04 Banco de Dados.csproj.AssemblyReference.cache
+C:\Users\CyberQ\Desktop\CyberQ - Practice\C#\02 - Interface Gráfica\Conceitos\Exemplo 04 Banco de Dados\obj\Debug\net6.0-windows\Exemplo_04_Banco_de_Dados.Form1.resources
+C:\Users\CyberQ\Desktop\CyberQ - Practice\C#\02 - Interface Gráfica\Conceitos\Exemplo 04 Banco de Dados\obj\Debug\net6.0-windows\Exemplo 04 Banco de Dados.csproj.GenerateResource.cache
+C:\Users\CyberQ\Desktop\CyberQ - Practice\C#\02 - Interface Gráfica\Conceitos\Exemplo 04 Banco de Dados\obj\Debug\net6.0-windows\Exemplo 04 Banco de Dados.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\CyberQ\Desktop\CyberQ - Practice\C#\02 - Interface Gráfica\Conceitos\Exemplo 04 Banco de Dados\obj\Debug\net6.0-windows\Exemplo 04 Banco de Dados.AssemblyInfoInputs.cache
+C:\Users\CyberQ\Desktop\CyberQ - Practice\C#\02 - Interface Gráfica\Conceitos\Exemplo 04 Banco de Dados\obj\Debug\net6.0-windows\Exemplo 04 Banco de Dados.AssemblyInfo.cs
+C:\Users\CyberQ\Desktop\CyberQ - Practice\C#\02 - Interface Gráfica\Conceitos\Exemplo 04 Banco de Dados\obj\Debug\net6.0-windows\Exemplo 04 Banco de Dados.csproj.CoreCompileInputs.cache
+C:\Users\CyberQ\Desktop\CyberQ - Practice\C#\02 - Interface Gráfica\Conceitos\Exemplo 04 Banco de Dados\obj\Debug\net6.0-windows\Exemplo 04 Banco de Dados.csproj.CopyComplete
+C:\Users\CyberQ\Desktop\CyberQ - Practice\C#\02 - Interface Gráfica\Conceitos\Exemplo 04 Banco de Dados\obj\Debug\net6.0-windows\Exemplo 04 Banco de Dados.dll
+C:\Users\CyberQ\Desktop\CyberQ - Practice\C#\02 - Interface Gráfica\Conceitos\Exemplo 04 Banco de Dados\obj\Debug\net6.0-windows\refint\Exemplo 04 Banco de Dados.dll
+C:\Users\CyberQ\Desktop\CyberQ - Practice\C#\02 - Interface Gráfica\Conceitos\Exemplo 04 Banco de Dados\obj\Debug\net6.0-windows\Exemplo 04 Banco de Dados.pdb
+C:\Users\CyberQ\Desktop\CyberQ - Practice\C#\02 - Interface Gráfica\Conceitos\Exemplo 04 Banco de Dados\obj\Debug\net6.0-windows\Exemplo 04 Banco de Dados.genruntimeconfig.cache
+C:\Users\CyberQ\Desktop\CyberQ - Practice\C#\02 - Interface Gráfica\Conceitos\Exemplo 04 Banco de Dados\obj\Debug\net6.0-windows\ref\Exemplo 04 Banco de Dados.dll

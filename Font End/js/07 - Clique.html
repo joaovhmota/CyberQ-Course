@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title> 07 - Clique </title>
+
+	<script>
+
+		function normalFoo() {
+			var campo = document.getElementById("txtNome");
+
+			if (campo.value.trim() == "") {
+				campo.style.borderColor = "#f00";
+			} else {
+				alert(`Bom dia. ${campo.value}`);
+			}
+		}
+		
+	</script>
+
+</head>
+<body>
+	<button onclick="alert('Bom dia!');"> Clique em mim :D </button>
+
+	<hr>
+
+	<input type="text" placeholder="Informe um nome" id="txtNome">
+	<button onclick="normalFoo()"> Enviar normal </button>
+</body>
+</html>

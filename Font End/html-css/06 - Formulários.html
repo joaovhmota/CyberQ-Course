@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title> 06 - Formulários </title>
+</head>
+<body>
+	<!-- Exemplo 1 -->
+	<h1> Exemplo 01 </h1>
+	<form action="https://www.quicksoft.com.br">
+		<input type="submit" value="Enviar">
+		<input type="button" value="Não faz nada (por enquanto)">
+	</form>
+
+	<!-- Usar fora dos forms -->
+	<button> Outro botão </button>
+
+	<hr>
+
+	<!-- Exemplo 02 -->
+	<h1> Exemplo 02 </h1>
+	<form action="http://www.quicksoft.com.br">
+		<input type="text" placeholder="Digite algo muito bacana" required>
+		<input type="email" placeholder="Informe o e-mail" required>
+		<input type="date">
+		<input type="color">
+		<input type="range">
+		<input type="file">
+		<input type="submit" value="Enviar">
+	</form>
+
+	<hr>
+
+	<!-- Exemplo 03 -->
+	<h1> Exemplo 03 </h1>
+	<form action="http://www.quicksoft.com.br">
+		<fieldset>
+			<legend> Escolha um treinamento </legend>
+
+			<input type="radio" name="course" id="csharp" checked>
+			<label for="csharp"> C# </label>
+
+			<input type="radio" name="course" id="oracle">
+			<label for="oracle"> Oracle </label>
+
+			<input type="radio" name="course" id="htmlcss"> 
+			<label for="htmlcss"> HTML & CSS </label>
+		</fieldset>
+
+		<fieldset>
+			<legend> Turno </legend>
+
+			<input type="checkbox" id="turnoMatutino">
+			<label for="turnoMatutino"> Matutino </label>
+
+			<input type="checkbox" id="turnoVespertino">
+			<label for="turnoVespertino"> Vespertino  </label>
+
+			<input type="checkbox" id="turnoNoturno">
+			<label for="turnoNoturno"> Noturno </label>
+		</fieldset>
+
+		<input type="reset" value="Resetar">
+	</form>
+
+	<br>
+
+	<!-- Exemplo 04 -->
+	<h1> Exemplo 04 </h1>
+	<form action="http://www.quicksoft.com.br">
+		<select>
+			<option value="">Escolha uma opção</option>
+			<option value="">C#</option>
+			<option value="">Java</option>
+			<option value="">Oracle</option>
+			<option value="">HTML & CSS</option>
+		</select>
+
+		<textarea placeholder="Mensagem"></textarea>
+	</form>
+
+</body>
+</html>

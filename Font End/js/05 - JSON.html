@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title> 05 - JSON </title>
+
+	<script>
+		var pessoas = [
+			{"nome": "João", "idade":17},
+			{"nome": "Henrique", "idade": 16},
+			{"nome": "William", "idade": 20}
+		];
+
+		pessoas.push({
+			"nome": "Wesley",
+			"idade": 19
+		});
+
+		pessoas.splice(1, 1);
+
+		console.table(pessoas);
+	</script>
+
+</head>
+<body>
+	
+</body>
+</html>
