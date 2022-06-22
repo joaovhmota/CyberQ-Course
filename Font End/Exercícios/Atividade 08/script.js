@@ -40,7 +40,7 @@ async function showAllPokemons() {
 							currentType.push(t.type.name);
 						});
 						
-						console.log(currentType);
+						// console.log(currentType);
 						if (currentType.includes(selectTypes.value))
 							pokemonDisplay.innerHTML += 
 								`
