@@ -1,0 +1,25 @@
+.somePadding {
+	margin-top: 50px;
+}
+
+
+.alignCenter {
+	display: flex;
+	align-items: center;
+}
+
+.somePadding .card {
+	margin-bottom: 20px;
+}
+
+.card-subtitle {
+	text-transform: capitalize;
+}
+
+.card-title {
+	text-transform: capitalize;
+}
+
+option {
+	text-transform: capitalize;
+}
