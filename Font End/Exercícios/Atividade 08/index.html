@@ -10,39 +10,41 @@
 	<link rel="stylesheet" href="style.css">
 </head>
 <body>
-	<div class="container">
-		<div class="row somePadding alignCenter">
+	<main>
+		<div class="container">
+			<div class="row somePadding alignCenter">
+				
+				<div class="col-3">
+					<input type="text" class="form-control" placeholder="Name" id="pokemonName">
+				</div>
+	
+				<div class="col-3">
+					<select class="form-select" id="selectTypes">
+						<option selected value=""> Any </option>
+					</select>
+				</div>
+	
+				<div class="col-3">
+					<input type="number" class="form-control" placeholder="Amount to show" id="amountToShow" min="1" max="1126" value="150"> 
+				</div>
+	
+				<div class="col-2">
+					<button class="btn btn-primary funcButton" id="searchButton"> Search </button>
+				</div>
+	
+				<div class="col-1">
+					<button class="btn btn-outline-success funcButton" id="shinyButton"> Shiny </button>
+				</div>
+			</div>
+	
 			
-			<div class="col-3">
-				<input type="text" class="form-control" placeholder="Name" id="pokemonName">
-			</div>
-
-			<div class="col-3">
-				<select class="form-select" id="selectTypes">
-					<option selected value=""> Any </option>
-				</select>
-			</div>
-
-			<div class="col-2">
-				<input type="number" class="form-control" placeholder="Amount to show" id="amountToShow" min="1" max="1126" value="150"> 
-			</div>
-
-			<div class="col-1">
-				<button class="btn btn-outline-primary" id="searchButton"> Search </button>
-			</div>
-
-			<div class="col-1">
-				<button class="btn btn-outline-success" id="shinyButton"> Shiny </button>
-			</div>
 		</div>
-
-		<div class="container" >
+		<div class="container">
 			<div class="row somePadding" id="pokemonDisplay">
 				
 			</div>
 		</div>
-	</div>
-
+	</main>
 	<script src="./script.js"></script>
 </body>
 </html>

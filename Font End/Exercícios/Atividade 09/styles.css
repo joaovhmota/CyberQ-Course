@@ -1,0 +1,8 @@
+.stickyTop {
+	position: sticky;
+	top: 0;
+}
+
+.someMargin {
+	margin-top: 50px;
+}

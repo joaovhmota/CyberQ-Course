@@ -1,0 +1,46 @@
+* {
+	text-rendering: optimizeSpeed;
+	scroll-behavior: smooth;
+}
+
+.someMarginTop {
+	margin-top: 50px;
+}
+
+.aFewMarginTop {
+	margin-top: 25px;;
+}
+
+.navbar {
+	position: sticky !important;
+	top: 0 !important;
+}
+
+.roundProduct {
+	border-radius: 25px;
+}
+
+.productCategory {
+	text-transform: capitalize;
+}
+
+.tableProductName {
+	width: 40%;
+}
+
+select, option {
+	text-transform: capitalize;
+}
+
+button, select, option {
+	cursor: pointer;
+}
+
+img {
+	image-rendering: optimizeSpeed;
+	mix-blend-mode: multiply;
+}
+
+nav {
+	z-index: 1000;
+}

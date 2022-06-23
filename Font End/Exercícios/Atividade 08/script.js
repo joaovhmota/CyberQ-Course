@@ -12,6 +12,7 @@ let pokemons = [];
 let pokemonTypes = [];
 var limit = 150;
 
+
 async function getPokemons() {
 	pokemons = [];
 	await fetch(`https://pokeapi.co/api/v2/pokemon?limit=${limit}`)
@@ -20,11 +21,10 @@ async function getPokemons() {
 
 	pokemons = pokemons[0];
 	await console.table(pokemons);
-
 	pokemonDisplay.innerHTML = "";
 }
 
-async function showAllPokemons() {
+async function showAllPokemons(isShiny = false) {
 	await getPokemons();
 	try {
 		await pokemons.forEach( async p => {
@@ -32,10 +32,10 @@ async function showAllPokemons() {
 			var currentType = ["", ];
 			
 			if (p.name.includes(pokemonName.value))
-				await fetch(`https://pokeapi.co/api/v2/pokemon/${pokemons.indexOf(p) + 1}`)
+				await fetch(`https://pokeapi.co/api/v2/pokemon/${p.name}`)
 					.then(jsonStr => jsonStr.json())
 					.then(jsonInfo => {
-						pokemonSprite = jsonInfo.sprites.front_default;
+						pokemonSprite = (isShiny) ? jsonInfo.sprites.front_shiny : jsonInfo.sprites.front_default;
 						jsonInfo.types.forEach( t => {
 							currentType.push(t.type.name);
 						});
@@ -48,49 +48,12 @@ async function showAllPokemons() {
 									<div class="card" >
 										<img loading="lazy" src="${pokemonSprite}">
 										<div class="card-body">
-											<h5 class="card-title"> ${p.name} </h5>
+											<h5 class="card-title"> ${isShiny ? "Shiny" : ""} ${p.name} </h5>
 											<h6 class="card-subtitle"> ${currentType.join(" ")} </h6>
 										</div>
 									</div>
 								</div>
 								`;
-						
-					});
-		});
-	} catch (ex) { console.error(ex); }
-}
-
-async function showAllShinyPokemons(name, type) {
-	await getPokemons();
-	try {
-		await pokemons.forEach( async p => {
-			var pokemonSprite = "";
-			var currentType = ["", ];
-			
-			if (p.name.includes(pokemonName.value))
-				await fetch(`https://pokeapi.co/api/v2/pokemon/${pokemons.indexOf(p) + 1}`)
-					.then(jsonStr => jsonStr.json())
-					.then(jsonInfo => {
-						pokemonSprite = jsonInfo.sprites.front_shiny;
-						jsonInfo.types.forEach( t => {
-							currentType.push(t.type.name);
-						});
-						
-						console.log(currentType);
-						if (currentType.includes(selectTypes.value))
-							pokemonDisplay.innerHTML += 
-								`
-								<div class="col-3">
-									<div class="card" >
-										<img loading="lazy" src="${pokemonSprite}">
-										<div class="card-body">
-											<h5 class="card-title"> ${p.name} </h5>
-											<h6 class="card-subtitle"> ${currentType.join(" ")} </h6>
-										</div>
-									</div>
-								</div>
-								`;
-						
 					});
 		});
 	} catch (ex) { console.error(ex); }
@@ -103,7 +66,7 @@ async function loadTypesSelect() {
 	
 	pokemonTypes = pokemonTypes[0];
 	await console.table(pokemonTypes);
-	await setTypesSelect()
+	await setTypesSelect();
 }
 
 async function setTypesSelect() {
@@ -113,22 +76,17 @@ async function setTypesSelect() {
 }
 
 window.onload = async () => {
+	await getPokemons();
 	await loadTypesSelect();
-	await showAllPokemons("");
+	await showAllPokemons();
 }
 
 searchButton.addEventListener("click", async () => {
-	limit = amountToShow.value;
-
-	if (limit == 0) limit = 1126;
-
-	showAllPokemons(pokemonName.value);
+	limit = (amountToShow.value == 0) ? 1 : amountToShow.value; 
+	await showAllPokemons();
 });
 
 shinyButton.addEventListener("click", async () => {
-	limit = amountToShow.value;
-
-	if (limit == 0) limit = 1126;
-
-	showAllShinyPokemons();
+	limit = (amountToShow.value == 0) ? 1 : amountToShow.value;
+	await showAllPokemons(true);
 });

@@ -23,3 +23,7 @@
 option {
 	text-transform: capitalize;
 }
+
+.funcButton {
+	width: 100%;
+}
