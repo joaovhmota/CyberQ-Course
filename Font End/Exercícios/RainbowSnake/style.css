@@ -1,0 +1,11 @@
+body {
+	background-color: #000;
+}
+
+
+.ball {
+	position: absolute;
+	width: 10px;
+	height: 10px;
+	background-color: #000;
+}
