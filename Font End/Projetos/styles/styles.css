@@ -1,6 +1,6 @@
 * {
 	text-rendering: optimizeSpeed;
-	scroll-behavior: smooth;
+	scroll-behavior: auto;
 }
 
 .someMarginTop {
@@ -8,7 +8,7 @@
 }
 
 .aFewMarginTop {
-	margin-top: 25px;;
+	margin-top: 25px;
 }
 
 .navbar {
@@ -26,6 +26,15 @@
 
 .tableProductName {
 	width: 40%;
+}
+
+.finalTableRow {
+	font-size: 12px;
+}
+
+.tax-cupon {
+	border-radius: 20px;
+	border: 1ox solid #000;
 }
 
 select, option {

@@ -15,7 +15,7 @@
 	<!-- Navbar -->
 	<nav class="navbar navbar-expand-lg bg-light">
 		<div class="container-fluid">
-		  <a class="navbar-brand" href="#"> Loja Pão de Açúcar </a>
+		  <a class="navbar-brand" href="#"> <img src="./imgs/pao-de-acucar-logo.png" style="width: 4.5rem;" alt=""> </a>
 		  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
 		    <span class="navbar-toggler-icon"></span>
 		  </button>
@@ -41,15 +41,15 @@
 	</nav>
 	
 	<!-- Confirm addition into the cart -->
-	<div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+	<div class="modal fade" id="addToCartModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
 		<div class="modal-dialog">
 		<div class="modal-content">
 		<div class="modal-header">
 			<h5 class="modal-title" id="staticBackdropLabel">Adicionar no Carrinho: </h5>
-			<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+			<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close" onclick="selectProduct(-1)"></button>
 		</div>
 		<div class="modal-body">
-			<input type="number" name="" id="numAddCart" class="form-control" min="0" max="1" placeholder="Quantidade a adicionar no carrinho">
+			<input type="number" name="" id="numAddCart" class="form-control" min="0" placeholder="Quantidade a adicionar no carrinho">
 		</div>
 		<div class="modal-footer">
 			<button type="button" class="btn btn-secondary" data-bs-dismiss="modal" id="btnCancelAddToCart" onclick="selectProduct(-1)">Cancelar</button>
@@ -59,6 +59,25 @@
 		</div>
 	</div>
 
+	<!-- Confirm remove from the cart -->
+	<div class="modal fade" id="removeFromCartModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+		<div class="modal-dialog">
+		<div class="modal-content">
+		<div class="modal-header">
+			<h5 class="modal-title" id="staticBackdropLabel">Remover do Carrinho: </h5>
+			<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close" onclick="selectProduct(-1)"></button>
+		</div>
+		<div class="modal-body">
+			<input type="number" name="" id="numRemoveCart" class="form-control" min="0" placeholder="Quantidade a remover do carrinho">
+		</div>
+		<div class="modal-footer">
+			<button type="button" class="btn btn-secondary" data-bs-dismiss="modal" id="btnCancelRemoveFromCart" onclick="selectProduct(-1)">Cancelar</button>
+			<button type="button" class="btn btn-primary" data-bs-dismiss="modal" id="btnConfirmRemoveFromCart" onclick="removeFromCart()">Confirmar</button>
+		</div>
+		</div>
+		</div>
+	</div>
+	
 	<main class="container someMarginTop">
 		<div class="accordion" id="accordionExample">
 
@@ -74,19 +93,14 @@
 					
 					<div class="row aFewMarginTop">
 
-						<div class="col-4">
-							<input type="text" value="" id="txtProductName" class="form-control" placeholder="Nome do Produto">
+						<div class="col-6">
+							<input type="search" value="" id="txtProductName" class="form-control" placeholder="Nome do Produto" autocomplete="off">
 						</div>
 
-						<div class="col-3">
+						<div class="col-6">
 							<select class="form-select" id="productCategorySelect">
-								<option value="" selected> Todos </option>
+								<option value="§"> Categoria </option>
 							</select>
-						</div>
-
-						<div class="col-1">
-							<button class="btn btn-primary" id="btnSearchProducts"> Pesquisar </button>
-							
 						</div>
 
 					</div>
@@ -153,6 +167,51 @@
 			  <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
 			    <div class="accordion-body">
 
+					<div class="row">
+						<!-- Tax Cupon -->
+						<div class="col-6 aFewMarginTop">
+							<h3> Cupom Fiscal </h3>
+							<div class="container tax-cupon">
+								<h5 style="font-weight: 100;"> Loja Pão de Açúcar </h5>
+								<table class="table table-striped">
+									<thead>
+										<tr>
+											<th style="font-weight: normal;"> Produto </th>
+											<th style="font-weight: normal;"> Valor </th>
+											<th style="font-weight: normal;"> Quantidade </th>
+										</tr>
+									</thead>
+									<tbody id="finalTable">
+
+									</tbody>
+									<tfoot id="finalTableTotal">
+
+									</tfoot>
+								</table>
+							</div>
+						</div>
+
+						<!-- Confirm data -->
+						<div class="col-6 aFewMarginTop">
+							<form class="formConfirm aFewMarginTop" autocomplete="off">
+								<h5> Confirmar compra </h5>
+								<input class="form-control" type="text" name="" id="txtClientName" required placeholder="Nome">
+
+								<br>
+								<div class="form-check">
+									<input class="form-check-input" type="checkbox" value="" id="cpfInNote">
+									<label class="form-check-label" for="flexCheckDefault">
+										CPF na nota? 
+									</label>
+								</div>
+								
+								<input class="form-control" type="text" name="" id="txtCPF" placeholder="CPF" disabled="true">
+
+								<button class="btn btn-outline-primary aFewMarginTop" id="btnEndShopping"> Finalizar compra </button>
+							</form>
+						</div>
+					</div>
+
 			    </div>
 			  </div>
 			</div>
@@ -162,5 +221,6 @@
 	</main>
 
 	<script src="./scripts/main.js"></script>
+	<script src="./scripts/lazyLoad.js"></script>
 </body>
 </html>
