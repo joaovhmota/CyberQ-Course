@@ -1,4 +1,4 @@
-var height = 10, width = 10;
+var height = 100, width = 100;
 var r = 0;
 	var g = 0;
 	var b = 0;
@@ -34,7 +34,7 @@ window.onload = () => {
 
 		try
 		{
-			var e = document.getElementById(`ball${i - 100}`).remove();
+			var e = document.getElementById(`ball${i - 150}`).remove();
 		} catch (e) {}
 		document.body.innerHTML += 
 		`<div id="ball${i}" class="ball" style="top: ${y}px; left: ${x}px; height: ${height}px; width: ${width}px; background-color: rgb(${r}, ${g}, ${b});">
@@ -42,11 +42,11 @@ window.onload = () => {
 		</div>
 		`;
 		
-		if (x >= 2123)
+		if (x >= 1920 + width * 2)
 			hitBot = true;
 		if (x <= 1)
 			hitBot = false;
-		if (y >= 1190)
+		if (y >= 1080 + width * 2)
 			hitRight = true;
 		if (y <= 1)
 		 	hitRight = false;
