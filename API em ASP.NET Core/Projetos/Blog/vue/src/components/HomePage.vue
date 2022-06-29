@@ -1,5 +1,6 @@
 <template>
 	<main>
+    <!-- Navbar -->
     <nav class="navbar navbar-expand-lg bg-light">
       <div class="container-fluid">
         <a class="navbar-brand" href="#"> <img id="logo" src="../assets/imgs/ah_negao_logo.png" alt="Logo"> </a>
@@ -21,15 +22,45 @@
             </li>
           </ul>
           <form v-if="this.userLogged != null" class="center d-flex" role="search">
-              <a class="nav-link active someMarginRight" aria-current="page">{{this.userLogged.username}}</a>
+              {{userLogged.username}}
               <button type="submit" v-on:click="logOff()" class="someMarginLeft btn btn-outline-danger"> Sair da conta </button>
           </form>
           <form v-if="this.userLogged == null" class="center d-flex" action="#/login">
-              <button type="submit" class="someMarginLeft btn btn-outline-success"> Login </button>
+              <button type="submit" class="someMarginLeft someMarginRight btn btn-outline-success"> Login </button>
           </form>
         </div>
       </div>
     </nav>
+
+    <!-- Fazer post -->
+    <div class="someMarginTop container" style="width: 650px;" v-if="this.userLogged != null && ( this.userLogged.isEditor || this.userLogged.isAdmin)">
+      <form action="./">
+        <input class="form-control" type="text" v-model="postToUpload.title" placeholder="Título" required>
+        <textarea class="someMarginTop form-control" rows="10" v-model="postToUpload.content" placeholder="Conteúdo" style="resize: none;"></textarea>
+        <div class="someMarginTop right">
+            <button class="btn btn-outline-success" type="button" v-on:click="publicPost()"> Publicar </button>
+        </div>
+      </form>
+    </div>
+    
+    <!-- Posts -->
+    <div class="aLotOfMarginTop container">
+        <div class="accordion" id="accordionExample">
+          <div class="accordion-item" v-for="post in allPosts" v-bind:key="post.id">
+            <h2 class="accordion-header" id="headingOne">
+              <button class="accordion-button" type="button" data-bs-toggle='{{post.id}}' data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                {{post.title}}
+              </button>
+            </h2>
+            <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+              <div class="accordion-body">
+                {{post.content}}
+              </div>
+            </div>
+          </div>
+        </div>
+    </div>
+
 	</main>
 </template>
 
@@ -39,27 +70,66 @@ export default {
   data() {
     return {
       userLogged : null,
-      categories: []
+      categories: [],
+      allPosts: [],
+      allUsers: [],
+      recentPosts: '',
+      postToUpload: {}
     }
   },
-  beforeMount() {
-    this.getUserLogged();
-    this.loadCategories();
+  async beforeMount() {
+    await this.getUserLogged();
+    await this.loadCategories();
+    await this.loadPosts();
   },
   methods: {
-    getUserLogged() {
-      var userLogged = JSON.parse(sessionStorage.getItem('userLogged'));
-      if (userLogged == null) userLogged = JSON.parse(localStorage.getItem('userLogged'));
-      this.userLogged = userLogged;
+    async loadPosts() {
+      await fetch('https://localhost:7251/api/Posts').then( str => str.json()).then(posts => {
+        this.allPosts = posts;
+      });
+    },
+    async getUserLogged() {
+      await fetch('https://localhost:7251/api/Users').then(str => str.json()).then(strJson => {
+        this.allUsers = strJson;
+      });
+  
+      var userLogged = await JSON.parse(sessionStorage.getItem('userLogged'));
+      if (userLogged == null) userLogged = await JSON.parse(localStorage.getItem('userLogged'));
+      this.userLogged = await userLogged;
     },
     logOff() {
       sessionStorage.removeItem('userLogged');
+      localStorage.removeItem('userLogged');
       this.userLogged = null;
     },
     async loadCategories() {
       var request = await fetch('https://localhost:7251/api/Categories');
       var requestReturn = await request.json();
       this.categories = await requestReturn;
+    },
+    async publicPost() {
+        const toPost = {
+          title: this.postToUpload.title,
+          content: this.postToUpload.content,
+          creationDate: new Date().toLocaleDateString(),
+          userId: this.userLogged.id,
+          categoryId: 1
+        }
+
+        const request = new Request('https://localhost:7251/api/Posts', {
+          method: 'post',
+          headers: {
+            'Accept': 'application/json',
+            'Content-type': 'application/json'
+          },
+          body: JSON.stringify(toPost, null, 2)
+        });
+  
+        const execRequest = await fetch(request);
+        const returnRequest = await execRequest.json();
+        this.allPosts.push(returnRequest);
+
+        console.log(toPost);
     }
   }
 }
@@ -78,8 +148,15 @@ nav {
   width: 250px;
 }
 
+.post {
+  display: flex; justify-content: left; float: left;
+}
 .someMarginTop {
   margin-top: 10px;
+}
+
+.aLotOfMarginTop {
+  margin-top: 50px;
 }
 
 .someMarginLeft {

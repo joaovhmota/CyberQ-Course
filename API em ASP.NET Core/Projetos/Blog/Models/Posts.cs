@@ -5,11 +5,8 @@ namespace Blog.Models {
           public int Id { get; set; }
           public string Title { get; set; }
           public string Content { get; set; }
-          public DateTime CreationDate { get; set; }
-
+          public string CreationDate { get; set; }
           public int UserId { get; set; }
-          public Users User { get; set; }
-
-          public List<Categories> Categories { get; set; }
+          public int CategoryId { get; set; }
      }
 }

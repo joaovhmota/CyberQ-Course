@@ -6,8 +6,6 @@
           public bool IsReader { get; set; }
           public bool IsEditor { get; set; }
           public bool IsAdmin { get; set; }
-
-          public List<Posts> Posts { get; set; }
-          public List<Comments> Comments { get; set; }
+          public string CreatedAt { get; set; }
      }
 }

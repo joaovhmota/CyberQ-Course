@@ -60,8 +60,8 @@ export default {
     }
   },
   beforeMount() {
+     if (JSON.parse(sessionStorage.getItem('userLogged')) != null) window.open('./', '_self');
     this.getUsers();
-    // console.table(this.users);
   },
   methods: {
     async getUsers() {
@@ -118,8 +118,7 @@ export default {
           isReader: true,
           isEditor: false,
           isAdmin: false,
-          posts: [],
-          comments: []
+          createdAt: new Date().toLocaleDateString()
         }
   
         const request = new Request('https://localhost:7251/api/Users', {
