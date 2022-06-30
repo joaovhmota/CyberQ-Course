@@ -57,10 +57,6 @@ namespace Blog.Migrations
                     b.Property<int>("PostId")
                         .HasColumnType("NUMBER(10)");
 
-                    b.Property<string>("Title")
-                        .IsRequired()
-                        .HasColumnType("NVARCHAR2(2000)");
-
                     b.Property<int>("UserId")
                         .HasColumnType("NUMBER(10)");
 

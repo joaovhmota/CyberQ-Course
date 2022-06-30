@@ -11,7 +11,7 @@ using Oracle.EntityFrameworkCore.Metadata;
 namespace Blog.Migrations
 {
     [DbContext(typeof(ApplicationContext))]
-    [Migration("20220629123751_MainMigration")]
+    [Migration("20220630105912_MainMigration")]
     partial class MainMigration
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -58,10 +58,6 @@ namespace Blog.Migrations
 
                     b.Property<int>("PostId")
                         .HasColumnType("NUMBER(10)");
-
-                    b.Property<string>("Title")
-                        .IsRequired()
-                        .HasColumnType("NVARCHAR2(2000)");
 
                     b.Property<int>("UserId")
                         .HasColumnType("NUMBER(10)");

@@ -27,7 +27,6 @@ namespace Blog.Migrations
                 {
                     Id = table.Column<int>(type: "NUMBER(10)", nullable: false)
                         .Annotation("Oracle:Identity", "START WITH 1 INCREMENT BY 1"),
-                    Title = table.Column<string>(type: "NVARCHAR2(2000)", nullable: false),
                     Content = table.Column<string>(type: "NVARCHAR2(2000)", nullable: false),
                     CreatedAt = table.Column<string>(type: "NVARCHAR2(2000)", nullable: false),
                     UserId = table.Column<int>(type: "NUMBER(10)", nullable: false),

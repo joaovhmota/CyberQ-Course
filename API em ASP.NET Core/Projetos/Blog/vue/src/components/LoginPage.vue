@@ -1,46 +1,66 @@
 <template>
-  <main class="bigMarginTop">
+  <main class="bigMarginTop" style="background-color: #561759;">
     <div class="center">
-      <form action="./" v-if="this.isLogging" autocomplete="off">
+      <div v-if="this.isLogging" autocomplete="off">
           <img src="../assets/imgs/ah_negao_logo.png" alt="">
-          <input type="text" name="" id="txtUsername" v-model="obj.username" class="form-control" placeholder="Usuário">
-          <input type="password" name="" id="txtPassword" v-model="obj.password" class="form-control someMarginTop" placeholder="Senha">
+          <div v-html="errorMessage"></div>
+
+          <div class="input-group mb-3">
+            <span class="input-group-text" id="basic-addon1">👤</span>
+            <input type="text" name="" id="txtUsername" v-model="obj.username" class="form-control" placeholder="Usuário" autocomplete="off">
+          </div>
+
+          <div class="input-group mb-3 someMarginTop">
+            <span class="input-group-text" id="basic-addon1">🔒</span>
+             <input type="text" name="" id="txtPassword" v-model="obj.password" class="form-control" placeholder="Senha" autocomplete="off">
+          </div>
+
           <div class="left">
-            <button class="someMarginTop btn btn-outline-success" value="Entrar" v-on:click="executeLogin()"> Entrar </button>
-            <input type="button" class="someMarginTop someMarginLeft btn btn-outline-dark" value="Registrar" v-on:click="loginRegisterMenu()">
-            <input type="button" class="someMarginTop someMarginLeft btn btn-outline-dark" value="Cancelar" v-on:click="goToHome()">
+            <button class="someMarginTop btn btn-success" value="Entrar" v-on:click="executeLogin()"> Entrar </button>
+            <input type="button" class="someMarginTop someMarginLeft btn btn-outline-light" value="Registrar" v-on:click="loginRegisterMenu()">
+            <input type="button" class="someMarginTop someMarginLeft btn btn-outline-light" value="Cancelar" v-on:click="goToHome()">
            
             <div class="someMarginLeft someMarginTop right" style="width: 100%;">
               <div class="form-check">
                 <input class="form-check-input" v-on:change="setRememberMe()" type="checkbox" value="" id="">
-                <label class="form-check-label" for="flexCheckChecked">
+                <label class="form-check-label" for="flexCheckChecked" style="color: #fff;">
                   Lembrar deste aparelho
                 </label>
               </div>
 
               <div class="someMarginLeft form-check">
                 <input class="form-check-input" v-on:change="showHidePassword()" type="checkbox" value="" id="flexCheckChecked">
-                <label class="form-check-label" for="flexCheckChecked">
+                <label class="form-check-label" for="flexCheckChecked" style="color: #fff;">
                   Mostrar senha
                 </label>
               </div>
 
             </div>
           </div>
-      </form>
+      </div>
 
-      <form v-if="!this.isLogging" autocomplete="off">
+      <div v-if="!this.isLogging" autocomplete="off">
           <img src="../assets/imgs/ah_negao_logo.png" alt="">
-          <input type="text" name="" id="txtUsername" v-model="obj.username" class="form-control" placeholder="Usuário">
-          <input type="password" name="" id="txtPassword" v-model="obj.password" class="form-control someMarginTop" placeholder="Senha">
-          <input type="password" name="" id="txtConfirmPassword" class="form-control someMarginTop" placeholder="Confirmar senha">
-          <div class="left">
-            <input type="button" class="someMarginTop btn btn-outline-success" v-on:click="registerUser()" value="Criar">
-            <input type="button" class="someMarginTop someMarginLeft btn btn-outline-dark" value="Cancelar" v-on:click="loginRegisterMenu()">
+          <div class="input-group mb-3">
+             <span class="input-group-text" id="basic-addon1">👤</span>
+             <input type="text" name="" id="txtUsername" v-model="obj.username" class="form-control" placeholder="Usuário">
           </div>
-      </form>
 
+          <div class="input-group mb-3 someMarginTop">
+            
+            <span class="input-group-text" id="basic-addon1">🔒</span>
+            <input type="password" name="" id="txtPassword" v-model="obj.password" class="form-control" placeholder="Senha">
+          </div>
 
+          <div class="input-group mb-3 someMarginTop">
+            <span class="input-group-text" id="basic-addon1">🔒</span>
+            <input type="password" name="" id="txtConfirmPassword" v-model="obj.confirmPassword" class="form-control" placeholder="Confirmar senha">
+          </div>
+          <div class="left someMarginTop someMarginTop">
+            <input type="button" class="btn btn-outline-success" v-on:click="registerUser()" value="Criar">
+            <input type="button" class="someMarginLeft btn btn-outline-dark" value="Cancelar" v-on:click="loginRegisterMenu()">
+          </div>
+      </div>
     </div>
   </main>
 </template>
@@ -56,11 +76,12 @@ export default {
         currentLogged: {},
         obj: {},
         users: [],
-        remeberMe: false
+        remeberMe: false,
+        errorMessage: ''
     }
   },
   beforeMount() {
-     if (JSON.parse(sessionStorage.getItem('userLogged')) != null) window.open('./', '_self');
+    if (JSON.parse(sessionStorage.getItem('userLogged')) != null) window.open('./', '_self');
     this.getUsers();
   },
   methods: {
@@ -93,59 +114,84 @@ export default {
     executeLogin() {
       this.users.forEach( user => {
           if (this.obj.username == user.username)
+          {
             if (this.obj.password == user.password) {
                 console.log("👍");
                 if (this.rememberMe) {
                   window.localStorage.setItem('userLogged', JSON.stringify(user));
                   window.sessionStorage.removeItem('userLogged');
+                  this.goToHome();
                 } else {
                   window.localStorage.removeItem('userLogged');
                   window.sessionStorage.setItem('userLogged', JSON.stringify(user));
+                  this.goToHome();
                 }
             }
+            else {
+               this.showErrorMessage('Usuário ou senhas estão incorretas', 'danger');
+            }
+          }
+          else {
+            this.showErrorMessage('Usuário ou senhas estão incorretas', 'danger');
+          }
       });
     },
     async registerUser() {
       try {
-        const txtPassword = document.getElementById('txtPassword').value;
-        const txtConfirmPassword = document.getElementById('txtConfirmPassword').value;
 
-        if (!(txtPassword === txtConfirmPassword)) return;
-  
-        const regisUser = {
-          username: this.obj.username,
-          password: this.obj.password,
-          isReader: true,
-          isEditor: false,
-          isAdmin: false,
-          createdAt: new Date().toLocaleDateString()
+        if (this.users.filter( u => u.username == this.obj.username)) { 
+          this.showErrorMessage('Usuário já existe', 'danger');
+          return; 
+        } 
+        else if (!(this.obj.password ===  this.obj.confirmPassword)) { 
+          this.showErrorMessage('Senhas não conhecidem', 'danger'); 
+          return; 
         }
+        else {
+          const regisUser = {
+            username: this.obj.username,
+            password: this.obj.password,
+            isReader: true,
+            isEditor: false,
+            isAdmin: false,
+            createdAt: new Date().toLocaleDateString()
+          }
+    
+          const request = new Request('https://localhost:7251/api/Users', {
+            method: 'post',
+            headers: {
+              'Accept': 'application/json',
+              'Content-type': 'application/json'
+            },
+            body: JSON.stringify(regisUser, null, 2)
+          });
+    
+          const execRequest = await fetch(request);
+          const returnRequest = await execRequest.json();
+          this.users.push(returnRequest);
+          
+          this.obj.username = '';
+          this.obj.password = '';
+          this.obj.confirmPassword = '';
   
-        const request = new Request('https://localhost:7251/api/Users', {
-          method: 'post',
-          headers: {
-            'Accept': 'application/json',
-            'Content-type': 'application/json'
-          },
-          body: JSON.stringify(regisUser, null, 2)
-        });
-  
-        const execRequest = await fetch(request);
-        const returnRequest = await execRequest.json();
-        this.users.push(returnRequest);
-
-        document.getElementById('txtUsername').value =  '';
-        document.getElementById('txtPassword').value =  '';
-        document.getElementById('txtConfirmPassword').value =  '';
-        
-        this.loginRegisterMenu();
+          this.loginRegisterMenu();
+        }
       } catch(e) { console.error(e); }
     },
     setRememberMe() {
       this.rememberMe = !this.rememberMe;
     },
     goToHome() {
-      window.open('./', '_self');
+      this.$router.push('/');
+    },
+    async showErrorMessage(message, type) {
+       this.errorMessage =
+        `
+          <div class="alert alert-${type} alert-dismissible" role="alert">
+            <div>${message}</div>
+            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+          </div>
+        `;
     }
   }
 }
