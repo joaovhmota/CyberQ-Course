@@ -17,12 +17,17 @@
                 Categorias
               </a>
               <ul id="allCategoriesList" class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <li v-for="(category) in allCategories" v-bind:key="category.id"><a class="dropdown-item" style="text-transform: capitalize;">{{category.name}}</a></li>
+                <li><a class="dropdown-item" style="text-transform: capitalize;" v-on:click="filterCategoy('')">Todas</a></li>
+                <li><hr class="dropdown-divider"></li>
+                <li v-for="(category) in allCategories" v-bind:key="category.id"><a class="dropdown-item" style="text-transform: capitalize;" v-on:click="filterCategoy(category.name)">{{category.name}}</a></li>
               </ul>
             </li>
           </ul>
           <form v-if="this.userLogged != null" class="center d-flex" role="search" style="color: #f2f2f2;">
               {{userLogged.username}}
+              <button v-if="(userLogged.isAdmin == true)" type="button" class="btn btn-outline-light someMarginLeft" data-bs-toggle="modal" data-bs-target="#adminPanel">
+                Painel do Admin
+              </button>
               <button type="submit" v-on:click="logOff()" class="someMarginLeft btn btn-danger"> Sair da conta </button>
           </form>
           <form v-if="this.userLogged == null" class="center d-flex" action="#/login">
@@ -32,22 +37,148 @@
       </div>
     </nav>
 
+    <!-- Painel Admin -->
+    <div class="modal fade" id="adminPanel" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true" style="z-index: 10000;">
+      <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="staticBackdropLabel"> Configurações do site </h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            
+            <div class="accordion accordion-flush" id="accordionFlushExample">
+              <!-- Usuários -->
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="flush-headingOne">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                    Usuários
+                  </button>
+                </h2>
+                <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                  
+                  <div class="accordion-body">
+                    <form action="./" class="someMarginTop">
+                        <div class="input-group mb-3">
+                          <span class="input-group-text" id="basic-addon1">👤</span>
+                          <input type="text" name="" id="txtUsername" v-model="newEditor.username" class="form-control" placeholder="Usuário (Editor)" autocomplete="off">
+                        </div>
+  
+                        <div class="input-group mb-3 someMarginTop">
+                          <span class="input-group-text" id="basic-addon1">🔒</span>
+                          <input type="text" name="" id="txtPassword" v-model="newEditor.password" class="form-control" placeholder="Senha (Editor)" autocomplete="off">
+                        </div>
+  
+                        <div class="left someMarginBottom">
+                          <button v-if="editingUser == false" type="button" class="btn btn-outline-success" v-on:click="registerNewEditor()"> Cadastrar </button>
+                          <button v-if="editingUser == true" type="button" class="btn btn-warning" v-on:click="updateSelectedUser()"> Atualizar </button>
+                          <button v-if="editingUser == true" type="button" class="someMarginLeft btn btn-danger" v-on:click="deleteSelectedUser()"> Remover </button>
+                          <button v-if="editingUser == true" type="button" class="someMarginLeft btn btn-outline-dark" v-on:click="cancelUserEdit()"> Cancelar </button>
+  
+                        </div>
+                    </form>
+
+                    <table class="table table-striped">
+                      <thead>
+                        <tr>
+                          <th> Usuário </th>
+                          <th> Senha </th>
+                          <th> Cargo </th>
+                          <th> Ação </th>
+                        </tr>
+                      </thead>
+                      <tbody v-for="(user) in allUsers" v-bind:key="user.id">
+                          <tr v-if="user.isAdmin == false">
+                            <td> {{user.username}} </td>
+                            <td> {{user.password}} </td>
+                            <td> {{(user.isEditor ? "Editor" : "Leitor")}}</td>
+                            <td> <button type="button" class="btn btn-outline-danger" v-on:click="adminSelectUser(user)"> Selecionar </button> </td>
+                          </tr>
+                      </tbody>
+                    </table>
+                  </div>
+
+                </div>
+              </div>
+
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="flush-headingTwo">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                    Categorias
+                  </button>
+                </h2>
+                <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+                  <div class="accordion-body">
+
+                    <form action="./" class="someMarginTop">
+                      <div class="input-group mb-3">
+                        <span class="input-group-text" id="basic-addon1">🔖</span>
+                        <input type="text" name="" id="txtUsername" v-model="newCategory.name" class="form-control" placeholder="Nome" autocomplete="off">
+                      </div>
+
+                      <div class="left someMarginBottom">
+                          <button v-if="editingCategory == false" type="button" class="btn btn-outline-success" v-on:click="registerNewCategory()"> Cadastrar </button>
+                          <button v-if="editingCategory == true" type="button" class="btn btn-warning" v-on:click="updateSelectedCategory()"> Atualizar </button>
+                          <button v-if="editingCategory == true" type="button" class="someMarginLeft btn btn-danger" v-on:click="deleteSelectedCategory()"> Remover </button>
+                          <button v-if="editingCategory == true" type="button" class="someMarginLeft btn btn-outline-dark" v-on:click="cancelCategoryEdit()"> Cancelar </button>
+                      </div>
+
+                      <table class="table">
+                          <thead>
+                            <tr>
+                              <th> Nome </th>
+                              <th> Ação </th>
+                            </tr>
+                          </thead>
+                          <tbody v-for="category in allCategories" v-bind:key="category.id">
+                            <tr>
+                              <td> {{category.name}} </td>
+                              <td> <button type="button" class="btn btn-outline-danger" v-on:click="adminSelectCategory(category)"> Selecionar </button></td>
+                            </tr>
+                          </tbody>
+                      </table>
+                            
+                    </form>
+
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-outline-dark" data-bs-dismiss="modal"> Concluído </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
     <!-- Fazer post -->
     <div class="aLotOfMarginTop container" style="width: 650px;" v-if="this.userLogged != null && ( this.userLogged.isEditor || this.userLogged.isAdmin)">
+      <div v-html="errorMessage"></div>
+
       <form action="./">
-        <input class="form-control" type="text" v-model="postToUpload.title" placeholder="Título" required>
-        <textarea class="someMarginTop form-control" rows="10" v-model="postToUpload.content" placeholder="Conteúdo" style="resize: none;"></textarea>
+        <div class="input-group mb-3">
+          <span class="input-group-text" id="basic-addon1">📌</span>
+          <input class="form-control" type="text" v-model="postToUpload.title" placeholder="Título" required>
+        </div>
+
+        <div class="input-group someMarginTop">
+          <span class="input-group-text">📄</span>
+          <textarea class="form-control" rows="10" v-model="postToUpload.content" placeholder="Conteúdo" style="resize: none;"></textarea>
+        </div>
 
         <div class="left">
           <div>
-            <select class="form-select someMarginTop" aria-label="Default select example" v-model="postToUpload.categoryId" style="width: max-content;" >
+            <select class="form-select someMarginTop" aria-label="Default select example" style="width: max-content;" v-model="postToUpload.categoryId">
               <option v-for="category in allCategories" :key="category.id" :value="category.id">{{category.name}}</option>
   
             </select>
           </div>
-
+          
           <div class="someMarginTop right" style="width: 100%;">
-              <button class="btn btn-success" type="button" v-on:click="publicPost()"> Publicar </button>
+              <button v-if="(this.isEditingPost == false)" class="btn btn-success" type="button" v-on:click="publicPost()"> Publicar </button>
+              <button v-if="(this.isEditingPost == true)" class="btn btn-warning" type="button" v-on:click="editPost()"> Atualizar </button>
+              <button v-if="(this.isEditingPost == true)" class="btn btn-outline-light someMarginLeft" type="button" v-on:click="cancelEditPost()"> Cancelar </button>
           </div>
         </div>
 
@@ -56,10 +187,18 @@
     
     <!-- Posts -->
     <div class="aLotOfMarginTop container">
-        <div class="accordion" id="accordionExample">
-          <div class="accordion-item" v-for="post in allPosts" v-bind:key="post.id">
+
+      <form action="./HomePage.vue">
+           <div class="input-group mb-3">
+              <span class="input-group-text" id="basic-addon1">🔎</span>
+              <input type="text" class="form-control" v-model="titleToFind" placeholder="Termo a pesquisar" aria-label="Comentário" aria-describedby="basic-addon1">
+            </div>
+      </form>
+
+        <div class="accordion" id="accordionExample" v-for="post in allPosts" v-bind:key="post.id">
+          <div class="accordion-item someMarginTop" v-if="(post.title.toUpperCase().includes(titleToFind.toUpperCase())) && (allCategories.find( c => c.id == post.categoryId).name.toUpperCase().includes(categoryToFind.toUpperCase()))">
             <h2 class="accordion-header" id="headingOne">
-              <button class="accordion-button" type="button" data-bs-toggle="collapse" v-bind:data-bs-target="('#post' + post.id)" aria-expanded="true" v-bind:aria-controls="('post' + post.id)">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" v-bind:data-bs-target="('#post' + post.id)" aria-expanded="true" v-bind:aria-controls="('post' + post.id)">
                <div class="left" style="width: 50%; color: #7B1481;">
                 <strong> {{post.title}} </strong>
                </div>
@@ -76,10 +215,11 @@
                 <hr>
 
                 <div>
-                  <p>{{post.content}}</p>
+                  <p style="word-wrap: break-word;">{{post.content}}</p>
 
                   <p style="display: flex; justify-content: right;" v-if="userLogged != null && (post.userId == userLogged.id || userLogged.isAdmin == true)"> 
                     <button class="btn btn-danger" v-on:click="removePost(post.id)"> 🗑 Excluir post </button>
+                    <button v-if="userLogged.isAdmin == true" class=" someMarginLeft btn btn-outline-secondary" v-on:click="getEditPost(post, post.id)"> ✒ Editar post </button>
                   </p>
                 </div>
 
@@ -89,7 +229,7 @@
                 <div v-if="userLogged != null">
                   <div class="input-group mb-3">
                     <span class="input-group-text" id="basic-addon1">💬</span>
-                    <input type="text" class="form-control" v-model="commentToUpload.content" placeholder="Username" aria-label="Comentário" aria-describedby="basic-addon1">
+                    <input type="text" class="form-control" v-model="commentToUpload.content" placeholder="Diga o que achou sobre o post =)" aria-label="Comentário" aria-describedby="basic-addon1">
                     <button class="btn btn-success" v-on:click="publicComment(post.id)"> Publicar </button>
                   </div>
                 </div>
@@ -123,8 +263,29 @@ export default {
       allUsers: [],
       allComments: [],
       recentPosts: '',
-      postToUpload: {},
-      commentToUpload: {}
+      postToUpload: {
+        title: '',
+        content: ''
+      },
+      commentToUpload: {},
+      titleToFind: '',
+      categoryToFind: '',
+      errorMessage: '',
+      isEditingPost : false,
+      editingPost : {},
+      newEditor: {
+        username: '',
+        password: ''
+      },
+      selectedUserId: 0,
+      editingUser: false,
+      targetUser: {},
+      newCategory: {
+        name: ''
+      },
+      selectedCategoryId: 0,
+      editingCategory: false,
+      targetCategory: {}
     }
   },
   async beforeMount() {
@@ -134,6 +295,227 @@ export default {
     await this.loadComments();
   },
   methods: {
+    async adminSelectCategory(c) {
+        this.targetCategory = c;
+        console.log(this.targetCategory);
+        this.newCategory.name = c.name;
+        this.selectedCategoryId = c.id; 
+        this.editingCategory = true;
+    },
+    async cancelCategoryEdit() {
+        this.targetCategory = {};
+        this.newEditor.name = '';
+        this.selectedCategoryId = 0; 
+        this.editingCategory = false;
+    },
+    async deleteSelectedCategory() {
+      var hasPost = false;
+        this.allPosts.forEach( p => {
+          if (p.categoryId == this.selectedCategoryId) { console.error('Categoria ainda contém posts'); hasPost = true; return; }
+        });
+
+        if (hasPost) return;
+
+        const request = new Request(`https://localhost:7251/api/Categories/${this.selectedCategoryId}`, {
+          method: 'DELETE',
+          headers: {
+            'Accept': 'application/json',
+            'Content-type': 'application/json'
+          }
+        });
+        await fetch(request);
+        window.location.reload();
+    },
+    async updateSelectedCategory() {
+      const regisCat = {
+          id: this.targetCategory.id,
+          name: this.newCategory.name
+        };
+
+        console.log(regisCat);
+
+        const request = new Request(`https://localhost:7251/api/Categories/${this.targetCategory.id}`, {
+          method: 'PUT',
+          headers: {
+            'Accept': 'application/json',
+            'Content-type': 'application/json'
+          },
+          body: JSON.stringify(regisCat, null, 2)
+        });
+
+        await fetch(request);
+
+        window.location.reload();
+    },
+    async registerNewCategory() {
+        var regisCat = {
+          name: this.newCategory.name
+        };
+
+        console.log(regisCat);
+
+        const request = new Request(`https://localhost:7251/api/Categories`, {
+          method: 'post',
+          headers: {
+            'Accept': 'application/json',
+            'Content-type': 'application/json'
+          },
+          body: JSON.stringify(regisCat, null, 2)
+        });
+
+        await fetch(request);
+        await fetch('https://localhost:7251/api/Categories').then(str => str.json()).then(strJson => {
+          this.allCategories = strJson;
+        });
+
+    },
+    async deleteSelectedUser() {
+      var hasUser = false;
+        this.allPosts.forEach( p => {
+          if (p.userId == this.selectedUserId) { console.error('Usuário ainda contém posts'); hasUser = true; return; }
+        });
+
+        if (hasUser) return;
+       const request = new Request(`https://localhost:7251/api/Users/${this.selectedUserId}`, {
+          method: 'DELETE',
+          headers: {
+            'Accept': 'application/json',
+            'Content-type': 'application/json'
+          }
+        });
+        await fetch(request);
+        window.location.reload();
+    },
+    async cancelUserEdit() {
+        this.newEditor.username = '';
+      this.newEditor.password = '';
+      this.selectedUserId = 0;
+      this.editingUser = false;
+    },
+    async updateSelectedUser() {
+        const regisUser = {
+          id: this.targetUser.id,
+          username: this.newEditor.username,
+          password: this.newEditor.password,
+          isReader: this.targetUser.isReader,
+          isEditor: this.targetUser.isEditor,
+          isAdmin: false,
+          createdAt: this.targetUser.createdAt
+        };
+
+        console.log(regisUser);
+
+        const request = new Request(`https://localhost:7251/api/Users/${this.selectedUserId}`, {
+          method: 'PUT',
+          headers: {
+            'Accept': 'application/json',
+            'Content-type': 'application/json'
+          },
+          body: JSON.stringify(regisUser, null, 2)
+        });
+
+        await fetch(request);
+
+        window.location.reload();
+    },
+    async adminSelectUser(u) {
+      this.targetUser = u;
+      this.newEditor.username = u.username;
+      this.newEditor.password = u.password;
+      this.selectedUserId = u.id;
+      this.editingUser = true;
+    },
+    async registerNewEditor() {
+       if (this.allUsers.find( u => u.username == this.newEditor.username) != undefined) { 
+          this.newEditor.username = '';
+          this.newEditor.password = '';
+          this.newEditor.confirmPassword = '';
+          return; 
+        }
+        
+        const regisUser = await {
+          username: this.newEditor.username,
+          password: this.newEditor.password,
+          isReader: true,
+          isEditor: true,
+          isAdmin: false,
+          createdAt: new Date().toLocaleDateString()
+        }
+  
+        const request = await new Request('https://localhost:7251/api/Users', {
+          method: 'post',
+          headers: {
+            'Accept': 'application/json',
+            'Content-type': 'application/json'
+          },
+          body: JSON.stringify(regisUser, null, 2)
+        });
+  
+        await fetch(request);
+        await fetch('https://localhost:7251/api/Users').then(str => str.json()).then(strJson => {
+          this.allUsers = strJson;
+        });
+        
+        this.newEditor.username = '';
+        this.newEditor.password = '';
+        this.newEditor.confirmPassword = '';
+    },
+    async cancelEditPost() {
+      this.postToUpload.title = '';
+      this.postToUpload.content = '';
+      this.postToUpload.categoryId = '';
+      this.editingPostId = {};
+      this.isEditingPost = false;
+    },
+    async getEditPost(post) {
+        this.postToUpload.title = await post.title;
+        this.postToUpload.content = await post.content;
+        this.postToUpload.categoryId = await post.categoryId;
+        this.editingPost = post;
+        this.isEditingPost = true;
+    },
+    async editPost() {
+        if (this.postToUpload.title.trim() == '' || this.postToUpload.content.trim() == '') {
+          this.showErrorMessage('Favor completar os campos da postagem');
+          return;
+        }
+        if (this.postToUpload.categoryId == undefined) {
+          this.showErrorMessage('Por favor, selecione uma categoria');
+          return;
+        }
+
+        const toPost = {
+            id: this.editingPost.id,
+            Title: this.postToUpload.title,
+            Content: this.postToUpload.content,
+            CreationDate: new Date().toLocaleDateString(),
+            userId: this.editingPost.userId,
+            categoryId: this.postToUpload.categoryId
+        }
+        
+        console.log(toPost);
+
+        const request = new Request(`https://localhost:7251/api/Posts/${this.editingPost.id}`, {
+          method: 'PUT',
+          headers: {
+            'Accept': 'application/json',
+            'Content-type': 'application/json'
+          },
+          body: JSON.stringify(toPost, null, 2)
+        });
+  
+        await fetch(request);
+
+        this.postToUpload.title = '';
+        this.postToUpload.content = '';
+
+        window.location.reload();
+        this.editingPost = {};
+        this.unShowErrorMessage();
+    },
+    async filterCategoy(c) {
+      this.categoryToFind = c;
+    },
     async currentUserCategories() {
       return this.userLogged.allowedCategories.replace('$', '').split(';');
     },
@@ -157,6 +539,8 @@ export default {
         const execRequest = await fetch(request);
         const returnRequest = await execRequest.json();
         this.allComments.push(returnRequest);
+
+        this.commentToUpload.content = '';
     },
     async loadComments() {
       await fetch('https://localhost:7251/api/Comments').then(str => str.json()).then(comments => {
@@ -189,6 +573,16 @@ export default {
       console.log(this.allCategories);
     },
     async publicPost() {
+
+        if (this.postToUpload.title.trim() == '' || this.postToUpload.content.trim() == '') {
+          this.showErrorMessage('Favor completar os campos da postagem', 'danger');
+          return;
+        }
+        if (this.postToUpload.categoryId == undefined) {
+          this.showErrorMessage('Por favor, selecione uma categoria', 'danger');
+          return;
+        }
+
         const toPost = {
           title: this.postToUpload.title,
           content: this.postToUpload.content,
@@ -210,7 +604,10 @@ export default {
         const returnRequest = await execRequest.json();
         this.allPosts.push(returnRequest);
 
-        console.log(toPost);
+        this.postToUpload.title = '';
+        this.postToUpload.content = '';
+
+        this.unShowErrorMessage();
     },
     async removePost(i) {
         const request = new Request(`https://localhost:7251/api/Posts/${i}`, {
@@ -235,6 +632,18 @@ export default {
   
         await fetch(request);
         window.location.reload();
+    },
+    async showErrorMessage(message, type = 'danger') {
+      this.errorMessage =
+        `
+          <div class="alert alert-${type} alert-dismissible" role="alert">
+            <div>${message}</div>
+            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+          </div>
+        `;
+    },
+    async unShowErrorMessage() {
+      this.errorMessage = '';
     }
   }
 }
@@ -246,7 +655,9 @@ export default {
 
 * {
   font-family: 'Noto Sans JP', sans-serif;
+  scroll-behavior: smooth;
 }
+
 
 .accordion-button, .accordion-item {
   text-align: left;
@@ -256,7 +667,7 @@ export default {
 nav {
   position: sticky;
   top: 0;
-  z-index: 10000;
+  z-index: 9000;
 }
 
 #logo {
@@ -270,6 +681,10 @@ nav {
 }
 .someMarginTop {
   margin-top: 10px;
+}
+
+.someMarginBottom {
+  margin-bottom: 10px;
 }
 
 .aLotOfMarginTop {

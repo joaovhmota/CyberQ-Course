@@ -12,7 +12,7 @@
 
           <div class="input-group mb-3 someMarginTop">
             <span class="input-group-text" id="basic-addon1">🔒</span>
-             <input type="text" name="" id="txtPassword" v-model="obj.password" class="form-control" placeholder="Senha" autocomplete="off">
+             <input type="password" name="" id="txtPassword" v-model="obj.password" class="form-control" placeholder="Senha" autocomplete="off">
           </div>
 
           <div class="left">
@@ -41,6 +41,8 @@
 
       <div v-if="!this.isLogging" autocomplete="off">
           <img src="../assets/imgs/ah_negao_logo.png" alt="">
+          <div v-html="errorMessage"></div>
+          
           <div class="input-group mb-3">
              <span class="input-group-text" id="basic-addon1">👤</span>
              <input type="text" name="" id="txtUsername" v-model="obj.username" class="form-control" placeholder="Usuário">
@@ -57,8 +59,8 @@
             <input type="password" name="" id="txtConfirmPassword" v-model="obj.confirmPassword" class="form-control" placeholder="Confirmar senha">
           </div>
           <div class="left someMarginTop someMarginTop">
-            <input type="button" class="btn btn-outline-success" v-on:click="registerUser()" value="Criar">
-            <input type="button" class="someMarginLeft btn btn-outline-dark" value="Cancelar" v-on:click="loginRegisterMenu()">
+            <input type="button" class="btn btn-success" v-on:click="registerUser()" value="Criar">
+            <input type="button" class="someMarginLeft btn btn-outline-light" value="Cancelar" v-on:click="loginRegisterMenu()">
           </div>
       </div>
     </div>
@@ -98,7 +100,7 @@ export default {
           this.showPassword = true;
         } else {
            document.getElementById('txtPassword').setAttribute('type', 'password');
-         this. showPassword = false;
+         this.showPassword = false;
         }
       } catch (e) { console.error(e); }
     },
@@ -138,44 +140,50 @@ export default {
     },
     async registerUser() {
       try {
-
-        if (this.users.filter( u => u.username == this.obj.username)) { 
+        // console.log(this.users.find( u => u.username == this.obj.username));
+        if (this.users.find( u => u.username == this.obj.username) != undefined) { 
           this.showErrorMessage('Usuário já existe', 'danger');
-          return; 
-        } 
-        else if (!(this.obj.password ===  this.obj.confirmPassword)) { 
-          this.showErrorMessage('Senhas não conhecidem', 'danger'); 
-          return; 
-        }
-        else {
-          const regisUser = {
-            username: this.obj.username,
-            password: this.obj.password,
-            isReader: true,
-            isEditor: false,
-            isAdmin: false,
-            createdAt: new Date().toLocaleDateString()
-          }
-    
-          const request = new Request('https://localhost:7251/api/Users', {
-            method: 'post',
-            headers: {
-              'Accept': 'application/json',
-              'Content-type': 'application/json'
-            },
-            body: JSON.stringify(regisUser, null, 2)
-          });
-    
-          const execRequest = await fetch(request);
-          const returnRequest = await execRequest.json();
-          this.users.push(returnRequest);
-          
           this.obj.username = '';
           this.obj.password = '';
           this.obj.confirmPassword = '';
-  
-          this.loginRegisterMenu();
+          return; 
+        } 
+        if (!(this.obj.password ===  this.obj.confirmPassword)) { 
+          this.showErrorMessage('Senhas não conhecidem', 'danger'); 
+          this.obj.username = '';
+          this.obj.password = '';
+          this.obj.confirmPassword = '';
+          return; 
         }
+        
+        const regisUser = await {
+          username: this.obj.username,
+          password: this.obj.password,
+          isReader: true,
+          isEditor: false,
+          isAdmin: false,
+          createdAt: new Date().toLocaleDateString()
+        }
+  
+        const request = await new Request('https://localhost:7251/api/Users', {
+          method: 'post',
+          headers: {
+            'Accept': 'application/json',
+            'Content-type': 'application/json'
+          },
+          body: JSON.stringify(regisUser, null, 2)
+        });
+  
+        const execRequest = await fetch(request);
+        const returnRequest = await execRequest.json();
+        this.users.push(returnRequest);
+        
+        this.obj.username = '';
+        this.obj.password = '';
+        this.obj.confirmPassword = '';
+
+        this.loginRegisterMenu();
+
       } catch(e) { console.error(e); }
     },
     setRememberMe() {

@@ -9,7 +9,8 @@ Vue.use(VueRouter);
 const router = new VueRouter({
   routes: [
     {path: '/login', component: LoginPage},
-    {path: '/', component: HomePage}
+    {path: '/', component: HomePage},
+    {path: '/*', component: HomePage}
   ]
 });
 
