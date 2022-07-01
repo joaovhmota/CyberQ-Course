@@ -11,7 +11,7 @@ using Oracle.EntityFrameworkCore.Metadata;
 namespace Blog.Migrations
 {
     [DbContext(typeof(ApplicationContext))]
-    [Migration("20220701105212_MainMigration")]
+    [Migration("20220701121032_MainMigration")]
     partial class MainMigration
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)

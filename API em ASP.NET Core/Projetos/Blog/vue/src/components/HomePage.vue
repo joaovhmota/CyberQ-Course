@@ -374,6 +374,9 @@ export default {
         this.allPosts.forEach( p => {
           if (p.userId == this.selectedUserId) { console.error('Usuário ainda contém posts'); hasUser = true; return; }
         });
+        this.allComments.forEach( c => {
+            if (c.userId == this.selectedUserId) { console.error('Usuário ainda contém comentários'); hasUser = true; return; }
+        });
 
         if (hasUser) return;
        const request = new Request(`https://localhost:7251/api/Users/${this.selectedUserId}`, {
