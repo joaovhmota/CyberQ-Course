@@ -1,7 +1,7 @@
 <template>
-	<main style="background-color: #561759; height: 100%; width: 100%">
+	<main style="background-color: #561759; height: 100%; width: 100%; padding-bottom: 25px;">
     <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg bg-light" style="background-color: #50105A !important;">
+    <nav class="navbar navbar-expand-lg bg-light navbar-dark" style="background-color: #50105A !important;">
       <div class="container-fluid">
         <a class="navbar-brand" href="#"> <img id="logo" src="../assets/imgs/ah_negao_logo.png" alt="Logo"> </a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -17,6 +17,7 @@
                 Categorias
               </a>
               <ul id="allCategoriesList" class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item" style="text-transform: capitalize;" v-on:click="setRecentPost()">Recentes</a></li>
                 <li><a class="dropdown-item" style="text-transform: capitalize;" v-on:click="filterCategoy('')">Todas</a></li>
                 <li><hr class="dropdown-divider"></li>
                 <li v-for="(category) in allCategories" v-bind:key="category.id"><a class="dropdown-item" style="text-transform: capitalize;" v-on:click="filterCategoy(category.name)">{{category.name}}</a></li>
@@ -191,59 +192,120 @@
       <form action="./HomePage.vue">
            <div class="input-group mb-3">
               <span class="input-group-text" id="basic-addon1">🔎</span>
-              <input type="text" class="form-control" v-model="titleToFind" placeholder="Termo a pesquisar" aria-label="Comentário" aria-describedby="basic-addon1">
+              <input type="text" class="form-control" v-model="titleToFind" placeholder="Termo a pesquisar" aria-label="Comentário" aria-describedby="basic-addon1" :change="disableRecentPosting()">
             </div>
       </form>
 
-        <div class="accordion" id="accordionExample" v-for="post in allPosts" v-bind:key="post.id">
-          <div class="accordion-item someMarginTop" v-if="(post.title.toUpperCase().includes(titleToFind.toUpperCase())) && (allCategories.find( c => c.id == post.categoryId).name.toUpperCase().includes(categoryToFind.toUpperCase()))">
-            <h2 class="accordion-header" id="headingOne">
-              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" v-bind:data-bs-target="('#post' + post.id)" aria-expanded="true" v-bind:aria-controls="('post' + post.id)">
-               <div class="left" style="width: 50%; color: #7B1481;">
-                <strong> {{post.title}} </strong>
-               </div>
-              </button>
-            </h2>
-            <div v-bind:id="('post' + post.id)" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
-              <div class="accordion-body post">
-                <div>
-                  <i>Escrito por: </i> <span class="badge bg-primary"> {{allUsers.find( u => u.id == post.userId).username}} </span> <br> 
-                  <i>Categoria: </i> <span class="badge bg-primary"> {{allCategories.find( c => c.id == post.categoryId).name}} </span> <br>
-                  <i>Publicado em: </i> <span class="badge bg-primary"> {{post.creationDate}} </span>
+        <!-- Recent posts -->
+        <div v-if="isRecentPosting == true">
+          <div class="accordion" id="accordionExample" v-for="post in recentPosts" v-bind:key="post.id">
+            <div class="accordion-item someMarginTop" v-if="(post.title.toUpperCase().includes(titleToFind.toUpperCase())) && (allCategories.find( c => c.id == post.categoryId).name.toUpperCase().includes(categoryToFind.toUpperCase()))">
+              <h2 class="accordion-header" id="headingOne">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" v-bind:data-bs-target="('#post' + post.id)" aria-expanded="true" v-bind:aria-controls="('post' + post.id)">
+                <div class="left" style="width: 50%; color: #7B1481;">
+                  <strong> {{post.title}} </strong>
                 </div>
-
-                <hr>
-
-                <div>
-                  <p style="word-wrap: break-word;">{{post.content}}</p>
-
-                  <p style="display: flex; justify-content: right;" v-if="userLogged != null && (post.userId == userLogged.id || userLogged.isAdmin == true)"> 
-                    <button class="btn btn-danger" v-on:click="removePost(post.id)"> 🗑 Excluir post </button>
-                    <button v-if="userLogged.isAdmin == true" class=" someMarginLeft btn btn-outline-secondary" v-on:click="getEditPost(post, post.id)"> ✒ Editar post </button>
-                  </p>
-                </div>
-
-                <hr v-if="userLogged != null">
-
-                <h5> Comentários </h5>
-                <div v-if="userLogged != null">
-                  <div class="input-group mb-3">
-                    <span class="input-group-text" id="basic-addon1">💬</span>
-                    <input type="text" class="form-control" v-model="commentToUpload.content" placeholder="Diga o que achou sobre o post =)" aria-label="Comentário" aria-describedby="basic-addon1">
-                    <button class="btn btn-success" v-on:click="publicComment(post.id)"> Publicar </button>
+                </button>
+              </h2>
+              <div v-bind:id="('post' + post.id)" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                <div class="accordion-body post">
+                  <div>
+                    <i>Escrito por: </i> <span class="badge bg-primary"> {{allUsers.find( u => u.id == post.userId).username}} </span> <br> 
+                    <i>Categoria: </i> <span class="badge bg-primary"> {{allCategories.find( c => c.id == post.categoryId).name}} </span> <br>
+                    <i>Publicado em: </i> <span class="badge bg-primary"> {{post.creationDate}} </span>
                   </div>
-                </div>
 
-                <div v-for="comment in allComments" v-bind:key="comment.id">
-                    <div v-if="(comment.postId == post.id)" style="word-wrap: break-word;">
-                        <span class="badge bg-primary">{{comment.createdAt}}</span>
-                        <span v-if="userLogged != null && (post.userId == userLogged.id || userLogged.isAdmin == true)" v-on:click="removeComment(comment.id)" class="badge bg-danger" style="cursor: pointer;"> 🗑 </span>
-                        <p>
-                          <strong>{{allUsers.find(u => u.id == comment.userId).username}} </strong> disse: {{comment.content}}
-                        </p>
+                  <hr>
+
+                  <div>
+                    <p style="word-wrap: break-word;">{{post.content}}</p>
+
+                    <p style="display: flex; justify-content: right;" v-if="userLogged != null && (post.userId == userLogged.id || userLogged.isAdmin == true)"> 
+                      <button class="btn btn-danger" v-on:click="removePost(post.id)"> 🗑 Excluir post </button>
+                      <button v-if="userLogged.isAdmin == true" class=" someMarginLeft btn btn-outline-secondary" v-on:click="getEditPost(post, post.id)"> ✒ Editar post </button>
+                    </p>
+                  </div>
+
+                  <hr v-if="userLogged != null">
+
+                  <h5> Comentários </h5>
+                  <div v-if="userLogged != null">
+                    <div class="input-group mb-3">
+                      <span class="input-group-text" id="basic-addon1">💬</span>
+                      <input type="text" class="form-control" v-model="commentToUpload.content" placeholder="Diga o que achou sobre o post =)" aria-label="Comentário" aria-describedby="basic-addon1">
+                      <button class="btn btn-success" v-on:click="publicComment(post.id)"> Publicar </button>
                     </div>
-                </div>
+                  </div>
 
+                  <div v-for="comment in allComments" v-bind:key="comment.id">
+                      <div v-if="(comment.postId == post.id)" style="word-wrap: break-word;">
+                          <span class="badge bg-primary">{{comment.createdAt}}</span>
+                          <span v-if="userLogged != null && (post.userId == userLogged.id || userLogged.isAdmin == true)" v-on:click="removeComment(comment.id)" class="badge bg-danger" style="cursor: pointer;"> 🗑 </span>
+                          <p>
+                            <strong>{{allUsers.find(u => u.id == comment.userId).username}} </strong> disse: {{comment.content}}
+                          </p>
+                      </div>
+                  </div>
+
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        
+        <!-- All posts -->
+        <div v-if="isRecentPosting == false">  
+          <div class="accordion" id="accordionExample" v-for="post in allPosts" v-bind:key="post.id">
+            <div class="accordion-item someMarginTop" v-if="(post.title.toUpperCase().includes(titleToFind.toUpperCase())) && (allCategories.find( c => c.id == post.categoryId).name.toUpperCase().includes(categoryToFind.toUpperCase()))">
+              <h2 class="accordion-header" id="headingOne">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" v-bind:data-bs-target="('#post' + post.id)" aria-expanded="true" v-bind:aria-controls="('post' + post.id)">
+                <div class="left" style="width: 50%; color: #7B1481;">
+                  <strong> {{post.title}} </strong>
+                </div>
+                </button>
+              </h2>
+              <div v-bind:id="('post' + post.id)" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                <div class="accordion-body post">
+                  <div>
+                    <i>Escrito por: </i> <span class="badge bg-primary"> {{allUsers.find( u => u.id == post.userId).username}} </span> <br> 
+                    <i>Categoria: </i> <span class="badge bg-primary"> {{allCategories.find( c => c.id == post.categoryId).name}} </span> <br>
+                    <i>Publicado em: </i> <span class="badge bg-primary"> {{post.creationDate}} </span>
+                  </div>
+
+                  <hr>
+
+                  <div>
+                    <p style="word-wrap: break-word;">{{post.content}}</p>
+
+                    <p style="display: flex; justify-content: right;" v-if="userLogged != null && (post.userId == userLogged.id || userLogged.isAdmin == true)"> 
+                      <button class="btn btn-danger" v-on:click="removePost(post.id)"> 🗑 Excluir post </button>
+                      <button v-if="userLogged.isAdmin == true" class=" someMarginLeft btn btn-outline-secondary" v-on:click="getEditPost(post, post.id)"> ✒ Editar post </button>
+                    </p>
+                  </div>
+
+                  <hr v-if="userLogged != null">
+
+                  <h5> Comentários </h5>
+                  <div v-if="userLogged != null">
+                    <div class="input-group mb-3">
+                      <span class="input-group-text" id="basic-addon1">💬</span>
+                      <input type="text" class="form-control" v-model="commentToUpload.content" placeholder="Diga o que achou sobre o post =)" aria-label="Comentário" aria-describedby="basic-addon1">
+                      <button class="btn btn-success" v-on:click="publicComment(post.id)"> Publicar </button>
+                    </div>
+                  </div>
+
+                  <div v-for="comment in allComments" v-bind:key="comment.id">
+                      <div v-if="(comment.postId == post.id)" style="word-wrap: break-word;">
+                          <span class="badge bg-primary">{{comment.createdAt}}</span>
+                          <span v-if="userLogged != null && (post.userId == userLogged.id || userLogged.isAdmin == true)" v-on:click="removeComment(comment.id)" class="badge bg-danger" style="cursor: pointer;"> 🗑 </span>
+                          <p>
+                            <strong>{{allUsers.find(u => u.id == comment.userId).username}} </strong> disse: {{comment.content}}
+                          </p>
+                      </div>
+                  </div>
+
+                </div>
               </div>
             </div>
           </div>
@@ -262,7 +324,6 @@ export default {
       allPosts: [],
       allUsers: [],
       allComments: [],
-      recentPosts: '',
       postToUpload: {
         title: '',
         content: ''
@@ -285,7 +346,9 @@ export default {
       },
       selectedCategoryId: 0,
       editingCategory: false,
-      targetCategory: {}
+      targetCategory: {},
+      recentPosts: [],
+      isRecentPosting: true
     }
   },
   async beforeMount() {
@@ -293,8 +356,21 @@ export default {
     await this.loadallCategories();
     await this.loadPosts();
     await this.loadComments();
+    await this.getRecentPosts();
   },
   methods: {
+    async disableRecentPosting() {
+      if (this.titleToFind.trim() == '') return;
+      
+      this.isRecentPosting = false;
+    },
+    async setRecentPost() {
+      this.isRecentPosting = true;
+      this.categoryToFind = '';
+    },
+    async getRecentPosts() {
+      await fetch('https://localhost:7251/api/Posts/recentPosts/10').then(str => str.json()).then( recentPosts => { this.recentPosts = recentPosts; });
+    },
     async adminSelectCategory(c) {
         this.targetCategory = c;
         console.log(this.targetCategory);
@@ -517,6 +593,7 @@ export default {
         this.unShowErrorMessage();
     },
     async filterCategoy(c) {
+      if (c == '') this.isRecentPosting = false;
       this.categoryToFind = c;
     },
     async currentUserCategories() {

@@ -29,7 +29,16 @@ namespace Blog.Controllers
           {
               return NotFound();
           }
-            return await _context.Posts.ToListAsync();
+            return await _context.Posts.OrderByDescending(p => p.Id).ToListAsync();
+        }
+
+        // GET: api/Posts/RecentPosts/qtd
+        [HttpGet("recentPosts/{qtd}")]
+        public async Task<ActionResult<IEnumerable<Posts>>> GetRecentPosts(int qtd) {
+               if (_context.Posts == null) {
+                    return NotFound();
+               }
+               return await _context.Posts.OrderByDescending(p => p.Id).Take(qtd).ToListAsync();
         }
 
         // GET: api/Posts/5
