@@ -90,12 +90,10 @@ END;
 TRUNCATE TABLE students;
 TRUNCATE TABLE classes;
 
-
 INSERT INTO classes (class_name) VALUES ('1A');
 INSERT INTO classes (class_name) VALUES ('1B');
 INSERT INTO classes (class_name) VALUES ('1C');
 SELECT * FROM classes;
-
 
 INSERT INTO students (student_name, actual_class) VALUES ('João', 1);
 INSERT INTO students (student_name, actual_class) VALUES ('Henrique', 2);
