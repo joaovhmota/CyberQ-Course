@@ -1,3 +1,4 @@
+/* PART 1 */
 /* TABLES */
 CREATE TABLE students (
 	id INTEGER,
@@ -39,3 +40,35 @@ DROP TABLE students;
 DROP SEQUENCE student_auto_increment;
 DROP TRIGGER tr_student_increment;
 DROP TRIGGER tr_student_setAvarage;
+/* END PART 1*/
+
+
+/* PART 2 */
+CREATE TABLE product (
+	id INTEGER,
+	name VARCHAR2(155),
+	price NUMBER,
+	promotional_price NUMBER
+);
+
+CREATE SEQUENCE sq_product MINVALUE 1 START WITH 1 INCREMENT BY 1;
+
+CREATE OR REPLACE TRIGGER tr_product_auto_increment
+BEFORE INSERT ON product
+FOR EACH ROW
+BEGIN
+	:new.id := sq_product.Nextval;
+END;
+
+CREATE OR REPLACE TRIGGER tr_discount_product
+BEFORE INSERT ON product
+FOR EACH ROW
+BEGIN
+	:new.promotional_price := (:new.price * 0.9);
+END;
+
+INSERT INTO product (name, price) VALUES ('Celular', 1000);
+INSERT INTO product (name, price) VALUES ('Celular, só que mais caro', 10000);
+
+SELECT * FROM product;
+/* END PART 2 */

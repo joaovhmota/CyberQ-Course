@@ -3388,3 +3388,16 @@ INNER JOIN countries ON countries.country_id = locations.country_id
 INNER JOIN regions ON regions.region_id = countries.region_id;
 
 SELECT * FROM customersOrderAndProductDetails;
+
+DROP TABLE order_items;  
+DROP TABLE orders;
+DROP TABLE inventories;
+DROP TABLE products;
+DROP TABLE product_categories;
+DROP TABLE warehouses;
+DROP TABLE employees;
+DROP TABLE contacts;
+DROP TABLE customers;
+DROP TABLE locations;
+DROP TABLE countries;
+DROP TABLE regions;
