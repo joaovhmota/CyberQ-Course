@@ -42,11 +42,11 @@ window.onload = () => {
 		</div>
 		`;
 		
-		if (x >= 1920 + width * 2)
+		if (x >= 1000)
 			hitBot = true;
 		if (x <= 1)
 			hitBot = false;
-		if (y >= 1080 + width * 2)
+		if (y >= 900)
 			hitRight = true;
 		if (y <= 1)
 		 	hitRight = false;
