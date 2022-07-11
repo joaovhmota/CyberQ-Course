@@ -22,4 +22,6 @@ BEGIN
 END;
 
 BEGIN addBorrow('João', 'One piece', '1-7-2022', SYSDATE); END;
+BEGIN addBorrow('William', 'Como conversar com seu cachorro sobre homossexualidade e comunismo', '1-6-2022', SYSDATE); END;
+BEGIN addBorrow('Henrique', 'Guia de mangá: Banco de dados', '10-7-2022', SYSDATE); END;
 SELECT * FROM borrows;
